@@ -8,3 +8,6 @@ Pratt SAVI 810 2018-10
     C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3
 
 
+##### Adding Python Packages
+
+    (arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>pip install bs4 --user
