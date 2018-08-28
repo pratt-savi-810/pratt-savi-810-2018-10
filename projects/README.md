@@ -1,1 +1,1 @@
-# Class Projects
+# Course Projects
