@@ -7,7 +7,9 @@ We'll try to be using Python 3.x as much as possible.
 
 
 # Lessons
-#### [Lesson 00 - Setting up your Python/ArcGIS Development Environment](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_00)	
+#### [Lesson 00 - Setting up your Python/ArcGIS Development Environment](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_00_python_setup)
+
+#### [Lesson 01 - Hello World!](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_01_hello_world)	
 	
 
 # Software and Packages
