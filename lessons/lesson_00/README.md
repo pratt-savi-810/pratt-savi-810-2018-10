@@ -54,14 +54,14 @@ Graciously lifted from [PyCharm article on Wikipedia](https://en.wikipedia.org/w
 >PyCharm is cross-platform, with Windows, macOS and Linux versions. The Community Edition is released under the Apache License,[3] and there is also Professional Edition released under a proprietary license - this has extra features.
 
 >Features
-* Coding assistance and analysis, with code completion, syntax and error highlighting, linter integration, and quick fixes
-* Project and code navigation: specialized project views, file structure views and quick jumping between files, classes, methods and usages
-* Python refactoring: including rename, extract method, introduce variable, introduce constant, pull up, push down and others
-* Support for web frameworks: Django, web2py and Flask
-* Integrated Python debugger
-* Integrated unit testing, with line-by-line code coverage
-* Google App Engine Python development
-* Version control integration: unified user interface for Mercurial, Git, Subversion, Perforce and CVS with changelists and merge (https://en.wikipedia.org/wiki/PyCharm)
+>* Coding assistance and analysis, with code completion, syntax and error highlighting, linter integration, and quick fixes
+>* Project and code navigation: specialized project views, file structure views and quick jumping between files, classes, methods and usages
+>* Python refactoring: including rename, extract method, introduce variable, introduce constant, pull up, push down and others
+>* Support for web frameworks: Django, web2py and Flask
+>* Integrated Python debugger
+>* Integrated unit testing, with line-by-line code coverage
+>* Google App Engine Python development
+>* Version control integration: unified user interface for Mercurial, Git, Subversion, Perforce and CVS with changelists and merge (https://en.wikipedia.org/wiki/PyCharm)
 
 ![PyCharm logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PyCharm_Logo.svg/128px-PyCharm_Logo.svg.png)
 
@@ -69,24 +69,18 @@ Graciously lifted from [PyCharm article on Wikipedia](https://en.wikipedia.org/w
 ### Setting up PyCharm
 * [Download the Community version of PyCharm](https://www.jetbrains.com/pycharm/download) and install.
 
-
-
-
-
-
-![](../../images/pycharm_create_project_from_existing_sources.png)
-
+* **Create a Project** for fun. Name it anything you'd like or create one with the **pratt-savi-810-2018-10** repo.
 ![](../../images/pycharm_create_project_select_interpreter.png)
 
-![](../../images/pycharm_open_new_window.png)
+* Try pointing to the ArcGIS Desktop or ArcGIS Pro `python.exe` - don't worry if you can't find it, point to any python if you have Python installed. If you don't, let me know and we'll get a version of Python installed on your machine.
 
-![](../../images/pycharm_project.png)
+* Open in a "new window" -  ![](../../images/pycharm_open_new_window.png)
 
-![](../../images/pycharm_select_github_folder.png)
+* If you already have some files in there, such as our class directory, select `Yes` ![](../../images/pycharm_create_project_from_existing_sources.png)
 
-![](../../images/python_command_prompt.png)
+* Now we have an open PyCharm Project. ![](../../images/pycharm_project.png)
 
-![](../../images/run_as_admin.png)
+<!-- ![](../../images/pycharm_select_github_folder.png) -->
 
 
 * **IMPORTANT NOTE:** We'll go over PyCharm a bit more in class. So don't worry if you don't quite get it early on.
@@ -101,7 +95,7 @@ Atom's Wikipedia link: https://en.wikipedia.org/wiki/Atom_(text_editor), where t
 
 ![Atom logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Atom_icon.svg/512px-Atom_icon.svg.png)
 
-## Installing Atom
+## Installing Atom (optional)
 * [Download and install Atom](https://atom.io/)
 
 * **IMPORTANT NOTE:** If you don't have ArcGIS at your home desktop or laptop computer, you can still install Atom to be able to **write code** and **[pseudocode](https://en.wikipedia.org/wiki/Pseudocode)** without the ArcGIS software installed.
@@ -121,7 +115,7 @@ Foolishly copied from [Git on Wikipedia](https://en.wikipedia.org/wiki/Git);
 
 ![Git logo](https://git-scm.com/images/logo@2x.png)
 
-### Installing Git.exe
+### Installing Git.exe (optional)
 * [Download and install Git.exe](https://git-scm.com/downloads)
 
 * PyCharm will ask you to point to it, you might find it here:
