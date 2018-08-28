@@ -41,7 +41,7 @@ Graciously stolen from [GitHub article on Wikipedia](https://en.wikipedia.org/wi
 
 * **IMPORTANT NOTE:** We'll go over GitHub Desktop a bit more in class. So don't worry if you don't quite get it early on.
 
-![github clone](../../images/github_clone_repo.png)
+![github clone](../../images/00_python_setup/github_clone_repo.png)
 
 * **IMPORTANT NOTE:** If you don't have ArcGIS at your home desktop or laptop computer, you can still install GitHub to be able to **write code** and **[pseudocode](https://en.wikipedia.org/wiki/Pseudocode)** without the ArcGIS software installed.
 
@@ -70,17 +70,17 @@ Graciously lifted from [PyCharm article on Wikipedia](https://en.wikipedia.org/w
 * [Download the Community version of PyCharm](https://www.jetbrains.com/pycharm/download) and install.
 
 * **Create a Project** for fun. Name it anything you'd like or create one with the **pratt-savi-810-2018-10** repo.
-![](../../images/pycharm_create_project_select_interpreter.png)
+![](../../images/00_python_setup/pycharm_create_project_select_interpreter.png)
 
 * Try pointing to the ArcGIS Desktop or ArcGIS Pro `python.exe` - don't worry if you can't find it, point to any python if you have Python installed. If you don't, let me know and we'll get a version of Python installed on your machine.
 
-* Open in a "new window" - this will just add a new window to work with.  ![](../../images/pycharm_open_new_window.png)
+* Open in a "new window" - this will just add a new window to work with.  ![](../../images/00_python_setup/pycharm_open_new_window.png)
 
-* If you already have some files in there, such as our class directory, select `Yes` ![](../../images/pycharm_create_project_from_existing_sources.png)
+* If you already have some files in there, such as our class directory, select `Yes` ![](../../images/00_python_setup/pycharm_create_project_from_existing_sources.png)
 
-* Now we have an open PyCharm Project. ![](../../images/pycharm_project.png)
+* Now we have an open PyCharm Project. ![](../../images/00_python_setup/pycharm_project.png)
 
-<!-- ![](../../images/pycharm_select_github_folder.png) -->
+<!-- ![](../../images/00_python_setup/pycharm_select_github_folder.png) -->
 
 
 * **IMPORTANT NOTE:** We'll go over PyCharm a bit more in class. So don't worry if you don't quite get it early on.
