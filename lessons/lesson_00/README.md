@@ -74,7 +74,7 @@ Graciously lifted from [PyCharm article on Wikipedia](https://en.wikipedia.org/w
 
 * Try pointing to the ArcGIS Desktop or ArcGIS Pro `python.exe` - don't worry if you can't find it, point to any python if you have Python installed. If you don't, let me know and we'll get a version of Python installed on your machine.
 
-* Open in a "new window" -  ![](../../images/pycharm_open_new_window.png)
+* Open in a "new window" - this will just add a new window to work with.  ![](../../images/pycharm_open_new_window.png)
 
 * If you already have some files in there, such as our class directory, select `Yes` ![](../../images/pycharm_create_project_from_existing_sources.png)
 
