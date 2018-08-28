@@ -39,6 +39,8 @@ Graciously stolen from [GitHub article on Wikipedia](https://en.wikipedia.org/wi
 * Try to clone this repo: https://github.com/pratt-savi-810/pratt-savi-810-2018-10
   * HINT - its the BRIGHT GREEN button.
 
+* **IMPORTANT NOTE:** We'll go over GitHub Desktop a bit more in class. So don't worry if you don't quite get it early on.
+
 ![github clone](../../images/github_clone_repo.png)
 
 * **IMPORTANT NOTE:** If you don't have ArcGIS at your home desktop or laptop computer, you can still install GitHub to be able to **write code** and **[pseudocode](https://en.wikipedia.org/wiki/Pseudocode)** without the ArcGIS software installed.
@@ -85,6 +87,9 @@ Graciously lifted from [PyCharm article on Wikipedia](https://en.wikipedia.org/w
 ![](../../images/python_command_prompt.png)
 
 ![](../../images/run_as_admin.png)
+
+
+* **IMPORTANT NOTE:** We'll go over PyCharm a bit more in class. So don't worry if you don't quite get it early on.
 
 * **IMPORTANT NOTE:** If you don't have ArcGIS at your home desktop or laptop computer, you can still install PyCharm to be able to **write code** and **[pseudocode](https://en.wikipedia.org/wiki/Pseudocode)** without the ArcGIS software installed.
 
