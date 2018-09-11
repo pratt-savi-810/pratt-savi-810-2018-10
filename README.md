@@ -5,6 +5,9 @@
 ![python](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
 
 ### Fall (October-November) 2018
+This semester we'll be staying within the ArcGIS Pro Python environment so we don't spend too much time dealing with cross-platform and environment/dependencies issues. 
+
+We'll try to be using Python 3.x as much as possible. 
 
 ##### Spatial Analysis:
 
@@ -13,9 +16,7 @@
 *"Space-time detection of emergent crime clusters"* 
 Linked from: https://www.spatialanalysisonline.com/HTML/index.html
 
-This semester we'll be staying within the ArcGIS Pro Python environment so we don't spend too much time dealing with cross-platform and environment/dependencies issues. 
 
-We'll try to be using Python 3.x as much as possible. 
 
 
 # Lessons
