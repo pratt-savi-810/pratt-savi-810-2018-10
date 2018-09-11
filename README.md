@@ -11,18 +11,6 @@ This semester we'll be staying within the ArcGIS Pro Python environment so we do
 
 We'll try to be using Python 3.x as much as possible. 
 
-
-
-##### Spatial Analysis:
-
-![spatial_analysis](https://www.spatialanalysisonline.com/HTML/spatiotemporalscan_zoom57.png)
-
-*"Space-time detection of emergent crime clusters"* 
-Linked from: https://www.spatialanalysisonline.com/HTML/index.html
-
-
-
-
 # Lessons
 #### [Lesson 00 - Setting up your Python/ArcGIS Development Environment](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_00_python_setup)
 
@@ -44,6 +32,13 @@ Linked from: https://www.spatialanalysisonline.com/HTML/index.html
 ##### Adding Python Packages
 
     (arcgispro-py3) C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3>pip install bs4 --user
+
+![spatial_analysis](https://www.spatialanalysisonline.com/HTML/spatiotemporalscan_zoom57.png)
+
+*"Space-time detection of emergent crime clusters"* 
+Linked from: https://www.spatialanalysisonline.com/HTML/index.html
+
+
 
 ## **Microsoft Windows 10 90-Day Trial**
 
