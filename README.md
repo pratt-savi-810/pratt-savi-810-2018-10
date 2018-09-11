@@ -1,5 +1,7 @@
 ## Pratt SAVI 810 2018-10
  
+![savi](http://www.pratt.edu/tiny_mce/plugins/imagemanager/files/Light_brown_blue22.jpg)
+
 # Intro to Python Scripting for Geospatial
 
 ![python](https://raw.githubusercontent.com/pratt-savi-810/pratt-savi-810-2018-10/master/images/python_logo.png)
@@ -11,7 +13,6 @@ This semester we'll be staying within the ArcGIS Pro Python environment so we do
 
 We'll try to be using Python 3.x as much as possible. 
 
-![savi](http://www.pratt.edu/tiny_mce/plugins/imagemanager/files/Light_brown_blue22.jpg)
 
 
 ##### Spatial Analysis:
