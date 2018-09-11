@@ -2,10 +2,9 @@
  
 # Intro to Python Scripting for Geospatial, 
 
-### Fall (October-November) 2018
-
-
 ![python](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+
+### Fall (October-November) 2018
 
 ![spatial_analysis](https://www.spatialanalysisonline.com/HTML/spatiotemporalscan_zoom57.png)
 
