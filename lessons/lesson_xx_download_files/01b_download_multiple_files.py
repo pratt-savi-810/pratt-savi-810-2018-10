@@ -15,13 +15,13 @@ def main():
 
     download_location = "Z:/Windows/GitHub/pratt-savi-810-2018-10/temp"
 
-    for k, url in download_data.items():
+    for key, url in download_data.items():
 
-        print('downloading {0} data, from url: {1}'.format(k, url))
+        print('downloading {0} data, from url: {1}'.format(key, url))
 
         download_file_from_web(
             url,
-            '{0}/{1}.zip'.format(download_location, k)
+            '{0}/{1}.zip'.format(download_location, key)
         )
 
 
