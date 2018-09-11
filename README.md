@@ -1,8 +1,10 @@
 ## Pratt SAVI 810 2018-10
  
-# Intro to Python Scripting for Geospatial, 
+# Intro to Python Scripting for Geospatial
 
 ![python](https://raw.githubusercontent.com/pratt-savi-810/pratt-savi-810-2018-10/master/images/python_logo.png)
+
+---
 
 ### Fall (October-November) 2018
 This semester we'll be staying within the ArcGIS Pro Python environment so we don't spend too much time dealing with cross-platform and environment/dependencies issues. 
