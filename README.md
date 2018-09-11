@@ -11,6 +11,9 @@ We'll try to be using Python 3.x as much as possible.
 
 #### [Lesson 01 - Hello World!](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_01_hello_world)	
 	
+#### [Lesson 02 - Import Python Packages](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_02_import)
+
+#### [Lesson 03 - Download Files](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_03_download_files)
 
 # Software and Packages
 
