@@ -1,9 +1,22 @@
-# Pratt SAVI 810 2018-10
-Class for SAVI 810 (Intro to Python Scripting for Geospatial), Fall (October-November) 2018
+## Pratt SAVI 810 2018-10
+ 
+# Intro to Python Scripting for Geospatial, 
 
+![python](https://svn.python.org/www/branches/rest2web/beta.python.org/resources/design/logo/python-logo-master-flat.png)
+
+### Fall (October-November) 2018
 This semester we'll be staying within the ArcGIS Pro Python environment so we don't spend too much time dealing with cross-platform and environment/dependencies issues. 
 
 We'll try to be using Python 3.x as much as possible. 
+
+##### Spatial Analysis:
+
+![spatial_analysis](https://www.spatialanalysisonline.com/HTML/spatiotemporalscan_zoom57.png)
+
+*"Space-time detection of emergent crime clusters"* 
+Linked from: https://www.spatialanalysisonline.com/HTML/index.html
+
+
 
 
 # Lessons
@@ -11,6 +24,9 @@ We'll try to be using Python 3.x as much as possible.
 
 #### [Lesson 01 - Hello World!](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_01_hello_world)	
 	
+#### [Lesson 02 - Import Python Packages](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_02_import)
+
+#### [Lesson 03 - Download Files](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons/lesson_03_download_files)
 
 # Software and Packages
 
