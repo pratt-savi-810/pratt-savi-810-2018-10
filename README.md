@@ -6,10 +6,12 @@
 
 ### Fall (October-November) 2018
 
-Spatial Analysis:
+##### Spatial Analysis:
+
 ![spatial_analysis](https://www.spatialanalysisonline.com/HTML/spatiotemporalscan_zoom57.png)
 
-*"Space-time detection of emergent crime clusters"* Linked from: https://www.spatialanalysisonline.com/HTML/index.html]
+*"Space-time detection of emergent crime clusters"* 
+Linked from: https://www.spatialanalysisonline.com/HTML/index.html
 
 This semester we'll be staying within the ArcGIS Pro Python environment so we don't spend too much time dealing with cross-platform and environment/dependencies issues. 
 
