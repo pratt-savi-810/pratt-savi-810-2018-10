@@ -1,4 +1,4 @@
-## Assignment 01
+## Lesson 01
 # Hello World!
 
 * Go To: `pratt-savi-810-2018-10/lessons/lessson_01_hello_world/01_hello_world.py`
