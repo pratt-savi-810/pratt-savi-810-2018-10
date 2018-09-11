@@ -7,7 +7,8 @@
 
 ![python](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
 
-![spatial_analysis](https://www.spatialanalysisonline.com/HTML/clip0007_zoom60.png)
+![spatial_analysis](https://www.spatialanalysisonline.com/HTML/spatiotemporalscan_zoom57.png)
+
 [Linked from: https://www.spatialanalysisonline.com/HTML/index.html]
 
 This semester we'll be staying within the ArcGIS Pro Python environment so we don't spend too much time dealing with cross-platform and environment/dependencies issues. 
