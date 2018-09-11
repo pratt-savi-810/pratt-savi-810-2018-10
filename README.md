@@ -6,6 +6,8 @@
 
 ---
 
+![savi](http://www.pratt.edu/tiny_mce/plugins/imagemanager/files/Light_brown_blue22.jpg)
+
 ### Fall (October-November) 2018
 This semester we'll be staying within the ArcGIS Pro Python environment so we don't spend too much time dealing with cross-platform and environment/dependencies issues. 
 
