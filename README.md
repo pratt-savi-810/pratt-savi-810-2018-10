@@ -4,6 +4,8 @@
 
 # Intro to Python Scripting for Geospatial
 
+Course Promotional Slides: https://docs.google.com/presentation/d/1hSrHtcvfZlYXDQJ_hKrEh_9w9EEsp5SbkT9d-R_9tSQ/edit?usp=sharing
+
 ![python](https://raw.githubusercontent.com/pratt-savi-810/pratt-savi-810-2018-10/master/images/python_logo.png)
 
 ### Fall (October-November) 2018 - 10/27 through 11/17 (Saturday mornings)
