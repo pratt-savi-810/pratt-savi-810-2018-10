@@ -11,6 +11,12 @@ df['latitude'] = df['the_geom'].str.split(' ').str[2].str.replace(')', '')
 
 out_csv = in_csv.replace('.csv', '_clean.csv')
 
+print(len(df.index))
+df = df[(df['BoroughID'] == 'MN')]  # query to only select borough ID manhattan
+print(df.head())
+
+print(len(df.index))
+
 df.to_csv(out_csv, index=False)
 
 arcpy.MakeXYEventLayer_management(
@@ -23,5 +29,5 @@ arcpy.MakeXYEventLayer_management(
 arcpy.FeatureClassToFeatureClass_conversion(
     'in_memory_xy_layer',
     'C:/Users/dsheehan/Downloads/',
-    'landmarks.shp',
+    'landmarks_fips_36061.shp',
 )
