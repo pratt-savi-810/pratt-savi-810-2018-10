@@ -12,22 +12,33 @@ df['latitude'] = df['the_geom'].str.split(' ').str[2].str.replace(')', '')
 out_csv = in_csv.replace('.csv', '_clean.csv')
 
 print(len(df.index))
+
+
 df = df[(df['BoroughID'] == 'MN')]  # query to only select borough ID manhattan
-print(df.head())
-
 print(len(df.index))
+print('Count of Historic Landmarks by District in Manhattan')
 
-df.to_csv(out_csv, index=False)
+dfg = df.groupby(['LM_NAME'], as_index=False).count()
 
-arcpy.MakeXYEventLayer_management(
-    out_csv,
-    'longitude',
-    'latitude',
-    'in_memory_xy_layer',
-)
+dfg['count_landmarks_in_district'] = dfg['BBL']
 
-arcpy.FeatureClassToFeatureClass_conversion(
-    'in_memory_xy_layer',
-    'C:/Users/dsheehan/Downloads/',
-    'landmarks_fips_36061.shp',
-)
+dfg = dfg[['LM_NAME', 'count_landmarks_in_district']]
+
+print(dfg.head)
+
+dfg.to_csv(out_csv.replace('.csv', 'mn_landmarks_count_dist.csv'), index=False)
+
+# df.to_csv(out_csv, index=False)
+
+# arcpy.MakeXYEventLayer_management(
+#     out_csv,
+#     'longitude',
+#     'latitude',
+#     'in_memory_xy_layer',
+# )
+#
+# arcpy.FeatureClassToFeatureClass_conversion(
+#     'in_memory_xy_layer',
+#     'C:/Users/dsheehan/Downloads/',
+#     'landmarks_fips_36061.shp',
+# )
