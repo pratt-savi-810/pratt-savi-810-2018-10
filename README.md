@@ -4,7 +4,10 @@
 
 # Intro to Python Scripting for Geospatial
 
-Course Promotional Slides: https://docs.google.com/presentation/d/1hSrHtcvfZlYXDQJ_hKrEh_9w9EEsp5SbkT9d-R_9tSQ/edit?usp=sharing
+Course Intro Slides: https://docs.google.com/presentation/d/1hSrHtcvfZlYXDQJ_hKrEh_9w9EEsp5SbkT9d-R_9tSQ/edit?usp=sharing
+
+# Course Calendar 
+https://calendar.google.com/calendar?cid=cHJhdHQuZWR1X3FzNzNscGdiaWFtbzZlbGlxbDk0Zm1wOGprQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20
 
 ![python](https://raw.githubusercontent.com/pratt-savi-810/pratt-savi-810-2018-10/master/images/python_logo.png)
 
