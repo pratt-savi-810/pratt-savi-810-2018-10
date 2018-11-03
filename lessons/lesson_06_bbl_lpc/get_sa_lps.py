@@ -1,24 +1,14 @@
-from select_bbl_ids import select_bbl_ids
+from select_bin_ids import select_bin_ids
+from lp_points_to_df import get_lps_from_bbls
+
 
 def get_sa_lps(
-        list_bbls,
+        input_list_bins,
         lpc_points,
         lpc_footprints,
+        output_csv,
 ):
-    lp_df = lp_points_to_df(lpc_points)
+    select_bin_ids(input_list_bins, lpc_footprints, distance)
 
-    dict_of_bbls_with_list_of_lps = {}
-
-    for bbl in list_bbls:
-        selected_bbls = select_bbl_ids(bbl, "400 Feet")
-        return selected_bbls
-
-
-
-
-
-
-
-        
-    export_excel(dict_of_bbls_with_list_of_lps)
-
+    selected_bins = [1077813, 1008701]
+    get_lps_from_bbls(lpc_points, selected_bins).to_csv(output_csv, index=False)
