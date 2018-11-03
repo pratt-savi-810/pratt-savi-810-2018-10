@@ -1,0 +1,65 @@
+import arcpy
+
+footprints_file = r'C:\Users\dmiyagus\Documents\GitHub\data\lpc_data\LPC_IL_HD_Bld_DB_10_19_18.shp'
+
+def select_bin_ids(
+        input_bin, #  this is the bin id
+        input_footprints, #  this is historic footprints file
+        distance,  # This is the buffer dist
+):
+    sql_bin = ' "BIN" = 1011258'
+
+    arcpy.MakeFeatureLayer_management(
+        input_footprints,
+        'input_bin_lyr',
+        where_clause=sql_bin
+    )
+    arcpy.Buffer_analysis(
+        'input_bin_lyr',
+        'in_memory/buffer',
+        distance
+    )
+    arcpy.MakeFeatureLayer_management(
+        input_footprints,
+        'select_bin_lyr'
+    )
+    arcpy.SelectLayerByLocation_management(
+        'select_bin_lyr',
+        'INTERSECT',
+        'in_memory/buffer')
+
+    bin_list = []
+
+    with arcpy.da.SearchCursor('select_bin_lyr', 'BIN') as cursor:
+        for row in cursor:
+            bin_list.append(row[0])
+
+    if arcpy.Exists('input_bin_lyr'):
+        arcpy.Delete_management('input_bin_lyr')
+    if arcpy.Exists('input_bin_lyr'):
+        arcpy.Delete_management('select_bin_lyr')
+    if arcpy.Exists('in_memory/buffer'):
+        arcpy.Delete_management('in_memory/buffer')
+
+    return bin_list
+
+select_bin_ids('1011258', footprints_file, '400 Feet')
+
+arcpy.MakeFeatureLayer_management(
+    in_features="C:/Users/dmiyagus/Documents/GitHub/data/lpc_data/LPC_IL_HD_Bld_DB_10_19_18.shp",
+    out_layer="input_bin_lyr",
+    where_clause=' "BIN" = 1011258',
+    workspace="",
+    field_info="FID FID VISIBLE NONE;Shape Shape VISIBLE NONE;OBJECTID OBJECTID VISIBLE NONE;BIN BIN VISIBLE NONE;BBL BBL VISIBLE NONE;Borough Borough VISIBLE NONE;Block Block VISIBLE NONE;Lot Lot VISIBLE NONE;Des_Addres Des_Addres VISIBLE NONE;Circa Circa VISIBLE NONE;Date_Low Date_Low VISIBLE NONE;Date_High Date_High VISIBLE NONE;Date_Combo Date_Combo VISIBLE NONE;Alt_Date_1 Alt_Date_1 VISIBLE NONE;Alt_Date_2 Alt_Date_2 VISIBLE NONE;Arch_Build Arch_Build VISIBLE NONE;Own_Devel Own_Devel VISIBLE NONE;Alt_Arch_1 Alt_Arch_1 VISIBLE NONE;Alt_Arch_2 Alt_Arch_2 VISIBLE NONE;Style_Prim Style_Prim VISIBLE NONE;Style_Sec Style_Sec VISIBLE NONE;Style_Oth Style_Oth VISIBLE NONE;Mat_Prim Mat_Prim VISIBLE NONE;Mat_Sec Mat_Sec VISIBLE NONE;Mat_Third Mat_Third VISIBLE NONE;Mat_Four Mat_Four VISIBLE NONE;Mat_Other Mat_Other VISIBLE NONE;Use_Orig Use_Orig VISIBLE NONE;Use_Other Use_Other VISIBLE NONE;Build_Type Build_Type VISIBLE NONE;Build_Oth Build_Oth VISIBLE NONE;Build_Nme Build_Nme VISIBLE NONE;Notes Notes VISIBLE NONE;Hist_Dist Hist_Dist VISIBLE NONE;LM_Orig LM_Orig VISIBLE NONE;LM_New LM_New VISIBLE NONE;Shape_Leng Shape_Leng VISIBLE NONE;Shape_Area Shape_Area VISIBLE NONE")
+
+
+arcpy.Buffer_analysis(
+    in_features="input_bin_lyr",
+    out_feature_class="in_memory/buffer",
+    buffer_distance_or_field="400 Feet",
+    line_side="FULL",
+    line_end_type="ROUND",
+    dissolve_option="NONE",
+    dissolve_field="",
+    method="PLANAR"
+)
