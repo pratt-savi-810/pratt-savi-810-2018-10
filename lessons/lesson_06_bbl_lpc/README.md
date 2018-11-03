@@ -9,4 +9,14 @@
 * In case old one is needed, https://data.cityofnewyork.us/api/geospatial/ch5p-r223?method=export&format=Shapefile
 
 ### Landmark Polygons
-[https://data.cityofnewyork.us/api/geospatial/nqwf-w8eh?method=export&format=Original](https://data.cityofnewyork.us/api/geospatial/nqwf-w8eh?method=export&format=Original)
+
+https://data.cityofnewyork.us/api/geospatial/7mgd-s57w?method=export&format=Original
+
+
+BIN = 1011258
+
+
+
+# Python Interpretor
+
+`C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe`
