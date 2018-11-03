@@ -2,19 +2,21 @@ import arcpy
 import pandas as pd
 
 
-def get_lps_from_bbls(lpc_points, input_bbls):
+def get_lps_from_bbls(lpc_points, input_bins):
     df_list = []
+    df_all_lp = lp_points_to_df(lpc_points)
+    for in_bin in input_bins:
+        print(in_bin)
 
-    for in_bbl in input_bbls:
-        print(in_bbl)
 
-        df = lp_points_to_df(lpc_points)
-        df = select_single_query_from_dataframe(df, 'bin_number', in_bbl)
+        print(in_bin)
+        #print(df.dtypes)
+        df = select_single_query_from_dataframe(df_all_lp, 'bin_number', in_bin)
         # df = df['lp_number'].unique().tolist()
 
         df_list.append(df)
 
-    master_df = pd.concat(df_list, sort=True)
+    master_df = pd.concat(df_list) #, sort=True)
     master_df = master_df[['bin_number', 'lp_number']]
     print(master_df)
     return master_df
