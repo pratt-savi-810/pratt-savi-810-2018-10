@@ -14,3 +14,9 @@ https://data.cityofnewyork.us/api/geospatial/7mgd-s57w?method=export&format=Orig
 
 
 BIN = 1011258
+
+
+
+# Python Interpretor
+
+`C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe`
