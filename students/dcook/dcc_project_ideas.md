@@ -24,9 +24,9 @@
 ## produce maps of most severe areas
 * top 5, top 10, etc.
 * have area of interest for each map correspond to
-..* tracts, or higher aggregations such as NTAs
+  * tracts, or higher aggregations such as NTAs
 * if time, make primary features displayed on maps
-..* lots/foot prints which approximate complaint location
-..* (also acquire mappluto or bldg footprints)
-..* symbolized according to number of complaints
-..* (aggregate/count complaints within lot or footprint extents)
+  * lots/foot prints which approximate complaint location
+  * (also acquire mappluto or bldg footprints)
+  * symbolized according to number of complaints
+  * (aggregate/count complaints within lot or footprint extents)
