@@ -2,4 +2,4 @@
 
 text text text text text
 
-![https://i.ytimg.com/vi/tIKqCjxOpeU/maxresdefault.jpg]
+![image placeholder](https://i.ytimg.com/vi/tIKqCjxOpeU/maxresdefault.jpg)
