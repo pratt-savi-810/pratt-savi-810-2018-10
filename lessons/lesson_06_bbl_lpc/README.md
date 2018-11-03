@@ -9,4 +9,5 @@
 * In case old one is needed, https://data.cityofnewyork.us/api/geospatial/ch5p-r223?method=export&format=Shapefile
 
 ### Landmark Polygons
-[https://data.cityofnewyork.us/api/geospatial/nqwf-w8eh?method=export&format=Original](https://data.cityofnewyork.us/api/geospatial/nqwf-w8eh?method=export&format=Original)
+
+https://data.cityofnewyork.us/api/geospatial/7mgd-s57w?method=export&format=Original
