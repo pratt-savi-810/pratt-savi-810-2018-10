@@ -51,3 +51,5 @@ def select_bin_ids(
     return bin_list
 
 print(select_bin_ids('1011258', footprints_file, '400 Feet'))
+
+print(yup)
