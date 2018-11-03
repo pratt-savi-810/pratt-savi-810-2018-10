@@ -1,1 +1,1 @@
-{\rtf1}
+# Get Landmark ID's from BIN's within 400 feet. 
