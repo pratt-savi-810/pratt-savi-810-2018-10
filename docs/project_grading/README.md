@@ -37,3 +37,5 @@ Your final project is the only thing you'll be evaluated on.
     * Outline (pseudo code or outline of steps) (11.1%)
     * Screen recording (11.1%)
     
+**Documentation must be submitted on submission date, if not, 33.3% of project grade will not be earned.**
+    
