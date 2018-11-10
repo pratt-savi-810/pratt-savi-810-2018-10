@@ -10,8 +10,7 @@ This Broadway Malls Association is a community group that manages the plantings 
 medians on Broadway in Manhattan. They wanted some assistance from the Parks Department in analyzing
 their existing plantings and getting some recommendations about what to plant in the future.
 
-Though developed for Broadway, this tool can be used for any corridor in any city
-that maintains tree point data.
+Though developed for Broadway, this tool can be used for any corridor in New York City.
 
 ## Data Inputs
 #### Parameters
@@ -26,8 +25,6 @@ that maintains tree point data.
 			around the corridor.
 	* segment_cross_streets: The cross streets used to break the
 		corridor into segments
-	* DBH_field: the field name regarding DBH
-	* Health_field: the field name regarding tree health
 
 
 #### Inputs for this project
@@ -36,8 +33,6 @@ that maintains tree point data.
 	* corridor_extent: Broadway malls shapefile
 	* segment_cross_streets:
 		60th-110th, 110th-122nd, 125th to 155th, 155th-168th
-	* DBH_field: 'DBH'
-	* Health_field: 'Condition'
 
 
 ## Steps
