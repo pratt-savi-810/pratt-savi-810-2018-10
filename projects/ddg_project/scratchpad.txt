@@ -1,0 +1,32 @@
+import geocoder
+g = geocoder.google('236 Sackett Street, Brooklyn, NY')
+g.latlng
+
+
+
+
+
+
+
+
+
+# importing xy data from csv (geocoded addresses)
+
+arcpy.management.XYTableToPoint("brooklyn_addresses_for_project_geo.csv", r"C:\Users\dgoodma7\Documents\lpc_data\lpc_project\lpc_project.gdb\adresses_pts", "Lng", "Lat", None, "GEOGCS['GCS_WGS_1984',DATUM['D_WGS_1984',SPHEROID['WGS_1984',6378137.0,298.257223563]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]];-400 -400 1000000000;-100000 10000;-100000 10000;8.98315284119521E-09;0.001;0.001;IsHighPrecision")
+
+
+# select by location (selecting MapPluto lots that intersect with the address points)
+
+arcpy.management.SelectLayerByLocation("BKMapPLUTO", "INTERSECT", "adresses_pts", None, "NEW_SELECTION")
+
+
+# exporting selected MapPluto lots to a shapefile or geodatabase
+
+arcpy.management.CopyFeatures("BKMapPLUTO", r"C:\Users\dgoodma7\Documents\lpc_data\lpc_project\lpc_project.gdb\selected_lots")
+
+
+# exporting selected MapPluto lots to a csv
+
+arcpy.management.CopyRows("selected_lots", r"C:\Users\dgoodma7\Documents\GitHub\pratt-savi-810-2018-10\students\ddg\final_project\tables\test_selected_lots.csv", None)
+
+
