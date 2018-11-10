@@ -11,19 +11,19 @@ def select_bin_ids(
 
     sql_bin = '''"BIN" = {}'''.format(input_bin)
 
-    arcpy.Delete_management('build_lyr')
+    arcpy.Delete_management('build_lyr_new8')
     arcpy.Delete_management('input_bin_lyr')
     arcpy.Delete_management('select_bin_lyr')
     arcpy.Delete_management('in_memory/buffer')
 
     arcpy.MakeFeatureLayer_management(
         input_footprints,  # input feature class
-        "build_lyr",  # output layer
+        "build_lyr_new8",  # output layer
         sql_bin,  # sql statement
     )
 
     arcpy.Buffer_analysis(
-        "build_lyr",
+        "build_lyr_new8",
         "in_memory/buffer",
         distance,
     )
