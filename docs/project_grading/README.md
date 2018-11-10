@@ -17,6 +17,7 @@ Your final project is the only thing you'll be evaluated on.
     
 3. **Documentation** (33.3%)
     * Documentation will be in your project's README.md file.
+        * List Python Dependencies (0.01%)
         * Description (11.1%)
         * Outline (pseudo code or outline of steps) (11.1%)
         * **Required**: **Screen recording of code in action**, either [Recordit.app](http://recordit.co/) or to YouTube. (11.1%)
