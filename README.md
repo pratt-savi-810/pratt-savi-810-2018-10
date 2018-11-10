@@ -17,7 +17,7 @@ This semester we'll be staying within the ArcGIS Pro Python environment so we do
 We'll try to be using Python 3.x as much as possible. 
 
 # Lessons
-#### [Lessons(https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons)
+#### [Lessons](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/tree/master/lessons)
 
 # Software and Packages
 
