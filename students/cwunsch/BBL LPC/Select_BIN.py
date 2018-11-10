@@ -1,5 +1,6 @@
 import arcpy
 
+
 footprint_files = r'C:\Users\cwunsch\Desktop\Class 2\LPC_IL_HD_Bld_DB_10_19_18.shp'
 
 
@@ -51,3 +52,5 @@ def select_bin_ids(  # this is the funct. use to compute all of the blw includin
     # arcpy.Delete_management('in_memory/buffer')
 
     return bin_list
+
+
