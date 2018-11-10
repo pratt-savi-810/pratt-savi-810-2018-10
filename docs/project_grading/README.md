@@ -13,6 +13,7 @@ Your final project is the only thing you'll be evaluated on.
     * Functional `def some_function()` rather than linear scripting (11.1%)
     * Do not include file names inside functions (11.1%), pass them as variables.
     * Bonus 10+ points for using a `config.json` or commandline arguments. 
+    * If your code has readability issues, you'll have 1 week from Instructor testing to refactor/repair. 
     
 3. Documentation (33.3%)
     * Documentation will be in your project's README.md file.
