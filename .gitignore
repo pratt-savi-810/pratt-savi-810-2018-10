@@ -81,3 +81,13 @@ students/hhernandez2783/Data110318/buffer_400.dbf
 students/hhernandez2783/Data110318/buffer_400.cpg
 students/hhernandez2783/buildlandbuffer.mxd
 *.pyc
+*.lock
+*.shp
+*.cpg
+*.dbf
+*.prj
+*.md
+*.sbx
+*.sbn
+*.shx
+*.xml
