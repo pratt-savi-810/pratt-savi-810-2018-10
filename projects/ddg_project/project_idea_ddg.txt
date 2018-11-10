@@ -2,7 +2,7 @@
 
 street_address
     geocode to lat/lng
-MapPLUTO data (local or online)
+MapPLUTO data (local)
     
 # Output
 
@@ -16,14 +16,11 @@ csv:        selected MapPLUTO parcels
 
 street addresses (csv)
     geocode to lat/lng
-      # move into arcgis #
+        # move into arcgis #
     create shapefile (points)
-import MapPLUTO data (either locally or from online)
+import MapPLUTO data (from local)
     select by location (overlap with points)
-    export MapPLUTO as shapefile and csv 
+    export selected MapPLUTO as shapefile and csv 
         - if multiple points fall on the same parcel, can the output duplicate itself as many times as necessary? (i.e., if 4 points fall on the same BBL, can that BBL show up in the output 4 times?)
 
     * decide which columns to export?
-    * can multiple layers be accessed? 
-        (i.e., MapPLUTO, DOF tax, DOB)
-        - is a join required or needed here?   
