@@ -17,6 +17,6 @@ BIN = 1011258
 
 
 
-# Python Interpretor
+# Python Interpreter
 
 `C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\python.exe`
