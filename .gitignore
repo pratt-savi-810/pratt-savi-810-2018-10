@@ -81,7 +81,17 @@ students/hhernandez2783/Data110318/buffer_400.dbf
 students/hhernandez2783/Data110318/buffer_400.cpg
 students/hhernandez2783/buildlandbuffer.mxd
 *.pyc
-<<<<<<< HEAD
+
+*.xml
+*.lock
+*.shp
+*.sbn
+*.dbf
+*.prj
+*.sbx
+*.shx
+*.cpg
+
 *.lock
 *.shp
 *.cpg
@@ -91,7 +101,7 @@ students/hhernandez2783/buildlandbuffer.mxd
 *.sbx
 *.sbn
 *.shx
-=======
+
 *.cpg
 *.prj
 *.sbn
@@ -100,5 +110,6 @@ students/hhernandez2783/buildlandbuffer.mxd
 *.shp
 *.lock
 *.sbx
->>>>>>> 44b936908510651e58fb7df6e875a1f53911894e
+
 *.xml
+
