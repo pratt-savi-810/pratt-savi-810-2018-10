@@ -1,3 +1,5 @@
+import pandas as pd
+
 def export_map_for_feature_in_fc(fc, mxd_file, unique_fieldname, output_png_dir):
     # declared mxd as current (instead of mxd filepath)
     mxd = arcpy.mapping.MapDocument(mxd_file)
@@ -16,7 +18,11 @@ def export_map_for_feature_in_fc(fc, mxd_file, unique_fieldname, output_png_dir)
         arcpy.SelectLayerByAttribute_management(
             fc,
             "NEW_SELECTION",
-            """ "{}" = '{}' """.format(unique_fieldname, field_value),
+            """ "{}" = '{}' """.format(
+                unique_fieldname,
+                field_value.replace("'", '"'),
+            ),
+
         )
 
         map_df.zoomToSelectedFeatures()
@@ -26,7 +32,7 @@ def export_map_for_feature_in_fc(fc, mxd_file, unique_fieldname, output_png_dir)
         arcpy.mapping.ExportToPNG(
             mxd, '{}_{}.png'.format(
                 output_png_dir,
-                field_value.replace('/', '')
+                field_value.replace('/', '').replace("""n\""", '')
             )
         )
 
