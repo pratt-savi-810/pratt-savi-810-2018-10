@@ -1,5 +1,7 @@
 # My README file
 
+Project Description
+
 After downloading the PLUTO tax lots shapefile, I also downloaded the street centerline shapefile in order to make buffer selections. 
 I separated out by selection each major centerline to conduct more finely-grained/accurate estimations.
 
