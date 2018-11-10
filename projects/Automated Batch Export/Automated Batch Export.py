@@ -1,12 +1,10 @@
-import arcpy.mapping
+import arcpy
 
-Folder = "C:Users/ashaiban/Desktop/Lesson 6/test"  # Alter this for your output folder
 mxd = arcpy.mapping.MapDocument("C:/Users/ashaiban/Desktop/Lesson 6/Untitled.mxd")
 df = arcpy.mapping.ListDataFrames(mxd, "Layers")[0]
+lyr = arcpy.mapping.ListLayers(mxd, "Buffer", df)[0]
+arcpy.RefreshActiveView()
+arcpy.mapping.overwriteExport = True
+arcpy.mapping.ExportToPNG(mxd, r"C:/Users/ashaiban/Desktop/Lesson 6/test/test321.png", df)
 
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "", data_frame=df):
-    df.extent = bkmk.extent
-    lyr = arcpy.mapping.ListLayers(mxd, "nybb", df)[0]
-    dfname = bkmk.name
-    arcpy.RefreshActiveView()
-    arcpy.mapping.ExportToPNG(mxd, "C:/Users/ashaiban/Desktop/Lesson 6/test/" + "#", resolution=600)
+del mxd
