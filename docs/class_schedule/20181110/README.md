@@ -16,4 +16,4 @@ BREAK
 * 03:00
 * 04:30 - Refactor/Branching in GitHub
 * 05:00
-* 05:30
+* 05:30 - if time, config.json - commandline args
