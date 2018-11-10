@@ -3,7 +3,7 @@
 Objective: Use DEM files from visualize NJ with 3D Elevation. Find a biking route between 2 locations. Create a flythrough to preview your route in 3D
 Inputs
 
-DEMs for each Watershed: https://www.nj.gov/dep/gis/wmalattice.html
+10m resolution DEMs for each Watershed: https://www.nj.gov/dep/gis/wmalattice.html
 
 https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma01lat.zip 
 
