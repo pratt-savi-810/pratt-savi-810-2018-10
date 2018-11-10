@@ -25,7 +25,7 @@ Your final project is the only thing you'll be evaluated on.
         * https://github.com/pratt-savi-810/project-kejoseph90
         * https://github.com/pratt-savi-810/project-anttim1
 
-## Checklist before submission
+## Final Checklist for Submission
 
 * Code Successfully Runs (33.3%)
 * Code Readability 
