@@ -2,12 +2,12 @@
 
 Your final project is the only thing you'll be evaluated on. 
 
-1. Code Successfully Runs (33.3%)
+1. **Code Successfully Runs** (33.3%)
     * Self contained-can run on course instructor(s) machine, either provide download links or auto-download. (Entire 33.3% of this portion of the code.)
     * Screen recording of code in action, either [Recordit.app](http://recordit.co/) or to YouTube. 
     * If your code does not run, you'll have 1 week from Instructor testing to refactor/repair. 
 
-2. Code Readability (33.3%)
+2. **Code Readability** (33.3%)
     * No PEP-8 issues (when PyCharm shows red or yellow warnings) (11.1%)
         * Exceptions being for `arcpy.mapping`, `arcpy.search`, `arcpy.da`, etc. 
     * Functional `def some_function()` rather than linear scripting (11.1%)
@@ -15,7 +15,7 @@ Your final project is the only thing you'll be evaluated on.
     * Bonus 10+ points for using a `config.json` or commandline arguments. 
     * If your code has readability issues, you'll have 1 week from Instructor testing to refactor/repair. 
     
-3. Documentation (33.3%)
+3. **Documentation** (33.3%)
     * Documentation will be in your project's README.md file.
         * Description (11.1%)
         * Outline (pseudo code or outline of steps) (11.1%)
