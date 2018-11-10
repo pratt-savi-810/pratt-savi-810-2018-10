@@ -25,14 +25,13 @@ Download the DEM for each Watershed from https://www.nj.gov/dep/gis/digidownload
 
 
 Go through steps to extrude elevation values to create a 3D surface (further research may be needed)
-	nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New Local Scene
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New Local Scene
 
-	nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add Data to ArcGIS Pro (Add Elevation Surfaces)
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add Data to ArcGIS Pro (Add Elevation Surfaces)
 
-	nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use a for loop to add all 20 watersheds? or add all files in a specified folder?
-
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Choose a Base Map (Get User input to Choose which base map?)
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use a for loop to add all 20 watersheds? or add all files in a specified folder?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Choose a Base Map (Get User input to Choose which base map?)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
 Share 3D scene to ArcOnline (to one's own ArcOnline account or another account specified by the user)
 
