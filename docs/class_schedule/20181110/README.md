@@ -5,7 +5,7 @@
 * 10:30 - COMMIT to GitHub -> BIN/LP finish up pandas/csv stuff
 * 11:00
 * 11:30 - BIN/LP- intro to arcpy mapping
-* 12:00 
+* 12:00 - if exists, create gdb, etc. 
 
 BREAK
 
