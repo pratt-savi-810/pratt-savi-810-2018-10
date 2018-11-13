@@ -1,6 +1,7 @@
 # Course Projects
 
 Objective: Use DEM files from visualize NJ with 3D Elevation. Find a biking route between 2 locations. Create a flythrough to preview your route in 3D
+
 Inputs
 
 10m resolution DEMs for each Watershed: https://www.nj.gov/dep/gis/wmalattice.html
@@ -9,13 +10,13 @@ https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma01lat.zip
 
 http://njogis-newjersey.opendata.arcgis.com/
 
-Note: There is a DEM for all of NJ, but will proceed with data broken out by watershed for the sake of practice. (Practice: DL multimle datasets using a loops, loading serveral datasets into Pro). 
+Note: There is a DEM for all of NJ, but will proceed with data broken out by watershed for the sake of practice. (Practice: DL multiple datasets using a loops, loading serveral datasets into Pro). 
 
 
 
 Output
 
-A web map of New Jersey uploaded to ArcOnline
+A web map of New Jersey uploaded to ArcOnline, Fly through of a given route
 
 
 
@@ -25,7 +26,7 @@ Download the DEM for each Watershed from https://www.nj.gov/dep/gis/digidownload
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Replace [...] with the Watershed number: 01, 02, ..., 20
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  >Because of the leading zero, create a list
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  >Because of the leading zero, create IF statement ( if <10 concatenate "0")
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use a for loop to download all DEMs, watersheds 1 through 20
 
