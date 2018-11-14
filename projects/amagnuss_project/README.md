@@ -14,8 +14,10 @@ This project takes two datasets made available from CIAT via the Harvard Dataver
 
 Then I wanted to automate the plotting of the xy data for the six countries in Central America which are included in the raster dataset through arcpy. After this step, there are six layers created. These are then projected into North American Alber Equal Area. This projection was chosen because ultimately, I would like to examine the change in coffee suitability by doing analyses on the area potenially 'lost' to changes in climate. 
 
-	```
-  download data from CIAT through Harvard dataverse
+
+**Psuedocode**
+```
+download data from CIAT through Harvard dataverse
 	raster data: https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/9QUGUR/GATGQJ&version=1.0
 	coffee locations (csv): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/29634#
 
@@ -43,6 +45,6 @@ project data in NA Albers Equal Area
 	project all news vector layers into AEA
 	project unzipped raster data into AEA
 		create custom geographic transormation
-    	```
+```
 
 
