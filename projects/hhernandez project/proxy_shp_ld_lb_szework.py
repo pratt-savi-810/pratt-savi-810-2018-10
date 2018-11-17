@@ -47,9 +47,10 @@ arcpy.RefreshActiveView()
 mxd.save()
 
 # select features & zoom
-nycbrg = arcpy.mapping.ListLayers(mxd, "brg", df)[0]
+nycbrg = arcpy.mapping.ListLayers(mxd)[0]
 arcpy.SelectLayerByAttribute_management(nycbrg, "NEW_SELECTION", """ "brg" = 'Brooklyn Bridge' """)
 df.zoomToSelectedFeatures()
+mxd.save()
 
 # export map
 arcpy.mapping.ExportToPNG(mxd, r'C:\Users\Hector Hernandez\Documents\GitHub\pratt-savi-810-2018-10\students\hhernandez2783\Test\expmap1.png')
