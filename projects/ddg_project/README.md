@@ -1,4 +1,4 @@
-Addresses to Points to MapPLUTO Lots, Oh My
+# H1 Addresses to Points to MapPLUTO Lots, Oh My
 
 ![image placeholder](http://i.imgur.com/KCDPWhM.gif)
 
@@ -50,4 +50,3 @@ Questions Remaining
 
 	* can I export only selected fields/columns from the MapPLUTO lots csv ('selected_lots.csv')
 
-	
