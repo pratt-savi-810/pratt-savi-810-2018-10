@@ -3,7 +3,15 @@
 Project Description
 
 After downloading the PLUTO tax lots shapefile, I also downloaded the street centerline shapefile in order to make buffer selections. 
-I separated out by selection each major centerline to conduct more finely-grained/accurate estimations. There are 7 centerline shapefiles in total: Wyckoff Ave, Irving Ave, Knickerbocker Ave, Wilson Ave, Myrtle Ave, Central Ave, and Broadway.Each corridor will be uniquely zoned so this is why I've separated them. I would like to select by buffer for each of these centerlines and then assign FAR values based on their location.
+I separated out by selection each major centerline to conduct more finely-grained/accurate estimations. There are 7 centerline shapefiles
+in total: Wyckoff Ave, Irving Ave, Knickerbocker Ave, Wilson Ave, Myrtle Ave, Central Ave, and Broadway.Each corridor will be uniquely 
+zoned so this is why I've separated them. I would like to select by buffer for each of these centerlines and then assign FAR values based 
+on their location.
+
+Data Input:
+-NYC Street Centerline
+-PLUTO tax lot database
+-Bushwick Draft Community Plan
 
 def project_upzoning(line_fc, buffer_distance, mappluto)
 	buffer the line
