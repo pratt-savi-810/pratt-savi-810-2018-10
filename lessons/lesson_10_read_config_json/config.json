@@ -4,6 +4,5 @@
     "buffer_file": "C:/GIS/data/buffer.shp",
     "out_file": "C:/GIS/data/output.shp"
   },
-  "png_dir": "C:/GIS/maps/",
-  "api_key": "A123"
+  "png_dir": "C:/GIS/maps/"
 }
