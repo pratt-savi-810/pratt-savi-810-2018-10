@@ -6,15 +6,42 @@ The data collected from these groundwater sampling events has to be later downlo
 
 # Project Outline
 
-Create a new file geodatabase
+Join Purge Chemistry and Sampling Information
 
-Make feature layer/Add Attribute Indexes
-
-Join table1 to table2
-
-Export the new_joined_table
-
-Join the new_joined_table to the "well" feature class
-
-Export the new_wells_table_join as a new feature class
+  call locations
+  allow pandas to read
+  join pc to si as a df
+  convert to csv
+  
+  call on new output csv
+  allow pandas to read
+  join output to wells as a df
+  convert to csv
+  
+ Join Lab Data CSVs together
+ 
+  read all csv files in a folder
+  for every csv file in the folder:
+    open file and set the delimiter
+   
+   save the header from one of the csv files
+    for filename in csv:
+      open file
+        keep header
+ 
+ Join Lab Results CSV and Wells (joined) CSV....(HALP)
+ 
+ 
+ 
+ Convert CSV to Shapefile Using Lat/Long
+ 
+  Arcpy
+  
+  MakeXYMakeFeatureEvent
+  CopyFeature
+ 
+  
+  
+  
+  
 
