@@ -1,4 +1,4 @@
-fc = feature_class
+```
 
 
 <!-- # need to geocode address in csv -->
@@ -58,3 +58,4 @@ aprxMap.addDataFromPath(lyrTest)
 -geocoding addresses in csv at the start of the process
 -final csv table export
   -can only certain fields/columns be exported
+```
