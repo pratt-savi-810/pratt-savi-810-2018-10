@@ -61,7 +61,7 @@ Download the NJ Street Network shapefile
 ```
 urllib.urlretrieve(
 "https://www.state.nj.us/transportation/gis/zip/NJ_Roads_shp.zip", 
-str(your_local_drive) + "NJroads.zip
+str(your_local_drive) + "NJroads.zip"
 )
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Set each WMA raster to an object name in the following scheme: WMA{ID number}
@@ -72,11 +72,13 @@ Go through steps to extrude elevation values to create a 3D surface
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add Data to ArcGIS Pro (Add Elevation Surfaces)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use a for loop to add all 20 watersheds? or add all files in a specified folder?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use a for loop to add all 20 watersheds
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Choose a Base Map (parameter. set a Topographic as the default basemap)
 
 Find a biking route between 2 locations using the ArcGIS Network Analyst extension
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://pro.arcgis.com/en/pro-app/arcpy/network-analyst/what-is-network-analyst-module.htm
 
 Create a fly-through visualization to preview the route with elevation in mind 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; info: https://pro.arcgis.com/en/pro-app/help/mapping/animation/animate-the-camera.htm
