@@ -2,7 +2,11 @@
 
 I created a geodatabase that stores the data for all our groundwater sampling events for a specific client. The geodatabase was originally created using ArcCatalog, published as a Web Servvice to ArcGIS Online, and accessed in the field via Collector for ArcGIS. 
 
-The data collected from these groundwater sampling events has to be later downloaded and sent to a new geodatabase as each sampling event will get its own. The two data tables associated with the "well" point feature class have to be joined together and later joined to the well points to create one unified shapefile and csv with no spared information.
+The data collected from these groundwater sampling events has to be later downloaded and sent to a new geodatabase as each sampling event will get its own. The two data tables associated with the "well" point feature class have to be joined together (purge chemistry and sampling information) and later joined to the well csv file. Output = 3 csv files combined into one.
+
+I would like to download the data from the lab and join it with the output from above to show all the well information, the purge chemistry, and the results. Output = 1 CSV 
+
+Later, I would like to create one unified shapefile. 
 
 # Project Outline
 
