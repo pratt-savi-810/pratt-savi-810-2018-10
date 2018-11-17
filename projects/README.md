@@ -79,6 +79,7 @@ Go through steps to extrude elevation values to create a 3D surface
 Find a biking route between 2 locations using the ArcGIS Network Analyst extension
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://pro.arcgis.com/en/pro-app/arcpy/network-analyst/what-is-network-analyst-module.htm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MakeRouteLayer_na http://pro.arcgis.com/en/pro-app/tool-reference/network-analyst/make-route-layer.htm
 
 Create a fly-through visualization to preview the route with elevation in mind 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; info: https://pro.arcgis.com/en/pro-app/help/mapping/animation/animate-the-camera.htm
