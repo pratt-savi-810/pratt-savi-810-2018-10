@@ -1,0 +1,357 @@
+,address,capacity,cross_street,lat,lon,name,post_code,rental_methods,station_id
+0,Fort York  Blvd / Capreol Crt,30,,43.639832,-79.395954,Fort York  Blvd / Capreol Crt,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7000
+1,Lower Jarvis St / The Esplanade,15,,43.647992,-79.370907,Lower Jarvis St / The Esplanade,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7001
+2,St. George St / Bloor St W,19,,43.667333,-79.399429,St. George St / Bloor St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7002
+3,Madison Ave / Bloor St W,15,,43.667158,-79.402761,Madison Ave / Bloor St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7003
+4,University Ave / Elm St,11,,43.656518,-79.389099,University Ave / Elm St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7004
+5,University Ave / King St W,19,,43.648093,-79.384749,University Ave / King St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7005
+6,Bay St / College St (East Side),11,,43.660439,-79.385525,Bay St / College St (East Side),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7006
+7,College St / Huron St,11,,43.658148,-79.398167,College St / Huron St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7007
+8,Wellesley St W / Queen's Park Cres,19,,43.663376,-79.392125,Wellesley St / Queen's Park Cres,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7008
+9,King St E / Jarvis St,11,,43.650325,-79.372287,King St E / Jarvis St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7009
+10,King St W / Spadina Ave,19,,43.645323,-79.395003,King St W / Spadina Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7010
+11,Wellington St W / Portland St,11,,43.642982,-79.399256,Wellington St W / Portland St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7011
+12,Elizabeth St / Edward St (Bus Terminal),15,,43.656026,-79.385327,Elizabeth St / Edward St (Bus Terminal),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7012
+13,Scott St / The Esplanade,19,,43.64656,-79.375274,Scott St / The Esplanade,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7013
+14,Sherbourne St / Carlton St (Allan Gardens),17,,43.663102,-79.373181,Sherbourne St / Carlton St (Allan Gardens),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7014
+15,King St W / Bay St (West Side),19,,43.64852,-79.380576,King St W / Bay St (West Side),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7015
+16,Bay St / Queens Quay W (Ferry Terminal),23,,43.640823,-79.376265,Bay St / Queens Quay W (Ferry Terminal),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7016
+17,Widmer St / Adelaide St W,19,,43.647145,-79.391479,Widmer St / Adelaide St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7017
+18,Bremner Blvd / Rees St,15,,43.641529,-79.386741,Bremner Blvd / Rees St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7018
+19,Temperance St. / Bay St.,27,,43.650699,-79.380723,Temperance St. / Bay St.,m,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7019
+20,Phoebe St / Spadina Ave,33,,43.650033,-79.396555,Phoebe St / Spadina Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7020
+21,Bay St / Albert St,31,,43.653264,-79.382458,Bay St / Albert St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7021
+22,Simcoe St / Queen St W,27,,43.650858,-79.387582,Simcoe St / Queen St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7022
+23,College St / Borden St,11,,43.6571,-79.4056,College St / Borden St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7023
+24,Dundonald St / Church St,23,,43.66663,-79.38148,Dundonald St / Church St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7024
+25,Ted Rogers Way / Bloor St E,27,,43.671293,-79.380471,Ted Rogers Way / Bloor St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7025
+26,Bay St / St. Joseph St,15,,43.665527,-79.387499,Bay St / St. Joseph St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7026
+27,Beverly  St / Dundas St W,23,,43.652823,-79.393388,Beverly  St / Dundas St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7027
+28,Gould St / Mutual St,31,,43.6582,-79.3768,Gould St / Mutual St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7028
+29,Bay St / Wellesley St W,35,,43.664088,-79.387095,Bay St / Wellesley St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7030
+30,Jarvis St / Isabella St,23,,43.668991,-79.379385,Jarvis St / Isabella St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7031
+31,Augusta Ave / Dundas St W,14,,43.652473,-79.401456,Augusta Ave / Dundas St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7032
+32,Union Station,27,,43.645609,-79.380386,Union Station,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7033
+33,Church St / Bloor St E,15,,43.671389,-79.382919,Church St / Bloor St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7034
+34,Queen St W / Ossington Ave,23,,43.643975,-79.419576,Queen St W / Ossington Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7035
+35,Trinity St / Front St E,19,,43.651318,-79.36023,Trinity St /Front St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7036
+36,Bathurst St / Dundas St W,19,,43.6523,-79.4058,Bathurst St / Dundas St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7037
+37,Dundas St W / Yonge St,15,,43.656094,-79.381484,Dundas St W / Yonge St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7038
+38,Simcoe St / Dundas St W,27,,43.653743,-79.38882,Simcoe St / Dundas St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7039
+39,Euclid Ave / Bloor St W,19,,43.664467,-79.414783,Euclid Ave / Bloor St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7040
+40,Edward St / Yonge St,23,,43.656729,-79.382736,Edward St / Yonge St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7041
+41,Sherbourne St / Wellesley St E,31,,43.6673,-79.374,Sherbourne St / Wellesley St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7042
+42,Queens Quay W / Lower Simcoe St,19,,43.63951,-79.383717,Queens Quay W / Lower Simcoe St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7043
+43,Church St / Alexander St,15,,43.663722,-79.380288,Church St / Alexander St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7044
+44,Bond St / Queen St E,25,,43.653236,-79.376716,Bond St / Queen St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7045
+45,Niagara St / Richmond St W,15,,43.64534,-79.409597,Niagara St / Richmond St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7046
+46,University Ave / Gerrard St W,25,,43.657763,-79.389165,University Ave / Gerrard St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7047
+47,Front St W / Yonge St (Hockey Hall of Fame),47,,43.646144,-79.377962,Front St W / Yonge St (Hockey Hall of Fame),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7048
+48,Queen St W / Portland St,11,,43.6476,-79.4015,Queen St W / Portland St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7049
+49,Richmond St E / Jarvis St Green P,11,,43.652634,-79.374222,Richmond St E / Jarvis St Green P,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7050
+50,Wellesley St E / Yonge St (Green P),17,,43.66506,-79.38357,Wellesley St E / Yonge St (Green P),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7051
+51,Wellington St W / Bay St,27,,43.647259,-79.379878,Wellington St W / Bay St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7052
+52,Metro Hall Plaza,27,,43.645859,-79.38783,Metro Hall Plaza,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7053
+53,Navy Wharf Ct. / Bremner Blvd.,11,,43.640722,-79.391051,Navy Wharf Ct. / Bremner Blvd.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7054
+54,Jarvis St / Carlton St,15,,43.66207,-79.37617,Jarvis St / Carlton St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7055
+55,Parliament St / Gerrard St,26,,43.661149,-79.366648,Parliament St / Gerrard St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7056
+56,Simcoe St / Wellington St W,31,,43.645533,-79.3854,Simcoe St / Wellington St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7057
+57,Huron/ Harbord St,19,,43.6637,-79.400053,Huron/ Harbord St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7058
+58,Front St W / Blue Jays Way,15,,43.643473,-79.390477,Front St W / Blue Jays Way,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7059
+59,Princess St / Adelaide St E,19,,43.652123,-79.367139,Princess St / Adelaide St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7060
+60,Bloor St / Brunswick Ave,25,,43.665802,-79.40731,Bloor St / Brunswick Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7061
+61,University Ave / College St,11,,43.659226,-79.390213,University Ave / College St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7062
+62,Queen's Park / Bloor St W,19,,43.668456,-79.393899,Queen's Park / Bloor St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7063
+63,51 Parliament St,19,,43.65205,-79.362198,51 Parliament St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7064
+64,Dundas St E / Parliament St,15,,43.659575,-79.365769,Dundas St E / Parliament St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7065
+65,Willcocks St / St. George St,17,,43.662085,-79.397735,Willcocks St / St. George St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7066
+66,Yonge St / Harbour St,39,,43.643795,-79.375413,Yonge St / Harbour St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7067
+67,Dockside Dr / Queens Quay E (Sugar Beach),27,,43.644607,-79.366295,Dockside Dr / Queens Quay E (Sugar Beach),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7068
+68,Queen St W / Spadina Ave,11,,43.649147,-79.395504,Queen St W / Spadina Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7069
+69,25 York St (ACC/Union Station South),11,,43.643667,-79.380414,25 York St (ACC/Union Station South),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7070
+70,161 Bleecker St (South of Wellesley),11,,43.666233,-79.373327,161 Bleecker St (South of Wellesley),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7071
+71,Queen St W / Shaw St,19,,43.644524,-79.416519,Queen St W / Shaw St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7072
+72,Spadina Ave / Bremner Blvd,15,,43.640114,-79.393249,Spadina Ave / Bremner Blvd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7073
+73,Spadina Ave / Sussex Ave,27,,43.664137,-79.402496,Spadina Ave / Sussex Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7074
+74,Queens Quay W / Dan Leckie Way,26,,43.636533,-79.395854,Queens Quay W / Dan Leckie Way,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7075
+75,York St / Queens Quay W,27,,43.640132,-79.380464,York St / Queens Quay W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7076
+76,College Park South,19,,43.659777,-79.382767,College Park South,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7077
+77,College St / Major St,11,,43.6576,-79.4032,College St / Major St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7078
+78,McGill St / Church St,19,,43.660694,-79.379052,McGill St / Church St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7079
+79,Danforth Ave / Barrington Ave,15,,43.688325,-79.300463,Danforth Ave / Barrington Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7083
+80,Stephenson Ave / Main St,15,,43.68704,-79.301915,Stephenson Ave / Main St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7084
+81,Danforth Ave / Westlake Ave,15,,43.687323,-79.304848,Danforth Ave / Westlake Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7085
+82,Woodbine Subway Green P (Cedarvale Ave),19,,43.686829,-79.311073,Woodbine Subway Green P (Cedarvale Ave),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7086
+83,Danforth Ave / Aldridge Ave,11,,43.684758,-79.316767,Danforth Ave / Aldridge Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7087
+84,Danforth Ave / Coxwell Ave,15,,43.683378,-79.322961,Danforth Ave / Coxwell Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7088
+85,Church St / Wood St,19,,43.662712,-79.379903,Church St  / Wood St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7089
+86,Danforth Ave / Lamb Ave,15,,43.681991,-79.329455,Danforth Ave / Lamb Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7090
+87,Donlands Station,11,,43.681126,-79.337779,Donlands Station,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7091
+88,Pape Subway Green P,15,,43.680223,-79.344062,Pape Subway Green P,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7092
+89,Danforth Ave / Gough Ave,17,,43.678401,-79.346289,Danforth Ave / Gough Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7093
+90,Chester Station,11,,43.678056,-79.352222,Chester Station,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7094
+91,Danforth Ave / Ellerbeck St,14,,43.677076,-79.35667,Danforth Ave / Ellerbeck St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7095
+92,Boston Ave / Queen St E,19,,43.661508,-79.338931,Boston Ave / Queen St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7096
+93,Riverdale Park North (Broadview Ave),15,,43.671172,-79.354704,Riverdale Park North (Broadview Ave),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7097
+94,Riverdale Park South (Broadview Ave),15,,43.667819,-79.35347,Riverdale Park South (Broadview Ave),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7098
+95,Cherry St / Mill St,15,,43.651248,-79.357848,Cherry St / Mill St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7099
+96,Dundas St E / Regent Park Blvd,19,,43.660207,-79.361275,Dundas St E / Regent Park Blvd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7100
+97,Lower Sherbourne St / The Esplanade,27,,43.648655,-79.367061,Lower Sherbourne St / The Esplanade,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7101
+98,Nelson St / Duncan St,31,,43.648711,-79.389728,Nelson St / Duncan St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7102
+99,Jimmie Simpson Park (Queen St E),11,,43.660362,-79.343801,Jimmie Simpson Park (Queen St E),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7103
+100,King St E / River St,15,,43.657071,-79.356598,King St E / River St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7104
+101,Queen St E / Sackville St,15,,43.6561111,-79.3613888889,Queen St E / Sackville St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7105
+102,Mill St / Tannery Rd,15,,43.652219,-79.354455,Mill St / Tannery Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7106
+103,Cherry St / Distillery Ln,15,,43.650279,-79.356832,Cherry St / Distillery Ln,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7107
+104,Front St E / Cherry St,15,,43.652686,-79.358395,Front St E / Cherry St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7108
+105,Seaton St / Dundas St E,11,,43.658777,-79.369596,Seaton St / Dundas St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7109
+106,Queen St E / Berkeley St,15,,43.6552778,-79.3658333333,Queen St E / Berkeley St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7110
+107,King St W / Douro St,11,,43.640885,-79.416379,King St W / Douro St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7111
+108,Liberty St / Fraser Ave Green P,19,,43.637981,-79.424146,Liberty St / Fraser Ave Green P,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7112
+109,Parliament St / Aberdeen Ave,15,,43.665278,-79.368333,Parliament St / Aberdeen Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7113
+110,Carlton St / Parliament St,15,,43.664524,-79.36793,Carlton St / Parliament St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7114
+111,Howard St / Sherbourne St,15,,43.6712581,-79.376367,Howard St / Sherbourne St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7115
+112,Parliament St / Bloor St E,15,,43.671827,-79.371849,Parliament St / Bloor St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7116
+113,Castle Frank Station,15,,43.674083,-79.368579,Castle Frank Station,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7117
+114,King St W / Bay St (East Side),19,,43.648575,-79.380042,King St W / Bay St (East Side),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7118
+115,Sumach St / Carlton St (Riverdale Farm),15,,43.665867,-79.362506,Sumach St / Carlton St. (Riverdale Farm),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7119
+116,Gerrard St E / River St,11,,43.663993,-79.358534,Gerrard St E / River St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7120
+117,Jarvis St / Dundas St E,15,,43.657266,-79.374756,Jarvis St / Dundas St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7121
+118,Niagara St / Tecumseth St,15,,43.641389,-79.404444,Niagara St / Tecumseth St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7122
+119,424 Wellington St W,15,,43.643834,-79.396649,424 Wellington St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7123
+120,Dundas St E / Broadview Ave,19,,43.662365,-79.351104,Dundas St E / Broadview Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7124
+121,Yonge St / Yorkville Ave,17,,43.671944,-79.387778,Yonge St / Yorkville Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7126
+122,Bay St / Davenport Rd,15,,43.672829,-79.390592,Bay St / Davenport Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7127
+123,Yonge St / Aylmer Ave,15,,43.675492,-79.388858,Yonge St / Aylmer Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7128
+124,Davenport Rd / Avenue Rd,11,,43.674991,-79.396273,Davenport Rd / Avenue Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7129
+125,Pears Av / Avenue Rd,11,,43.675481,-79.397359,Pears Av / Avenue Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7130
+126,Taddle Creek Park,15,,43.66986,-79.398443,Taddle Creek Park,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7131
+127,Kendal Ave / Spadina Rd,9,,43.670318,-79.405181,Kendal Ave / Spadina Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7132
+128,Summerhill Station,11,,43.681944,-79.390556,Summerhill Station,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7133
+129,Marlborough Ave / Yonge St,23,,43.68,-79.391111,Marlborough Ave / Yonge St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7134
+130,Hanna Ave / Liberty St,15,,43.638333,-79.419722,Hanna Ave / Liberty St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7135
+131,Queen St W / Close Ave,23,,43.640634,-79.435841,Queen St W / Close Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7136
+132,Davenport Rd / Bathurst St,15,,43.676667,-79.416111,Davenport Rd / Bathurst St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7137
+133,Davenport Rd / Christie St,15,,43.675278,-79.423889,Davenport Rd / Christie St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7138
+134,Glen Edyth Dr / Davenport Rd,15,,43.677778,-79.405556,Glen Edyth Dr / Davenport Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7139
+135,Macpherson Ave / Spadina Rd,15,,43.675791,-79.40698,Macpherson Ave / Spadina Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7140
+136,Bridgeman Ave / Kendal Ave,15,,43.675556,-79.410278,Bridgeman Ave / Kendal Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7141
+137,Bridgeman Ave / Bathurst St,15,,43.674444,-79.414722,Bridgeman Ave / Bathurst St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7142
+138,Kendal Ave / Bernard Ave,15,,43.671513,-79.408317,Kendal Ave / Bernard Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7143
+139,Palmerston Ave / Vermont Ave,15,,43.671389,-79.416389,Palmerston Ave / Vermont Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7144
+140,Christie St / Benson Ave (Wychwood Barns),18,,43.68,-79.425,Christie St / Benson Ave (Wychwood Barns),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7146
+141,King St W / Fraser Ave,15,,43.6394444,-79.4252777778,King St W / Fraser Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7147
+142,King St W / Joe Shuster Way,15,,43.639444,-79.423611,King St W / Joe Shuster Way,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7148
+143,Yarmouth Rd / Christie St,11,,43.67,-79.4208333333,Yarmouth Rd / Christie St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7149
+144,Dufferin St / Sylvan Av (Dufferin Grove Park),19,,43.6555556,-79.4336111111,Dufferin St / Sylvan Av (Dufferin Grove Park),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7150
+145,Essex St / Christie St,19,,43.6686111,-79.4202777778,Essex St / Christie St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7151
+146,Ossington Ave / Bloor St W,11,,43.661705,-79.425734,Ossington Ave / Bloor St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7152
+147,Bloor St W / Christie St,19,,43.6638889,-79.4188888889,Bloor St W / Christie St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7153
+148,Bathurst Subway Station,23,,43.6666667,-79.4116666667,Bathurst Subway Station,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7154
+149,Bathurst St / Lennox St,19,,43.663808,-79.410491,Bathurst St / Lennox St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7155
+150,Salem Ave / Bloor St W,15,,43.6608333,-79.4316666667,Salem Ave / Bloor St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7156
+151,Dufferin St / Bloor St,15,,43.6608333333,-79.4358333333,Dufferin St / Bloor St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7157
+152,King St W / Stafford St,15,,43.6422222,-79.4111111111,King St W / Stafford St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7158
+153,King St W / Tecumseth St,15,,43.6433333333,-79.4055555556,King St W / Tecumseth St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7160
+154,Beverly St / College St,23,,43.6575,-79.3952777778,Beverly St / College St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7161
+155,Hayter St / Laplante Ave,15,,43.6591666667,-79.3855555556,Hayter St / Laplante Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7162
+156,Yonge St / Wood St,15,,43.6622222,-79.3825,Yonge St / Wood St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7163
+157,Victoria St / Gould St (Ryerson University),19,,43.657189,-79.379953,Victoria St / Gould St (Ryerson University),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7164
+158,Queen St E / George St (Moss Park),17,,43.6544444,-79.3711111111,Queen St E / George St (Moss Park),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7167
+159,Queens Quay / Yonge St,15,,43.641646,-79.375308,Queens Quay / Yonge St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7168
+160,Front St W / Bay St (North Side),11,,43.646162,-79.378912,Front St W / Bay St (North Side),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7169
+161,Spadina Ave / Willcocks St,15,,43.6616667,-79.4013888889,Spadina Ave / Willcocks St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7170
+162,Ontario Place Blvd / Remembrance Dr,27,,43.632999,-79.408671,Ontario Place Blvd / Remembrance Dr,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7171
+163,Strachan Ave / Princes' Blvd,19,,43.635,-79.4088888889,Strachan Ave / Princes' Blvd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7172
+164,Cariboo St / Rail Path,19,,43.66666667,-79.4583333333,Cariboo St / Rail Path,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7173
+165,Bloor St W / Dundas St W,15,,43.6563889,-79.4516666667,Bloor St W / Dundas St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7174
+166,HTO Park (Queens Quay W),27,,43.63796,-79.387502,HTO Park (Queens Quay W),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7175
+167,Bathurst St / Fort York Blvd,19,,43.639179,-79.399595,Bathurst St / Fort York Blvd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7176
+168,East Liberty St / Pirandello St,19,,43.6386111111,-79.4147222222,East Liberty St / Pirandello St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7177
+169,Dundas St W / Edna Ave,15,,43.657192,-79.452559,Dundas St W / Edna Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7178
+170,Bloor GO / UP Station (West Toronto Railpath),19,,43.6575,-79.4502777778,Bloor GO / UP Station (West Toronto Railpath),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7179
+171,Lansdowne Subway Green P,23,,43.6591666667,-79.4427777778,Lansdowne Subway Green P,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7180
+172,Lansdowne Ave / Whytock Ave,15,,43.6538888889,-79.4413888889,Lansdowne Ave / Whytock Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7181
+173,Sterling Rd / Dundas St W,19,,43.6508333333,-79.4430555556,Sterling Rd / Dundas St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7182
+174,Margueretta St / College St,15,,43.6513888889,-79.4377777778,Margueretta St / College St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7183
+175,Ossington Ave / College St,11,,43.6544915,-79.422634,Ossington Ave / College St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7184
+176,Exhibition GO (Atlantic Ave),23,,43.6366666667,-79.4197222222,Exhibition GO (Atlantic Ave),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7188
+177,Augusta Ave / Denison Sq,15,,43.65375,-79.401753,Augusta Ave / Denison Sq,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7189
+178,St. George St / Hoskin Ave,15,,43.664059,-79.398334,St. George St / Hoskin Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7190
+179,Central Tech (Harbord St),11,,43.661975,-79.407896,Central Tech  (Harbord St),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7191
+180,Harbord St / Clinton St,15,,43.660414,-79.415646,Harbord St / Clinton St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7192
+181,Queen St W / Gladstone Ave,15,,43.6430555556,-79.4275,Queen St W / Gladstone Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7193
+182,Mortimer Ave / Coxwell Ave,11,,43.690564,-79.326319,Mortimer Ave / Coxwell Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7194
+183,Ulster St / Bathurst St,11,,43.66,-79.4088888889,Ulster St / Bathurst St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7195
+184,Roxton Rd / Harbord St,11,,43.65905,-79.422988,Roxton Rd / Harbord St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7196
+185,Queen St W / Dovercourt Rd,11,,43.6436111111,-79.4225,Queen St W / Dovercourt Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7197
+186,Queen St W / Cowan Ave,19,,43.6409,-79.432837,Queen St W / Cowan Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7198
+187,College St / Markham St,19,,43.6563888889,-79.4091666667,College St / Markham St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7199
+188,Queen St W / York St (City Hall),23,,43.651667,-79.384167,Queen St W / York St (City Hall),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7202
+189,Bathurst St/Queens Quay(Billy Bishop Airport),35,,43.635492,-79.398253,Bathurst St/Queens Quay(Billy Bishop Airport),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7203
+190,College St / Crawford St,19,,43.655,-79.418889,College St / Crawford St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7204
+191,Rusholme Park Cres / College St,15,,43.65277778,-79.42972222,Rusholme Park Cres / College St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7205
+192,Claremont St / Dundas St W,13,,43.651281,-79.411717,Claremont St / Dundas St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7206
+193,Dundas St W / Crawford St,19,,43.649722,-79.416944,Dundas St W / Crawford St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7207
+194,80 Clinton St (North of College),11,,43.656296,-79.414663,80 Clinton St (North of College),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7208
+195,Ossington Ave / Harrison St,19,,43.6511111111,-79.4213888889,Ossington Ave / Harrison St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7209
+196,Mary McCormick Rec Centre (Sheridan Ave),15,,43.6475,-79.4330555556,Mary McCormick Rec Centre (Sheridan Ave),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7210
+197,Fort York Blvd / Garrison Rd,15,,43.6375,-79.4061111111,Fort York Blvd / Garrison Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7211
+198,Wellington St W / Stafford St,23,,43.641281,-79.409339,Wellington St W / Stafford St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7216
+199,Lakeshore Blvd W / Ellis Ave,19,,43.635932,-79.465083,Lakeshore Blvd W / Ellis Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7220
+200,High Park Subway Station,19,,43.6543604,-79.4655296,High Park Subway Station,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7221
+201,Sunnyside - Gus Ryder Pool,23,,43.637894,-79.454823,Sunnyside - Gus Ryder Pool,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7222
+202,Parkside Dr / Bloor St W,12,,43.654501,-79.460053,Parkside Dr / Bloor St W - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7223
+203,Bloor St W / High Park Ave (High Park),19,,43.6535269,-79.4650569,Bloor St W / High Park Ave (High Park),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7224
+204,Lakeshore Blvd W / Windermere Ave,19,,43.634896,-79.467763,Lakeshore Blvd W / Windermere Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7225
+205,Lakeshore Blvd W / The Boulevard Club,19,,43.636731,-79.444966,Lakeshore Blvd W / The Boulevard Club,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7226
+206,Martin Goodman Trail (Marilyn Bell Park),15,,43.6314,-79.4304,Martin Goodman Trail (Marilyn Bell Park),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7227
+207,Queen St W / Roncesvalles Ave,19,,43.638399,-79.4464436,Queen St W / Roncesvalles Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7228
+208,Dundas St W / Roncesvalles Green P,12,,43.6534268,-79.4512787,Dundas St W / Roncesvalles Green P - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7229
+209,Garden Ave / Roncesvalles Ave,19,,43.643769,-79.447915,Garden Ave / Roncesvalles Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7230
+210,Wright Ave / Sorauren St (Sorauren Park),18,,43.646677,-79.442741,Wright / Sorauren (Sorauren Park) - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7231
+211,Queen St W / Fuller Ave,16,,43.640255,-79.439223,Queen St W  /  Fuller Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7232
+212,King St W / Cowan Ave,16,,43.637922,-79.431734,King / Cowan Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7233
+213,Roncesvalles Ave / Marmaduke St,19,,43.650492,-79.450842,Roncesvalles Ave / Marmaduke St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7234
+214,Bay St / College St (West Side),12,,43.660087,-79.385655,Bay St / College St (West Side) - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7235
+215,Thompson St / Broadview Ave,12,,43.659471,-79.350325,Thompson St / Broadview Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7236
+216,Ward Ave / Wallace Ave,15,,43.662251,-79.446036,Ward Ave / Wallace Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7237
+217,Sorauren St / Geoffrey St (Sorauren Park),16,,43.649172,-79.4445087,Sorauren/Geoffrey (Sorauren Park) - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7238
+218,Bloor St W / Manning Ave,20,,43.663912,-79.416124,Bloor St W / Manning Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7239
+219,Bloor St W / Shaw Ave,12,,43.662403,-79.423098,Bloor St W / Shaw Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7240
+220,519 Church St,12,,43.666805,-79.381288,519 Church St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7241
+221,Lakeshore Blvd W / Ontario Dr (Ontario Place),23,,43.630254,-79.420317,Lakeshore Blvd W / Ontario Dr (Ontario Place),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7242
+222,Exhibition GO Station,15,,43.6356551,-79.4184785,Exhibition GO Station,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7243
+223,Dufferin Gate,16,,43.633473,-79.425679,Dufferin Gate - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7244
+224,Tecumseth St / Queen St W,9,,43.646552,-79.406468,Tecumseth St / Queen St W - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7245
+225,Yonge St / Bloor St,14,,43.669969,-79.386532,Yonge St / Bloor St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7246
+226,Howard Park Ave / Dundas St W,12,,43.6521,-79.4486,Howard Park Ave / Dundas St W - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7247
+227,Baldwin Ave / Spadina Ave,20,,43.654905,-79.398448,Baldwin Ave / Spadina Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7248
+228,Dovercourt Rd / Harrison St (Green P) - SMART,12,,43.651145,-79.423742,Dovercourt Rd / Harrison St (Green P) - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7249
+229,St. George St / Russell St,12,,43.660296,-79.397107,St. George St / Russell St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7250
+230,The Royal Ontario Museum (Bloor St Entrance),19,,43.668561,-79.394403,The Royal Ontario Museum (Bloor St Entrance),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7251
+231,Robert St / Bloor St W,18,,43.665846,-79.404998,Robert St / Bloor St W - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7252
+232,John St / Mercer St,12,,43.6461,-79.3895,John St  / Mercer St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7253
+233,Borden St / Bloor St W,12,,43.665461,-79.40848,Borden St / Bloor St W - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7254
+234,Stewart St / Bathurst St,16,,43.643307,-79.402176,Stewart St / Bathurst St  - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7255
+235,Vanauley St / Queen St W,9,,43.648437,-79.39838,Vanauley St / Queen St W - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7256
+236,Dundas St W / St. Patrick St,19,,43.6545174,-79.3895315,Dundas St W / St. Patrick St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7257
+237,Queen St E / Larchmount Ave,25,,43.662279,-79.334166,Queen St E / Larchmount Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7258
+238,Lower Spadina Ave / Lakeshore Blvd W,19,,43.638497,-79.39192,Lower Spadina Ave / Lakeshore Blvd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7259
+239,Spadina Ave / Adelaide St W,15,,43.646688,-79.395267,Spadina Ave / Adelaide St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7260
+240,Wychwood Ave / Benson Ave,16,,43.6809164,-79.4229684,Wychwood Ave / Benson Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7262
+241,Walton St / Elizabeth St,20,,43.657838,-79.38631,Walton St / Elizabeth St - SMART,M8Z4T4,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7263
+242,Bloor St E / Huntley St,16,,43.671535,-79.379173,Bloor St E / Huntley St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7264
+243,Wallace Ave / Symington Ave,12,,43.661324,-79.449534,Wallace Ave / Symington Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7265
+244,Victoria Park Subway Station,20,,43.6940155,-79.2889842,Victoria Park Subway Station - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7266
+245,Dundas St E / Pembroke St,16,,43.658295,-79.372346,Dundas St E / Pembroke St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7267
+246,Toronto Eaton Centre (Yonge St),14,,43.655431,-79.380653,Toronto Eaton Centre (Yonge St),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7269
+247,Church St / Dundas St E,15,,43.657024,-79.377257,Church St / Dundas St E - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7270
+248,Yonge St / Alexander St,8,,43.662862,-79.383572,Yonge St / Alexander St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7271
+249,Yonge St / Dundonald St,12,,43.665801,-79.384796,Yonge St / Dundonald St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7272
+250,Bay St / Charles St W,20,,43.668153,-79.38891,Bay St / Charles St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7273
+251,Queen's Park Cres E / Grosvenor St,12,,43.661803,-79.389682,Queen's Park Cres E / Grosvenor St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7274
+252,Queen St W / James St,11,,43.652276,-79.380701,Queen St W / James St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7275
+253,Bloor St W / Balmuto St,11,,43.669903,-79.387802,Bloor St W / Balmuto St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7276
+254,Chorley Park,12,,43.6856,-79.3718,Chorley Park - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7277
+255,Summerhill Ave / MacLennan Ave,12,,43.6859,-79.3766,Summerhill Ave / MacLennan Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7278
+256,Rosehill Ave / Avoca Ave,16,,43.687999,-79.38906,Rosehill Ave / Avoca Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7279
+257,Charles St E / Jarvis St,16,,43.669604,-79.381171,Charles St E / Jarvis St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7280
+258,Charles St W / Balmuto St,16,,43.668427,-79.38725,Charles St W / Balmuto St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7281
+259,Adelaide St W / Bay St,20,,43.650152,-79.379856,Adelaide St W / Bay St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7282
+260,Front St W / Bay St (South Side),19,,43.64595,-79.378761,Front St W / Bay St (South Side),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7283
+261,York St / King St W,16,,43.648,-79.3834,York St / King St W - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7284
+262,Spadina Ave / Harbord St,12,,43.6629228,-79.4018451,Spadina Ave / Harbord St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7285
+263,Gerrard St E / Broadview,18,,43.665656,-79.352055,Gerrard St E / Broadview - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7286
+264,Queen St E / Pape Ave,8,,43.661673,-79.337789,Queen St E / Pape Ave - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7287
+265,Humber Bay Shores Park West,23,,43.626705,-79.476571,Humber Bay Shores Park West,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7288
+266,Humber Bay Shores Park East,23,,43.629742,-79.474627,Humber Bay Shores Park East,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7289
+267,Lakeshore Blvd E / Parliament St,15,,43.647562,-79.36138,Lakeshore Blvd E / Parliament St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7291
+268,Granby St / Church St -SMART,12,,43.6605302,-79.3787235,Granby St / Church St - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7292
+269,College St / McCaul St,17,,43.65906,-79.393771,College St / McCaul St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7293
+270,Westmoreland Ave / Fernbank Ave,19,,43.665327,-79.43235,Westmoreland Ave / Fernbank Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7296
+271,Havelock St / Dufferin Park,19,,43.657343,-79.43112,Havelock St / Dufferin Park,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7297
+272,Bathurst St / Adelaide St W,25,,43.645324,-79.40345,Bathurst St / Adelaide St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7298
+273,Mill St / Parliament St,15,,43.650256,-79.36163,Mill St / Parliament St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7299
+274,Primrose Ave / Davenport Rd,15,,43.67142,-79.445947,Primrose Ave / Davenport Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7301
+275,Winona Dr / Davenport Rd,11,,43.674923,-79.430465,Winona Dr / Davenport Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7302
+276,Queen St. E / Woodward Av,19,,43.665269,-79.319796,Queen St. E / Woodward Av,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7303
+277,Queen St. E / Rhodes Ave.,23,,43.666224,-79.317693,Queen St. E / Rhodes Ave.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7309
+278,Sherbourne St / Isabella St,15,,43.669576,-79.375961,Sherbourne St / Isabella St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7311
+279,Amelia St. / Sumach St.,11,,43.66852,-79.363525,Amelia St. / Sumach St.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7312
+280,Coxwell Ave. / Lakeshore Blvd. E,11,,43.662771,-79.315223,Coxwell Ave. / Lakeshore Blvd. E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7313
+281,Queen St. E / Eastern Ave,15,,43.667208,-79.312315,Queen St. E / Eastern Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7314
+282,Queen St E / Hammersmith Ave,11,,43.671349,-79.29451,Queen St E / Hammersmith Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7315
+283,Queen St. E / Spruce Hill Rd.,15,,43.672571,-79.289,Queen St. E / Spruce Hill Rd.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7316
+284,Hubbarb Blvd / Balsam Av,19,,43.669328,-79.288949,Hubbarb Blvd / Balsam Av,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7317
+285,Hubbard Blvd. / Glen Manor Dr.,15,,43.668633,-79.291162,Hubbard Blvd. / Glen Manor Dr.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7318
+286,Lakeshore Blvd. E / Knox Ave.,11,,43.660206,-79.3244,Lakeshore Blvd. E / Knox Ave.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7319
+287,Front St W / University Ave (1),19,,43.6451635,-79.3831757,Front St W / University Ave (1),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7320
+288,Front St W / University Ave (2),19,,43.6452972,-79.3827914,Front St W / University Ave (2),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7321
+289,King St W / Brant St,23,,43.6446926,-79.3986795,King St W / Brant St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7322
+290,457 King St W.,19,,43.6452091,-79.3960744,457 King St. W. at Spadina,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7323
+291,King St W / Charlotte St,19,,43.645572,-79.39399,King St W / Charlotte St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7324
+292,Davenport Rd / Landsdowne Rd,19,,43.671526,-79.44874,Davenport Rd / Landsdowne Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7326
+293,Davenport Rd / Oakwood Rd - SMART,12,,43.674453,-79.43439,Davenport Rd / Oakwood Rd - SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7327
+294,Roxborough St W / Yonge St,17,,43.678077,-79.390328,Roxborough St W / Yonge St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7328
+295,Crawford St / Queen St W,19,,43.645665,-79.415345,Crawford St / Queen St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7329
+296,Lee St / Queen St E,11,,43.669863,-79.297786,Lee St / Queen St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7330
+297,Coxwell Ave / Plains Rd,18,,43.69595,-79.328535,Coxwell Ave / Plains Rd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7331
+298,200 Bloor St. E.,23,,43.671561,-79.38117,200 Bloor St. E.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7332
+299,King St E / Victoria St,19,,43.649465,-79.3766,King St E / Victoria St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7333
+300,Simcoe St / Front St W,19,,43.644876,-79.385108,Simcoe St / Front St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7334
+301,Peter St / King St W,15,,43.646204,-79.392287,Peter St / King St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7335
+302,Queen St E / Alton Av,19,,43.663912,-79.327987,Queen St E / Alton Av,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7336
+303,Gerrard Square Mall (1010 Gerrard St E),15,,43.668553,-79.338673,Gerrard Square Mall (1010 Gerrard St E),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7337
+304,Logan Ave / Bain Ave,11,,43.672348,-79.34727,Logan Ave / Bain Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7338
+305,Carlaw Ave / McConnell Ave,15,,43.676384,-79.34648,Carlaw Ave / McConnell Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7339
+306,Blake St / Boultbee Ave,15,,43.672453,-79.338259,Blake St / Boultbee Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7340
+307,Eastern Ave / Winnifred Ave,15,,43.659178,-79.334966,Eastern Ave / Winnifred Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7341
+308,Morse St / Eastern Ave,11,,43.657991,-79.340075,Morse St / Eastern Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7342
+309,Alton Ave / Dundas St E (Greenwood Park),23,,43.66745,-79.329408,Alton Ave / Dundas St E (Greenwood Park),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7343
+310,Cherry Beach,25,,43.637764,-79.345359,Cherry Beach,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7344
+311,Cherry Beach Sports Field (55 Unwin Ave),15,,43.640757,-79.343144,Cherry Beach Sports Field (55 Unwin Ave),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7345
+312,Logan Av / McConnell Av,19,,43.675887,-79.348733,Logan Av / McConnell Av,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7346
+313,Regal Rd / Dufferin St,15,,43.673939,-79.441159,Regal Rd / Dufferin St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7347
+314,Pape Ave / Gamble Ave,19,,43.690237,-79.350119,Pape Ave / Gamble Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7348
+315,Gamble Ave / Broadview Ave,23,,43.689211,-79.35438,Gamble Ave / Broadview Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7349
+316,Broadview Ave/ Westwood Ave,23,,43.6848652,-79.356602,Broadview Ave / Westwood Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7350
+317,Pretoria Av / Broadview Av,19,,43.6783213,-79.35822,Pretoria Av / Broadview Av,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7351
+318,Cosburn Ave / Donlands Ave,19,,43.690537,-79.341307,Cosburn Ave / Donlands Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7352
+319,Fulton Ave / Pape Ave,19,,43.68395,-79.347046,Fulton Ave / Pape Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7353
+320,Tommy Thompson Park (Leslie Street Spit),19,,43.652195,-79.322796,Tommy Thompson Park (Leslie Street Spit),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7354
+321,Beltline Trail / Chaplin Cres.,15,,43.704461,-79.423122,Beltline Trail / Chaplin Cres.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7355
+322,King St E / Ontario St.,14,,43.651885,-79.3649,King St E / Ontario St.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7356
+323,Lakeshore Blvd E /Leslie St,19,,43.659195,-79.329196,Lakeshore Blvd E /Leslie St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7357
+324,Gailbraith Rd / King’s College Cr. (U of T),17,,43.660382,-79.3954,Gailbraith Rd / King’s College Cr. (U of T),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7358
+325,Rosedale Park (20 Schofield Ave),23,,43.682645,-79.377557,Rosedale Park (20 Schofield Ave),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7359
+326,Concord Av / Dewson St,17,,43.656945,-79.424911,Concord Av / Dewson St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7360
+327,Hocken Ave./Vaughan Rd.,19,,43.6817346,-79.4184725,Hocken Ave./Vaughan Rd.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7361
+328,St Clair Ave W / Bathurst St.,19,,43.683296,-79.418734,St Clair Ave W / Bathurst St.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7362
+329,Wells Hill Ave / St Clair Ave W,15,,43.683351,-79.41562,Wells Hill Ave / St Clair Ave W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7363
+330,Queen St E / Nursewood Rd (Neville Park Loop),19,,43.673831,-79.281455,Queen St E / Nursewood Rd (Neville Park Loop),,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7364
+331,Kew Beach Ave / Kenilworth Ave,23,,43.666325,-79.3014,Kew Beach Ave / Kenilworth Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7365
+332,Fort York Blvd / Bathurst St SMART,20,,43.639052,-79.399792,Fort York Blvd / Bathurst St SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7366
+333,Alma Ave / Gladstone Ave SMART,16,,43.6448617,-79.42822,Alma Ave / Gladstone Ave SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7367
+334,Lisgar St / Dundas St SMART,8,,43.6493472,-79.42668,Lisgar St / Dundas St SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7368
+335,Dupont St / Emerson Ave  SMART,16,,43.667266,-79.443946,Dupont St / Emerson Ave SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7369
+336,Eglinton Ave W / Henning Ave SMART,20,,43.7063473,-79.40161,Eglinton Ave W / Henning Ave SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7371
+337,King St W / Portland St,23,,43.6442859,-79.40074,King St W / Portland St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7372
+338,George St / King St E,15,,43.6509552,-79.3707,George St / King St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7373
+339,Frederick St / The Esplanade,19,,43.6487245,-79.36839,Frederick St / The Esplanade,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7374
+340,Front St E / Scott St,11,,43.6476616,-79.37549,Front St E / Scott St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7375
+341,Frobisher Ave / Lascelles Blvd,19,,43.696708,-79.40045,Frobisher Ave / Lascelles Blvd,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7376
+342,Balliol St / Yonge St SMART,20,,43.6978701,-79.39419,Balliol St / Yonge St  SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7377
+343,Yonge St / Davisville Ave,15,,43.6975969,-79.39654,Yonge St / Davisville Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7378
+344,Lawton Blvd / Yonge St,15,,43.6910667,-79.39535,Lawton Blvd / Yonge St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7379
+345,Erskine Ave / Yonge St SMART,16,,43.7112153,-79.39894,Erskine Ave / Yonge St SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7380
+346,Roehampton Ave / Yonge St,19,,43.7080145,-79.39826,Roehampton Ave / Yonge St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7381
+347,Simcoe St / Adelaide St W,20,,43.6481303,-79.38632,Simcoe St / Adelaide St W,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7382
+348,12 Harbour St,15,,43.6425636,-79.3762,12 Harbour St,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7383
+349,Cumberland Ave / Bay St SMART,12,,43.6704537,-79.39014,Cumberland Ave / Bay St SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7384
+350,20 Charles St E,23,,43.6691099,-79.38551,20 Charles St E,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7385
+351,"D'Arcy St, /McCaul St. SMART",16,,43.655227,-79.39201,D'Arcy St. /McCaul St. SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7386
+352,Mortimer Ave / Carlaw Ave SMART,12,,43.685167,-79.34962,Mortimer Ave / Carlaw Ave SMART,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7387
+353,Broadview Ave / Danforth Ave,15,,43.6772,-79.35858,Broadview Ave / Danforth Ave,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7388
+354,Westmoreland Ave. / Dupont St.,23,,43.6693959,-79.43388,Westmoreland Ave. / Dupont St.,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7389
+355,Yonge St / Dundas Sq,27,Yonge St / Dundas Sq,43.655766,-79.3802,Yonge St / Dundas Sq,,"[KEY, CREDITCARD, TRANSITCARD, PHONE]",7391
