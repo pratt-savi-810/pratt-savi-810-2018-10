@@ -2,7 +2,7 @@ import geocoder
 import pandas as pd
 import arcpy
 
-add_df = pd.read_csv(r'\Mac\Home\Desktop\Geocode\Addresses.csv')
+add_df = pd.read_csv('adresses.csv')
 add_df['Lat'] = ''
 add_df['Long'] = ''
 
@@ -11,10 +11,10 @@ for index, row in add_df.iterrows():
     row['Lat'] = g.lat
     row['Long'] = g.lng
 
-add_df.to_csv(r'\Mac\Home\Desktop\Geocode\LatLong_Plot.csv')
+add_df.to_csv('address_xy.csv')
 
 arcpy.MakeXYEventLayer_management(
-    r'\Mac\Home\Desktop\Geocode\LatLong_Plot.csv',
+    'address_xy.csv',
     'Long',
     'Lat',
     'latlong_plot',
@@ -22,5 +22,5 @@ arcpy.MakeXYEventLayer_management(
 
 arcpy.CopyFeatures_management(
     'latlong_plot',
-    r'\Mac\Home\Desktop\Geocode\address_plot.shp',
+    'address_plot.shp',
 )
