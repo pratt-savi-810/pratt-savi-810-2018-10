@@ -17,7 +17,7 @@
 
 ## Project Outline
 
-	_this entire process, ideally, would happen in ArcGIS Pro, with a map active_
+	*this entire process, ideally, would happen in ArcGIS Pro, with a map active*
 
 	receive list of (nyc-based) addresses
 		(e.g., list of no-build projects; list of historic landmarks, etc.)
