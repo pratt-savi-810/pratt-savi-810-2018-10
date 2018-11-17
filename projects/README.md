@@ -33,6 +33,21 @@ for i in range(1,20):
        url_list.append("https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma0"+str(i)+"lat.zip")
    else:
        url_list.append("https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma"+str(i)+"lat.zip")
+       
+filename_list = []
+
+for i in range(1,20):
+     if i < 10:
+         filename_list.append(
+	 "C:/Users/bagta/Documents/810 Project Data/wma0"+str(i)+".zip")
+     else:  
+         filename_list.append(
+         "C:/Users/bagta/Documents/810 Project Data/wma"+str(i)+".zip")
+
+for url_item, filename_item in zip(url_list, filename_list): 
+    urllib.urlretrieve(url_item, filename_item)
+
+
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download .zip file to a specified location (parameter)
 
