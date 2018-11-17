@@ -10,6 +10,7 @@
 		* stores the following:
 			- coordinate system for plotting xy data in ArcGIS Pro
 			- filepath for MapPLUTO data on local drive
+			- api key (nyc geoclient api)
 
 ## Project Description
 
