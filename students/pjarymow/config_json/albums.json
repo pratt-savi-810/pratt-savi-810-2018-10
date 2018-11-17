@@ -1,0 +1,32 @@
+{
+  "Neutral Milk Hotel": {
+    "On Avery Island": {
+      "year": 1996,
+      "record company": "Merge Records"
+    },
+    "In the Aeroplane Over the Sea": {
+      "year": 1998,
+      "record company": "Merge Records",
+      "category": "indie"
+    }
+  },
+  "Big Star": {
+    "#1 Record": {
+      "year": 1972,
+      "record company": "Ardent/Stax",
+      "instrument": "guitar"
+    },
+    "Radio City": {
+      "year": 1974,
+      "record company": "Ardent/Stax"
+    },
+    "Third/Sister Lovers": {
+      "year": 1978,
+      "record company": "PVC"
+    },
+    "In Space": {
+      "year": 2005,
+      "record company": "Rykodisc"
+    }
+  }
+}
