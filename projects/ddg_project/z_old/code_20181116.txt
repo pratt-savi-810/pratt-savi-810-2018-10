@@ -1,0 +1,10 @@
+arcpy.management.XYTableToPoint(r"csv_file", r"output_address_pts", "Lng", "Lat", None, "GEOGCS['GCS_WGS_1984',DATUM['D_WGS_1984',SPHEROID['WGS_1984',6378137.0,298.257223563]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]];-400 -400 1000000000;-100000 10000;-100000 10000;8.98315284119521E-09;0.001;0.001;IsHighPrecision")
+
+lyrTest = r"pluto_feature_class"
+aprx = arcpy.mp.ArcGISProject("CURRENT")
+aprxMap = aprx.listMaps("Map")[0]
+aprxMap.addDataFromPath(lyrTest)
+
+arcpy.management.SelectLayerByLocation('pluto_feature_class', "INTERSECT", "output_address_pts", None, "NEW_SELECTION")
+arcpy.management.CopyFeatures('pluto_feature_class', r"output_fc_selected_lots")
+arcpy.management.CopyRows("output_fc_selected_lots", r"output_csv_file", None)
