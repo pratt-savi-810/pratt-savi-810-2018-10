@@ -16,7 +16,10 @@ Then I wanted to automate the plotting of the xy data for the six countries in C
 
 **How to Use**
 
-Data: Located in GitHub project (https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/coffee_project/projects/amagnuss_project/CoffeePoints_2.csv). Download this data and save it locally. Copy the path name for this file - this will be your "input_table".
+Coffee Projects Data: Located in GitHub project (https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/coffee_project/projects/amagnuss_project/CoffeePoints_2.csv). Download this data and save it locally. Copy the path name for this file - this will be your "input_table".
+
+json_config file: https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/coffee_project/projects/amagnuss_project/coffee_cfg.json
+
 	
 Python Dependencies:
 IMPORT
@@ -58,8 +61,6 @@ create event layer from xy from csvs just saved
 
 project data in NA Albers Equal Area
 	project all news vector layers into AEA
-	project unzipped raster data into AEA
-		create custom geographic transormation
 ```
 
 
