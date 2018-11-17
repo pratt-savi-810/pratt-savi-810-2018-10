@@ -28,8 +28,11 @@ def unzip_file(zip_file_name, extract_location):
     zip_object.extractall(extract_location)
 
 
+#  designate the folder where you want to extract the data
+
 your_project_folder = "C:/Users/jbagtas/Documents/"
 
+# extract the data
 for i in range(len(filename_list)):
     unzip_file(
         filename_list[int(i) - 1],
