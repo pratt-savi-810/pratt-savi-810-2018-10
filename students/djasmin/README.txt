@@ -8,6 +8,23 @@ in total: Wyckoff Ave, Irving Ave, Knickerbocker Ave, Wilson Ave, Myrtle Ave, Ce
 zoned so this is why I've separated them. I would like to select by buffer for each of these centerlines and then assign FAR values based 
 on their location.
 
+150' buffer for corridors
+
+
+Proposed FAR by corridors:
+3.6
+- Wyckoff Ave
+- Myrtle Ave
+- Knickerbocker Ave
+
+3.44
+-Broadway
+
+2.2
+- Irving Ave
+- Wilson Ave
+- Central Ave
+
 Data Input:
 -NYC Street Centerline
 -PLUTO tax lot database
