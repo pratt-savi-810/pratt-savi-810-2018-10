@@ -1,4 +1,3 @@
-```
 # Rate of Landmark Designation
 
 # project description
@@ -20,8 +19,7 @@ The output is a new polygon shapefile which contains rate of designation as a ne
 
 	import arcpy
 	mxd = arcpy.mapping.MapDocument(mxd_filepath)
-##	define function
-##  def convertdatetimestring
+	def convertdatetimestring # define function
 
 2) Start a loop and create a new double numeric field in IND_Landmark_Points_10_26_18_revised
 
@@ -55,5 +53,3 @@ The output is a new polygon shapefile which contains rate of designation as a ne
 ##	arcpy.clearselectedfeature
 
 	arcpy.ExportToPNG
-
-```
