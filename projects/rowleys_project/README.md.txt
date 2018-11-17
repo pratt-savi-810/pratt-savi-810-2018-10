@@ -1,5 +1,5 @@
 I'll be creating a map showing the locations of buildings with stabilized rent
-and also show the percent gross rent by household income of the population.
+and also show the gross rent as a percent of household income of the population.
 
 Steps:
 Extract zip file
