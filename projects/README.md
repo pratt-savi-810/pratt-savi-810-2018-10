@@ -22,12 +22,14 @@ A web map of New Jersey uploaded to ArcOnline, Fly through of a given route
 
 Steps
 
-Download the DEM for each Watershed. Create a list of urls, one for each WMA (20)
-```url_list = []
+Download the DEM for each Watershed. Create a list of urls, one for each WMA (20). The url is the same for each WMA except for its WMA ID number (eg. wma01, wma, 02,...wma20). Use an if statement so that those less than 10 have a leading zero.
+```import urllib
+
+url_list = []
 
 for i in range(1,20):
    if i < 10:
-       url_list.append(    "https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma0"+str(i)+"lat.zip")
+       url_list.append("https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma0"+str(i)+"lat.zip")
    else:
        url_list.append("https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma"+str(i)+"lat.zip")
 ```
