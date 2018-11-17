@@ -1,8 +1,26 @@
-import json
+import geocoder
+import pandas as pd
+import arcpy
 
-def read_config(config_json):
-    with open(config_json) as f:
-        data = json.load(f)
+add_df = pd.read_csv(r'F:\Python Class\brooklyn_addresses_for_project_test.csv')
+add_df['Lat'] = ''
+add_df['Long'] = ''
 
-        return data
+for index, row in add_df.iterrows():
+    g = geocoder.google(row['Full Address'])
+    row['Lat'] = g.lat
+    row['Long'] = g.lng
 
+add_df.to_csv(r'F:\Python Class\brooklyn_addresses_for_project_test.csv')
+
+arcpy.management.MakeXYEventLayer(
+    'F:\Python Class\brooklyn_addresses_for_project_test.csv',
+    'Long',
+    'Lat',
+    'latlong_plot',
+)
+
+arcpy.management.CopyFeatures(
+    'latlong_plot',
+    'address_pts.shp',
+)
