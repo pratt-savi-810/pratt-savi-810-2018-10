@@ -36,23 +36,25 @@ for i in range(1,20):
        
 filename_list = []
 
+your_local_drive = "C:/Users/bagta/Documents/810 Project Data/" #substitute with your project folder
+
 for i in range(1,20):
      if i < 10:
          filename_list.append(
-	 "C:/Users/bagta/Documents/810 Project Data/wma0"+str(i)+".zip")
+	 str(your_local_drive)+"wma0"+str(i)+".zip")
      else:  
          filename_list.append(
-         "C:/Users/bagta/Documents/810 Project Data/wma"+str(i)+".zip")
+         str(your_local_drive)+"wma"+str(i)+".zip")
 
 for url_item, filename_item in zip(url_list, filename_list): 
     urllib.urlretrieve(url_item, filename_item)
 
 
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Download .zip file to a specified location (parameter)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extract to a specified location - (parameter. default = same as download location)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extract to a specified location 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Set each WMA raster to an object name in the following scheme: WMA{ID number}
 
 Go through steps to extrude elevation values to create a 3D surface 
 
