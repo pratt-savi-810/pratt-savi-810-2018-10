@@ -2,7 +2,7 @@
 
 # project description
 
-This project uses NYC Landmarks Preservation Commission (LPC) data to calculate a new field that measures the time between landmark and historic district calendaring and their designation. This is accomplished in order to compare across neighborhoods as well as types of landmarks and identify potential trends in faster or slower designation. This rate is likely contingent on several external factors as well, such as time of the year or number of other actively calendared buildings, which is why the rate is also compared to how recently each designation occurred. The aim of this project is to create a generic method of creating and calculating a new field for spatial analysis that can be transferable to similar projects.
+This project uses NYC Landmarks Preservation Commission (LPC) data to calculate a new field that measures the time between landmark and historic district calendaring and their designation. This is done in order to compare across neighborhoods as well as types of landmarks and identify potential trends in faster or slower designation. This rate is likely contingent on several external factors as well, such as time of the year or number of other actively calendared buildings, which is why the rate is also compared to how recently each designation occurred. The aim of this project is to create a generic method of creating and calculating a new field for spatial analysis that can be transferable to similar projects.
 
 # data inputs
 IND_Landmark_Points_10_26_18_revised (LPC shapefiles from nyc open data portal)
@@ -12,14 +12,15 @@ LPC_IL_HD_Bld_DB_10_19_18 (landmark and historic district building footprints)
 nybb  (borough boundaries clipped to shoreline)
 
 # output
-The output is a new polygon shapefile which contains rate of designation as a new field so it can be symbolized for relative rates across NYC. This can be symbolized by plotting statistics and showing average rates by borough
+The output is a new polygon shapefile which contains rate of designation as a new field so it can be symbolized for relative rates across NYC. This can be symbolized by plotting statistics and showing average rates by borough.
 
 # steps to accomplish this
 1) Import arcpy and set up workspace
 
 	import arcpy
 	mxd = arcpy.mapping.MapDocument(mxd_filepath)
-	def ...
+##	define function
+##  def convertdatetimestring
 
 2) Start a loop and create a new double numeric field in IND_Landmark_Points_10_26_18_revised
 
@@ -48,8 +49,8 @@ The output is a new polygon shapefile which contains rate of designation as a ne
 		""" "{}" = '{}'' """.format(unique_fieldname, field_value),
 		)
 
-	map_df.zoomToSelectedFeatures()
+##	map_df.zoomToSelectedFeatures()
 
-	arcpy.clearselectedfeature
+##	arcpy.clearselectedfeature
 
 	arcpy.ExportToPNG
