@@ -23,7 +23,8 @@ A web map of New Jersey uploaded to ArcOnline, Fly through of a given route
 Steps
 
 Download the DEM for each Watershed. Create a list of URLs to download, one for each WMA (there are 20). The URL is the same for each one except for its WMA ID number (eg. wma01, wma02,...wma20). Use an if statement so those less than 10 have a leading zero.
-```import urllib
+```
+import urllib
 
 url_list = []
 
