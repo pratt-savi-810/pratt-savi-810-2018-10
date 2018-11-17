@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def export_map_for_feature_in_fc(fc, mxd_file, unique_fieldname, output_png_dir):
     # declared mxd as current (instead of mxd filepath)
     mxd = arcpy.mapping.MapDocument(mxd_file)
