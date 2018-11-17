@@ -18,7 +18,7 @@ Then I wanted to automate the plotting of the xy data for the six countries in C
 
 Coffee Projects Data: Located in GitHub project (https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/coffee_project/projects/amagnuss_project/CoffeePoints_2.csv). Download this data and save it locally. Copy the path name for this file - this will be your "input_table".
 
-json_config file: https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/coffee_project/projects/amagnuss_project/coffee_cfg.json
+json_config file: https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/coffee_project/projects/amagnuss_project/coffee_cfg.json. Save in same directory as data above. You will use this path to define "coffee_cfg" later in the script. 
 
 	
 Python Dependencies:
