@@ -14,6 +14,21 @@ This project takes two datasets made available from CIAT via the Harvard Dataver
 
 Then I wanted to automate the plotting of the xy data for the six countries in Central America which are included in the raster dataset through arcpy. After this step, there are six layers created. These are then projected into North American Alber Equal Area. This projection was chosen because ultimately, I would like to examine the change in coffee suitability by doing analyses on the area potenially 'lost' to changes in climate. 
 
+**How to Use**
+
+Data: Located in GitHub project (https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/coffee_project/projects/amagnuss_project/CoffeePoints_2.csv). Download this data and save it locally. Copy the path name for this file - this will be your "input_table".
+	
+Python Dependencies:
+IMPORT
+- arcpy
+- pandas as pd
+- json
+	
+VENV
+C:\Python27\ArcGIS10.6\python.exe
+	
+	
+
 
 **Psuedocode**
 ```
