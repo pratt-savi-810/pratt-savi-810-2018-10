@@ -2,7 +2,7 @@
 
 Objective: Use DEM files from visualize NJ with 3D Elevation. Find a biking route between 2 locations. Create a flythrough to preview your route in 3D
 
-Inputs
+##Inputs
 
 10m resolution DEMs for each Watershed: https://www.nj.gov/dep/gis/wmalattice.html
 
@@ -16,45 +16,51 @@ Note: There is a DEM for all of NJ, but will proceed with data broken out by wat
 
 
 
-Output
+## Output
 
-A web map of New Jersey uploaded to ArcOnline, Fly through of a given route
+A fly through of a given route
 
 
 
-Steps
+## Steps
 
 Download the DEM for each Watershed. Create a list of URLs to download, one for each WMA (there are 20). The URL is the same for each one except for its WMA ID number (eg. wma01, wma02,...wma20). Use an if statement so those less than 10 have a leading zero.
+
+Excerpt from [download input data.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/download%20input%20data.py)
 ```
 import urllib
 
+#create a list of URLs to download each WMA DEM (WMAs 1 through 20)
 url_list = []
 
-for i in range(1,20):
-   if i < 10:
-       url_list.append("https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma0"+str(i)+"lat.zip")
-   else:
-       url_list.append("https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma"+str(i)+"lat.zip")
-       
+for i in range(1, 21):
+    if i < 10:
+        url_list.append("https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma0" + str(i) + "lat.zip")
+    else:
+        url_list.append("https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma" + str(i) + "lat.zip")
+
+print(url_list)
+
+#  create a list of file paths/file names for download
 filename_list = []
 
-your_local_drive = "C:/Users/bagta/Documents/810 Project Data/" #substitute with your project folder
+your_downloads_folder = "C:/Users/jbagtas/Downloads/"
 
-for i in range(1,20):
-     if i < 10:
-         filename_list.append(
-	 str(your_local_drive)+"wma0"+str(i)+".zip")
-     else:  
-         filename_list.append(
-         str(your_local_drive)+"wma"+str(i)+".zip")
+for i in range(1, 21):
+    if i < 10:
+        filename_list.append(
+            str(your_downloads_folder) + "wma0" + str(i) + ".zip")
+    else:
+        filename_list.append(
+            str(your_downloads_folder) + "wma" + str(i) + ".zip")
 
-for url_item, filename_item in zip(url_list, filename_list): 
+
+#  download all WMA DEMs to the specified file path
+for url_item, filename_item in zip(url_list, filename_list):
     urllib.urlretrieve(url_item, filename_item)
-
-
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extract to a specified location 
+Extract to a specified location using [unzip all.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/unzip%20all.py)
 
 Download the NJ Street Network shapefile
 
