@@ -1,8 +1,8 @@
-# H1 Addresses to Points to MapPLUTO Lots, Oh My
+# Addresses to Points to MapPLUTO Lots, Oh My
 
 ![image placeholder](http://i.imgur.com/KCDPWhM.gif)
 
-Dependencies
+## Dependencies
 
 	import arcpy
 
@@ -11,13 +11,13 @@ Dependencies
 			- coordinate system for plotting xy data in ArcGIS Pro
 			- filepath for MapPLUTO data on local drive
 
-Project Description
+## Project Description
 
 	[text_to_come]
 
-Project Outline
+## Project Outline
 
-	# this entire process, ideally, would happen in ArcGIS Pro, with a map active
+	_this entire process, ideally, would happen in ArcGIS Pro, with a map active_
 
 	receive list of (nyc-based) addresses
 		(e.g., list of no-build projects; list of historic landmarks, etc.)
@@ -44,7 +44,7 @@ Project Outline
 	export selected MapPLUTO lots to a csv ('selected_lots.csv')
 		* arcpy.management.CopyRows
 
-Questions Remaining
+## Questions Remaining
 
 	* geocoding addresses within python
 
