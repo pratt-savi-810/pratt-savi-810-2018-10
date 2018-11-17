@@ -5,6 +5,11 @@ df = arcpy.mapping.ListDataFrames(mxd, "Layers")[0]
 lyr = arcpy.mapping.ListLayers(mxd, "Buffer", df)[0]
 arcpy.RefreshActiveView()
 arcpy.mapping.overwriteExport = True
-arcpy.mapping.ExportToPNG(mxd, r"C:/Users/ashaiban/Desktop/Lesson 6/test/test123.png", df)
+arcpy.mapping.ExportToPNG(mxd, r"C:/Users/ashaiban/Desktop/Lesson 6/test/test1231.png",
+                          resolution = 50)
 
 del mxd
+
+
+
+
