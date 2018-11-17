@@ -4,25 +4,37 @@ import pandas as pd
 import urllib
 import zipfile
 
-bike_json_addr = 'https://tor.publicbikesystem.net/ube/gbfs/v1/'
-csv_dir = r'J:/Pavlo/Pratt_XSAVI_810/Data/station_list.csv'
+project_dir = r'C:/Users/pjarymow/Documents/GitHub/pratt-savi-810-2018-10/projects/pjarymow_project'
 
-gdb_dir = r'J:/Pavlo/Pratt_XSAVI_810/Data'
+bike_json_addr = 'https://tor.publicbikesystem.net/ube/gbfs/v1/'
+
+csv_dir = project_dir + r'/Data'
+csv_name = 'station_list'
+csv_path = csv_dir + r'/' + csv_name + r'.csv'
+
+
+# csv_dir = r'J:/Pavlo/Pratt_XSAVI_810/Data/station_list.csv'
+
+# gdb_dir = r'J:/Pavlo/Pratt_XSAVI_810/Data'
+gdb_dir = project_dir + r'/Data'
 gdb_name = r'Test_GDB'
 gdb_path = gdb_dir + r'/' + gdb_name + r'.gdb'
 feature_dataset_name = 'Bikeshare'
 
 # print(gdb_path)
 
-shapefile_dir = r'J:/Pavlo/Pratt_XSAVI_810/Data/Shapefiles'
+# shapefile_dir = r'J:/Pavlo/Pratt_XSAVI_810/Data/Shapefiles'
+shapefile_dir = project_dir + r'/Data/Shapefiles'
+
 
 bikelane_data_url = 'http://opendata.toronto.ca/gcc/bikeways_mtm3.zip'
-bikelane_data_zip_path = r'J:/Pavlo/Pratt_XSAVI_810/Data/Shapefiles/mtm3.zip'
+# bikelane_data_zip_path = r'J:/Pavlo/Pratt_XSAVI_810/Data/Shapefiles/mtm3.zip'
+bikelane_data_zip_path = shapefile_dir + r'mtm3.zip'
 
 Functions.clear_data_dir(gdb_dir, shapefile_dir)
 
 station_list = Functions.get_station_list(bike_json_addr)
-Functions.station_list_to_csv(station_list, csv_dir)
+Functions.station_list_to_csv(station_list, csv_path)
 
 arcpy.CreateFileGDB_management(gdb_dir, gdb_name, "CURRENT")
 
