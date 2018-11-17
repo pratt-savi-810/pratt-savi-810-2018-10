@@ -1,45 +1,50 @@
+import urllib
+import pandas as pd
 import arcpy
+import zipfile
 
+# downloading the necessary files from OpenData
+def download_file_from_web(url, file_name):
+    # Download the file from `url` and save it locally under `file_name`:
+    urllib.urlretrieve(url, file_name)
 
- # display_data: Forestry treepoints (available in NYC Open Data)
-	# * corridor: Broadway (in Manhattan)
-	# * corridor_extent: Broadway malls shapefile
-	# * segment_cross_streets:
-	# 	60th-110th, 110th-122nd, 125th to 155th, 155th-168th
-	# * DBH_field: 'DBH'
-	# * Health_field: 'Condition'
-    #
-trees =  'https://data.cityofnewyork.us/resource/k5ta-2trh.json'
+# uncomment this when done
+# download_file_from_web("https://data.cityofnewyork.us/api/views/k5ta-2trh/rows.csv?accessType=DOWNLOAD",
+#                        r'C:\Users\ksutton\Documents\Data\treepoints.csv')
+# download_file_from_web("https://data.cityofnewyork.us/api/views/2v4z-66xt/files/64d8bbe5-3a34-4811-912d-7259c8679d57?filename=nyclion_18c.zip",
+#                        r'C:\Users\ksutton\Documents\Data\LION.zip'
 
-def existing_plantings (
-        corridor,
-        corridor_extent,
-        segment_cross_streets,
-        mxd_name,
-):
-
-
-
-
-# ## Steps
+# extract the parks properties and LION zipfiles
+# uncomment this when done
+# zf = zipfile.ZipFile(r'C:\Users\ksutton\Documents\Data\LION.zip')
+# zf.extractall(r'C:\Users\ksutton\Documents\Data')
 #
-# #### Data Cleaning
-#     - Grab Forestry Treepoints from NYC Open Data
-#     - Decode the Lat Long
-#
-# #### Existing Plantings
-# function: **display_existing_plantings**
-#     - intersect point_data with corridor_extent
-#     - make visualizations of the whole corridor using matplotlib
-#     	- bar graphs of most common species
-#     	- histogram of DBH
-#     	- histogram of tree health
-#     - export csv of entire corridor
-#     - split the broadway malls shapefile into separate shapefiles based on the cross streets
-#     - select only the trees within one segment
-#     - make same visualizations for that segment
-#     - export a csv for that segment
-#     - export an image for that segment
-#     - add the extent of that export to the overview map
-#     - iterate for the rest of the segments
-#     - export the overview map
+# zf_parks_props = zipfile.ZipFile(r'C:\Users\ksutton\Documents\Data\ParksProperties.zip')
+# zf_parks_props.extractall(r'C:\Users\ksutton\Documents\Data')
+
+# separate long and lat in treepoints to their own columns
+trees = r'C:\Users\ksutton\Documents\Data\treepoints.csv'
+df = pd.read_csv(trees)
+df['longitude'] = df['Location'].str.split('(').str[1].str.split(' ').str[0].str.replace(',', '')
+df['latitude'] = df['Location'].str.split(' ').str[1].str.replace(')', '')
+# export the dataframe to a fresh csv to use in arc
+out_trees = trees.replace('.csv', '_clean.csv')
+df.to_csv(out_trees, index=False)
+
+# # make new arcmap
+# need this to work!
+# mxd_path = r'C:\Users\ksutton\Documents\GitHub\pratt-savi-810-2018-10\projects\KSutton_project\MXD\Tree_Corridor_Analysis'
+# mxd = arcpy.mapping.MapDocument(mxd_path)
+
+# show treepoint data
+State_Plane = arcpy.SpatialReference(4456)
+arcpy.MakeXYEventLayer_management(
+    out_trees,
+    'longitude',
+    'latitude',
+    'in_memory_xy_layer',
+    State_Plane,
+)
+
+print('made in memory layer')
+
