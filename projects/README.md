@@ -1,6 +1,6 @@
-# Course Projects
+# Project Documentation
 
-Objective: Use DEM files from visualize NJ with 3D Elevation. Find a biking route between 2 locations. Create a flythrough to preview your route in 3D
+Objective: Use DEM files from visualize NJ with 3D Elevation. Find a driving route between 2 locations. Create a flythrough to preview your route in 3D
 
 ##Inputs
 
