@@ -7,6 +7,10 @@ far_file_list = [
 	['Myrtle_Avenue', 3.6],
 	['Knickerbocker_Avenue', 3.6],
 	['Broadway', 3.44],
+	['Irving_Avenue', 2.2],
+	['Wilson_Avenue', 2.2],
+	['Central_Avenue', 2.2],
+	['Bushwick_Avenue', 2]
 ]
 
 
@@ -27,7 +31,7 @@ def buffer_street_apply_far(
     
    
     
-# add field to mappluto, called new far
+# add field to mappluto, called new_far
 
 
 for i in far_file_list:
@@ -38,8 +42,16 @@ for i in far_file_list:
         far, 
         '150 Feet',
     )
-    
-# select bbl's where new far field is null 
+
+# dissolve function
+import arcpy
+arcpy.Dissolve_management("E:\Python Project\Shapefiles\Streets\Bushwick_Avenue_buf.shp",
+			  "E:\Python Project\Shapefiles\Streets\Bushwick_Avenue_dissolved.shp",
+                          "",
+			  "SINGLE_PART", 
+                          "DISSOLVE_LINES")
+
+# select bbl's where new far field is null (zip code 11237 = FAR 2.0; all others = FAR 1.35)
 # calculate selected bb's where new far field is null 
 
 
