@@ -1,46 +1,33 @@
 import arcpy
 
-
-
-mxd = arcpy.mapping.MapDocument("C:/Users/ashaiban/Desktop/Lesson 6/Untitled.mxd")
+mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\Python\Python.mxd")
 df = arcpy.mapping.ListDataFrames(mxd, "*")
 bkmk = arcpy.mapping.ListBookmarks(mxd, "*")
 layers = arcpy.mapping.ListLayers(mxd, "*")
 
-#print lyr
 
+#list and apply bookmarks extents
+for bkmks in bkmk:
+    ext = bkmks.extent
+
+
+#list and toggle layers
 for item in layers:
     print(item)
-    # print(item.isGroupLayer)
-    item.visible = False
-    if item.name == "IND":   #first layer
+    if item.name == 'Overview':
         item.visible = True
-    if item.name == "LPC":   #second layer
+    if item.name == 'Housing':
         item.visible = True
-    if item.name == 'Group One':   # third layer
-        item.visible = True
-    if item.name == 'nybb':  # third layer
+    if item.name == 'Year Built':
         item.visible = True
 
+#refresh
 arcpy.RefreshActiveView()
+
+#overwrite export
 arcpy.mapping.overwriteExport = True
-arcpy.mapping.ExportToPNG(mxd, r"C:/Users/ashaiban/Desktop/Lesson 6/test/test1.png")
 
-
-
-'''
-layers = ["IND"]
-
-for lyr in layers:
-    if lyr.name in layers:
-        lyr.visible = True
-
-
-arcpy.RefreshActiveView()
-arcpy.mapping.overwriteExport = True
-arcpy.mapping.ExportToPNG(mxd, r"C:/Users/ashaiban/Desktop/Lesson 6/test/test1.png")
-
-print lyr
+#define export
+arcpy.mapping.ExportToPNG(mxd, r"C:/Users/blazer/Desktop/test2.png", resolution=300)
 
 del mxd
-'''
