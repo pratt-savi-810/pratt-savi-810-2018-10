@@ -75,9 +75,10 @@ A fly through of a given route
 ### Visualizing NJ in 3D in ArcGIS Pro
 1. Add a local scene in ArcGIS Pro: 
     * Insert > New Map > New Scene. 
-    ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/InsertScene.png)
-    Once the scene has loaded, make it a local scene:
-    * View > Local
+    
+    * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/InsertScene.png)
+    * Once the scene has loaded, make it a local scene: View > Local
+    * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/LocalSceneView.png)
 
 Set each WMA raster to an object name in the following scheme: WMA{ID number}
 
