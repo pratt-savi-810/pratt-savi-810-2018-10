@@ -25,10 +25,11 @@ A fly through of a given route
 ## Steps
 
 ### Downloading the Data
-1. Download the DEM for each Watershed. Create a list of URLs to download, one for each WMA (there are 20). 
+1. To download the DEM for each watershed management area (WMA), first start by creating a list of URLs to download, one for each WMA (there are 20).  
     * The URL is the same for each watershed except for its WMA ID# (eg. wma01, wma02,...wma20). 
     * Use an if statement so those less than 10 have a leading zero.
     * Also download the NJ road networks shp file 
+    * Utilize [download input data.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/download%20input%20data.py) to accomplish this
 
     Excerpt from [download input data.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/download%20input%20data.py)
     ```
@@ -46,7 +47,7 @@ A fly through of a given route
     ```
     [...]
     ```
-    #  download all WMA DEMs to the specified file path (a list called filename_list)
+    #  download all WMA DEMs to the specified file path (a list called filename_list contains the specified file path for each DEM)
     for url_item, filename_item in zip(url_list, filename_list):
         urllib.urlretrieve(url_item, filename_item)
     ```  
@@ -72,7 +73,13 @@ A fly through of a given route
         )
     ```
 ### Visualizing NJ in 3D in ArcGIS Pro
-1. Set each WMA raster to an object name in the following scheme: WMA{ID number}
+1. Add a local scene in ArcGIS Pro: 
+    * Insert > New Map > New Scene. 
+    ![Screenshot](Screenshot References/InsertScene.png?raw=true)
+    Once the scene has loaded, make it a local scene:
+    * View > Local
+
+Set each WMA raster to an object name in the following scheme: WMA{ID number}
 
 2. Go through steps to extrude elevation values to create a 3D surface 
 
