@@ -17,40 +17,70 @@ I would like to pick out all exceeding well locations and associated data that s
 
 ### Project Outline
 
+```
 Join Purge Chemistry and Sampling Information
+	call locations
+	allow pandas to read
+	merge purge chemistry (pc) CSV to sampling information (si) CSV
+	convert to csv
+  
+  	call on converted csv
+	allow pandas to read
+	merge with wells CSV
+	convert to csv
+  
+ Join Lab Data CSVs Together
+ 	define parameters
+	create function for file in csvfile
+		read csv
+		write rows
+		
+	save header of one csv to be showin in output CSV
+		with csv
+			keep header
+			if there is a header in the others
+				ignore
 
-  call locations
-  allow pandas to read
-  join pc to si as a df
-  convert to csv
-  
-  call on new output csv
-  allow pandas to read
-  join output to wells as a df
-  convert to csv
-  
- Join Lab Data CSVs together
- 
-  read all csv files in a folder
-  for every csv file in the folder:
-    open file and set the delimiter
-   
-   save the header from one of the csv files
-    for filename in csv:
-      open file
-        keep header
- 
- Join Lab Results CSV and Wells (joined) CSV....(HALP)
- 
- 
- 
- Convert CSV to Shapefile Using Lat/Long
- 
-  Arcpy
-  
-  MakeXYMakeFeatureEvent
-  CopyFeature
- 
+ Join Lab Results CSV and Wells CSV
+ 	set parameter locations
+	allow pandas to read CSVs
+	merge lab results CSV with wells CSV
+	
+	Compare State Groundwater Regulations with Lab Results column in table
+		list chemical standards and values
+		create function
+			if data frame exceeds chemical standards = "exceed"
+			if data frame does not exceed chemical standards = "good"
+			
+		create new data frame with selected columns (flagged)
+		convert to csv
+		
+Convert Well & Lab Data Join CSV and the Flagged Lab Data to Shapefile
+	define table locations
+	MakeXYEventLayer (table1)
+	CopyFeatures (table1)
+	MakeXYEventLayer (table2)
+	CopyFeatures (table2)
+	FeatureClassToGeodatabase (table1)
+	FeatureClassToGeodatabase (table2)
+	
+Select Attributes in Flagged Lab Data Shapefile to Display Exceedances Only & Select Parameters to Show Benzene Exceedances Only
+	define workspaces, file locations, parameters, and queries
+	flagged lab data:
+		MakeFeatureLayer 
+		SelectLayerByAttribute (exceedance query)
+		CopyFeatures
+		FeatureClassToGeodatabase
+	benzene exceedance only
+		MakeFeatureLayer 
+		SelectLayerByAttribute (benzene exceedance query)
+		CopyFeatures
+		FeatureClassToGeodatabase
+		
+Create a IDW Interpolation of Benzene Exceedances
+	gp.Idw_sa(Benzene Exceedance SHP, "Value", IDW Location, "cell size", "VARIABLE 12")
+	
+	
   
   
   
