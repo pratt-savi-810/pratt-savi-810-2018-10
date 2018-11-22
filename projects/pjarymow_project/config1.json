@@ -1,0 +1,24 @@
+{
+  "links": {
+    "bike_json_addr": "https://tor.publicbikesystem.net/ube/gbfs/v1/",
+    "bikelane_data_url": "http://opendata.toronto.ca/gcc/bikeways_mtm3.zip"
+  },
+  "directories": {
+    "project_dir": "J:/Pavlo/Pratt_XSAVI_810_final",
+    "save_dir": "J:/Pavlo/Pratt_XSAVI_810_final/maps_1"
+  },
+  "layer_files": {
+    "basemap": "J:/Pavlo/Pratt_XSAVI_810_final/OpenStreetMap.lyr"
+  },
+  "locations": {
+    "pt_1": {
+      "lon": -79.463564,
+      "lat": 43.657813
+    },
+    "pt_2": {
+      "lon": -79.315839,
+      "lat": 43.665264
+    }
+  }
+
+}
