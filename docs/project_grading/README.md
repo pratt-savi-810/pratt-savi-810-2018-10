@@ -1,4 +1,4 @@
-# Final Project - Due Nov. 21 (Wednesday) - likely last revision date Dec. 1 (Saturday)
+# Final Project - Due Nov. 24 (Saturday) - likely last revision date Dec. 1 (Saturday)
 
 Your final project is the only thing you'll be evaluated on. 
 
