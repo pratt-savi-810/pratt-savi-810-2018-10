@@ -3,7 +3,6 @@ import json
 import urllib
 import urllib2
 import pandas as pd
-import shutil
 import os
 import zipfile
 
@@ -71,8 +70,17 @@ def travel_pt_list_to_csv(pt_list, csv_path):
 
 
 def clear_data_dir(gdb_dir, shapefile_dir, save_dir):
-    # delete data directory
-    shutil.rmtree(gdb_dir, ignore_errors=True)
+    gdb_name = r'Bikeshare_GDB'
+    gdb_path = gdb_dir + r'/' + gdb_name + r'.gdb'
+
+    # set arcpy workspace
+    arcpy.env.workspace = gdb_path
+    arcpy.ResetEnvironments()
+    arcpy.env.overwriteOutput = True
+
+    # check if data directory exists, and delete it, if yes
+    if os.path.exists(gdb_dir):
+        arcpy.Delete_management(gdb_dir)
 
     # create empty directories for geodatabase and shapefiles
     os.mkdir(gdb_dir)
@@ -332,6 +340,8 @@ def import_bikeshare_data(config_json):
     # write original data to geodatabase
     bike_data_to_gdb(shapefile_path, csv_path, travel_pt_path, gdb_feature_path)
 
+    del to_sr
+
     print('Data Import Complete!')
 
 
@@ -396,6 +406,7 @@ def solve_network(config_json):
     config_data = read_config_json(config_json)
     project_dir = config_data['directories']['project_dir']
     save_dir = config_data['directories']['save_dir']
+    direction_save_name = config_data['filenames']['direction_save_name']
     gdb_dir = project_dir + r'/Data'
     gdb_name = r'Bikeshare_GDB'
     gdb_path = gdb_dir + r'/' + gdb_name + r'.gdb'
@@ -428,6 +439,7 @@ def solve_network(config_json):
         "Bike_Stations_Intersect",  # input features table
         "Name Name #",              # field mapping
         "5000 Meters",              # search tolerance
+        "ORIG_FID",                 # sort field
     )
 
     # solve the routing problem
@@ -444,23 +456,29 @@ def solve_network(config_json):
     print('Network Route Complete!')
 
     # export route directions
-    arcpy.Directions_na("Route", "TEXT", (save_dir + r'/Route_Directions.txt'), "Meters", "REPORT_TIME", "Minutes")
+    arcpy.Directions_na(
+        "Route",                                            # input route analysis layer
+        "TEXT",                                             # export format
+        (save_dir + r'/' + direction_save_name + r'.txt'),  # export path
+        "Meters",                                           # distance units
+        "REPORT_TIME",                                      # write travel time
+        "Minutes"                                           # travel time units
+    )
     print('Route Directions Exported!')
 
 
 def save_result(config_json):
-    # This function saves the network analyst results as a map image
+    # This function saves the network analyst results as a map document in PDF
 
     config_data = read_config_json(config_json)
     save_dir = config_data['directories']['save_dir']
+    map_save_name = config_data['filenames']['map_save_name']
     project_dir = config_data['directories']['project_dir']
     basemap_path = config_data['layer_files']['basemap']
-    save_path = save_dir + r'/Map_Export.svg'
+    save_path = save_dir + r'/' + map_save_name + r'.pdf'
     gdb_dir = project_dir + r'/Data'
     gdb_name = r'Bikeshare_GDB'
     gdb_path = gdb_dir + r'/' + gdb_name + r'.gdb'
-    feature_dataset_name = 'Bikeshare'
-    gdb_feature_path = gdb_path + r'/' + feature_dataset_name
 
     # set arcpy workspace
     arcpy.env.workspace = gdb_path
@@ -468,28 +486,39 @@ def save_result(config_json):
     # reference to map document
     mxd = arcpy.mapping.MapDocument(project_dir + r'/Bikeshare_Route.mxd')
 
+    # reset mxd geodatabase connections
+    mxd.findAndReplaceWorkspacePaths('', gdb_path)
+
     # add a basemap
     basemap_layer = arcpy.mapping.Layer(basemap_path)
     df = arcpy.mapping.ListDataFrames(mxd, "*")[0]
     arcpy.mapping.AddLayer(df, basemap_layer, "BOTTOM")
 
-    # make layers from features for selection
-    arcpy.MakeFeatureLayer_management((gdb_feature_path + r'/Travel_Points_Buffer'), "Buffer_Layer")
-    arcpy.MakeFeatureLayer_management((gdb_feature_path + r'/Routes'), "Route_Layer")
+    # create layer references
+    route_layer = arcpy.mapping.ListLayers(mxd, "Routes")
+    buffer_layer = arcpy.mapping.ListLayers(mxd, "Travel_Points_Buffer")
 
     # select features in view
-    arcpy.SelectLayerByAttribute_management("Buffer_Layer", "NEW_SELECTION")
-    arcpy.SelectLayerByAttribute_management("Route_Layer", "ADD_TO_SELECTION")
+    arcpy.SelectLayerByAttribute_management(buffer_layer[0], "NEW_SELECTION")
+    arcpy.SelectLayerByAttribute_management(route_layer[0], "ADD_TO_SELECTION")
 
     # zoom to selected layers
     df.zoomToSelectedFeatures()
 
     # deselect features in view
-    arcpy.SelectLayerByAttribute_management("Buffer_Layer", "CLEAR_SELECTION")
-    arcpy.SelectLayerByAttribute_management("Route_Layer", "CLEAR_SELECTION")
+    arcpy.SelectLayerByAttribute_management(buffer_layer[0], "CLEAR_SELECTION")
+    arcpy.SelectLayerByAttribute_management(route_layer[0], "CLEAR_SELECTION")
 
     # refresh screen and export map
     arcpy.RefreshActiveView()
-    arcpy.mapping.ExportToSVG(mxd, save_path)
+    arcpy.mapping.ExportToPDF(mxd, save_path)
+
+    # clear database references
+    del df
+    del mxd
+    del basemap_layer
+    del route_layer
+    del buffer_layer
+    arcpy.Compact_management(gdb_path)
 
     print('Map Exported!')
