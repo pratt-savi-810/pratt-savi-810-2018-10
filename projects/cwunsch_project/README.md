@@ -1,5 +1,9 @@
 # {Caitlin, just add a project name}
 
+[![CLICK HERE FOR VIDEO](screen_capture.png)](https://www.youtube.com/watch?v=9FM82kQdqdM)
+*Video on YouTube*
+
+
 ### Python Dependencies
 	pip install pandas
 	pip install glob
@@ -7,9 +11,6 @@
 	pip install numpy 
 	pip install arcpy
 	arcpy.CheckOutExtension("Spatial")
-
-[![CLICK HERE FOR VIDEO](screen_capture.png)](https://www.youtube.com/watch?v=9FM82kQdqdM)
-*Video on YouTube*
 
 ### Project Description 
 
@@ -19,7 +20,6 @@ The data collected from these groundwater sampling events has to be later downlo
 
 Next, I have to download the lab data that was provided to us as three CSVs (Step 2 - Merege Lab Data CSVs). Then, I link the original "well" CSV with the combined lab data (Step 3). Note: I do not need to use the combined CSVs aquired from Step 1. Once the well CSV is merged with the Lab Data based on the common identifier, I need to pick out the parameters that exhibit exceedances as according to the state regulations (Step 4). 
 I would like to pick out all exceeding well locations and associated data that specifically exceeds the "Benzene" regulations, convert the  features to a shapefile, and save to the geodatabase (Step 5). Finially, I would like to interpolate as IDW and show on ArcMap (Step 6).
-
 
 ### Project Outline
 
