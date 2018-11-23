@@ -1,4 +1,4 @@
-# {Caitlin, just add a project name}
+# Groundwater Data and Benzene Exceedance Interpolation (IDW)
 
 [![CLICK HERE FOR VIDEO](screen_capture.png)](https://www.youtube.com/watch?v=9FM82kQdqdM)
 *Video on YouTube*
