@@ -12,7 +12,7 @@ The bikeshare model is often structured as a point-to-point system. A rider pick
 This project was created to generate a route for an individual desiring to use the [Bike Share Toronto](https://bikesharetoronto.com/) network. It takes user-defined coordinates of stops in the city, finds the nearest bikestands, and outputs text directions and a map of a suggested route.
 
 ### How to Use
-**CAUTION - To be safe, copy all necessary files into a new directory.<br/> The script performs some directory deletion within the assigned parent directory, so data loss may occur if not run from a fresh folder.**
+**CAUTION - To be safe, copy all necessary files into a new directory.<br/> The code moves the Data directory within the assigned parent directory to your Recycle Bin, but data loss may occur if not initially run from a fresh folder.**
 
 *This program was written in Python 2.7 and relies on ArcGIS Desktop 10.6 with the Network Analyst extension. It uses some Network Analyst functions (specifically	`CreateNetworkDatasetFromTemplate_na()`	) that were introduced in this version of ArcGIS Desktop.*
 
@@ -47,7 +47,6 @@ This project was created to generate a route for an individual desiring to use t
 		import urllib
 		import urllib2
 		import pandas as pd
-		import shutil
 		import os
 		import zipfile
 		```
@@ -63,26 +62,15 @@ This project was created to generate a route for an individual desiring to use t
 - Read `config.json`
 	- set parameter variables from config data
 - Clear old data and recreate directory structure
-	- as currently written, this function deletes any directory named "Data" within the code parent directory, ie. `C:/Bikeshare/Data`<br/>
-	- to be safe, ensure no directory named "Data" exists within the parent code directory, otherwise unintentional data loss may occur
+	- as currently written, this function removes any directory named "Data" within the code parent directory, ie. `C:/Bikeshare/Data`, and places it in the "Recycle Bin"
+	- to be safe, ensure no directory named "Data" initially exists within the parent code directory, otherwise unintentional data loss may occur, although it should be recoverable
 
 ```Python
 gdb_dir = project_dir + r'/Data'
 
-def clear_data_dir(gdb_dir, shapefile_dir, save_dir):
-    # delete data directory
-    shutil.rmtree(gdb_dir, ignore_errors=True)
-
-    # create empty directories for geodatabase and shapefiles
-    os.mkdir(gdb_dir)
-    os.mkdir(shapefile_dir)
-
-    # check if save directory exists, and create, if not
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
-
-    print('Directory Clear and Refresh Complete!')
-
+# check if data directory exists, and delete it, if yes
+if os.path.exists(gdb_dir):
+		arcpy.Delete_management(gdb_dir)
 ```
 
 - Set-up ArcGIS environment
@@ -120,4 +108,4 @@ def clear_data_dir(gdb_dir, shapefile_dir, save_dir):
 	- update data connections in template mxd file
 		- zoom map to route features
 		- update basemap
-	- export map as image
+	- export map as PDF document
