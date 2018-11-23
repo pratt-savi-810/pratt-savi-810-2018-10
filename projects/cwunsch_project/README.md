@@ -8,7 +8,7 @@
 	pip install arcpy
 	arcpy.CheckOutExtension("Spatial")
 
-![[CLICK HERE FOR VIDEO](https://www.youtube.com/watch?v=9FM82kQdqdM)](screen_capture.png)
+[![CLICK HERE FOR VIDEO](screen_capture.png)](https://www.youtube.com/watch?v=9FM82kQdqdM)]
 *Video on YouTube*
 
 ### Project Description 
