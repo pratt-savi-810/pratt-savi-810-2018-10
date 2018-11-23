@@ -8,7 +8,7 @@
 	pip install arcpy
 	arcpy.CheckOutExtension("Spatial")
 
-[![CLICK HERE FOR VIDEO](screen_capture.png)](https://www.youtube.com/watch?v=9FM82kQdqdM)]
+[![CLICK HERE FOR VIDEO](screen_capture.png)](https://www.youtube.com/watch?v=9FM82kQdqdM)
 *Video on YouTube*
 
 ### Project Description 
@@ -86,9 +86,4 @@ Select Attributes in Flagged Lab Data Shapefile to Display Exceedances Only & Se
 Create a IDW Interpolation of Benzene Exceedances
 	gp.Idw_sa(Benzene Exceedance SHP, "Value", IDW Location, "cell size", "VARIABLE 12")
 	
-	
-  
-  
-  
-  
-
+```
