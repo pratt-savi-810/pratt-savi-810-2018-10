@@ -1,76 +1,67 @@
-#import modules
+# import modules
 import arcpy
 
-# set the mxd
+
+
+
+# EXPORT 1
+
+# set the  mxd
 mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\Python\Python.mxd")
-
-#import layers
+# import layers
 layers = arcpy.mapping.ListLayers(mxd, "*")
-
-
-#the following would be for one export, copy for as many exports as needed
-#Export 1
-# input the desired bookmark name
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "<BOOKMARK>"): #Bookmark
+# import bookmarks and define desired bookmark
+for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD103"):
     ext = bkmk.extent
     df = arcpy.mapping.ListDataFrames(mxd)[0]
     df.extent = ext
     for item in layers:
-        # input the desired layers to be on
-        if item.name == '<LAYER>':
+        # input the desired layers to be toggled on
+        if item.name == 'Housing':
             item.visible = True
-        if item.name == '<LAYER>':
+        if item.name == 'Year Built':
             item.visible = True
-        if item.name == '<LAYER>':
-            item.visible = True
+    # overwrite exports
+    arcpy.mapping.overwriteOutput = True
+    # output and export destination and characteristics
+    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Desktop\TEST1.png".format(bkmk.name), resolution=50)
 
-    #export
-    arcpy.mapping.ExportToPDF(mxd, r"<DESTINATION>".format(bkmk.name)) #Export Destination
+del mxd
 
 
-#Export 2
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "<BOOKMARK>"):
+# EXPORT 2
+
+mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\Python\Python.mxd")
+layers = arcpy.mapping.ListLayers(mxd, "*")
+for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD103"):
     ext = bkmk.extent
     df = arcpy.mapping.ListDataFrames(mxd)[0]
     df.extent = ext
     for item in layers:
-        if item.name == '<LAYER>':
+        if item.name == 'Housing':
             item.visible = True
-        if item.name == '<LAYER>':
+        if item.name == 'Year Built':
             item.visible = True
-        if item.name == '<LAYER>':
-            item.visible = True
+    arcpy.mapping.overwriteOutput = True
+    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Desktop\TEST1.png".format(bkmk.name), resolution=50)
 
-    arcpy.mapping.ExportToPDF(mxd, r"<DESTINATION>".format(bkmk.name))
+del mxd
 
 
-#Export 3
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "<BOOKMARK>"):
+# EXPORT 3
+
+mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\Python\Python.mxd")
+layers = arcpy.mapping.ListLayers(mxd, "*")
+for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD103"):
     ext = bkmk.extent
     df = arcpy.mapping.ListDataFrames(mxd)[0]
     df.extent = ext
     for item in layers:
-        if item.name == '<LAYER>':
+        if item.name == 'Housing':
             item.visible = True
-        if item.name == '<LAYER>':
+        if item.name == 'Year Built':
             item.visible = True
-        if item.name == '<LAYER>':
-            item.visible = True
+    arcpy.mapping.overwriteOutput = True
+    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Desktop\TEST1.png".format(bkmk.name), resolution=50)
 
-    arcpy.mapping.ExportToPDF(mxd, r"<DESTINATION>".format(bkmk.name))
-
-
-#Export 4
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "<BOOKMARK>"):
-    ext = bkmk.extent
-    df = arcpy.mapping.ListDataFrames(mxd)[0]
-    df.extent = ext
-    for item in layers:
-        if item.name == '<LAYER>':
-            item.visible = True
-        if item.name == '<LAYER>':
-            item.visible = True
-        if item.name == '<LAYER>':
-            item.visible = True
-
-    arcpy.mapping.ExportToPDF(mxd, r"<DESTINATION>".format(bkmk.name))
+del mxd
