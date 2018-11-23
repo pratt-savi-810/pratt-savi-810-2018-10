@@ -6,15 +6,15 @@ Many times when I am tasked with mapping projects, a lot of time and effort is s
 
 **How to Use**
 
-1. FIll in all the desired bookmarks, layers, and outputs
-2. Click Enter
+1. FIll in all the desired bookmarks, layers, and export
+2. Run
 3. Voila
 	
 Python Dependencies:
 - arcpy
 
 Current Limitations:
-I am having difficulty clearning the layers I enabled previously for the next export. I tried using the <i>else</i> function, but I kept recieving errors. I tried all the indentations I thought possible, and ordered them in different ways to no avail.
+I am having difficulty clearing the layers I enabled previously for the next export. I tried using the <i>else</i> function, but I kept recieving errors. I tried all the indentations I thought possible, and ordered them in different ways to no avail.
 
 My workaround is to use the <i>del mxd</i> function and just re-input the mxd after each export. I imagine this will slow things down, but it works.
 	
