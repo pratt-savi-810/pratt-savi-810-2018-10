@@ -53,6 +53,11 @@ This project was created to generate a route for an individual desiring to use t
 		```
 	- When code finishes running, there will be a map and text directions in your indicated save directory
 
+#### Recording of Running Code
+[![Screen Recording](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/dc81b0b0fbee4484e4e120e67526dd7506a8c99b/projects/pjarymow_project/misc_readme_images/Map_1.jpg)](http://recordit.co/QE1NIFBchr "Screen Recording")
+
+[Click the Image to View Code in Action](http://recordit.co/QE1NIFBchr)
+
 ### Code Outline
 
 - Read `config.json`
