@@ -28,23 +28,21 @@ We've identified a series of variables and topics that could potentially be inte
 
 <i>Some of them include:</i>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Community Facilities
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parks and Open Spaces
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schools
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public Library
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkNYC and Public WiFi
-
-&nbsp;&nbsp;&nbsp;&nbsp;<b>Transportation</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bicycle
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subway
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Bus</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ferry Routes
-&nbsp;&nbsp;&nbsp;&nbsp;Housing
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building by Year Built
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclusionary Housing Area
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;421-a Tax Lots
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NYCHA Properties
+&nbsp;&nbsp;&nbsp;&nbsp;Community Facilities<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parks and Open Spaces<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schools<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public Library<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkNYC and Public WiFi<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>Transportation</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bicycle<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subway<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Bus</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ferry Routes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Housing<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building by Year Built<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclusionary Housing Area<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;421-a Tax Lots<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NYCHA Properties<br>
 
 The challenge is the continuous toggling of layers and changing extents to the different community districts. This process would usually be painstakingly long and cumberson. The automation would allow me to set up the scene, and just run.
 
