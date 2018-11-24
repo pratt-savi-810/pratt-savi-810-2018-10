@@ -52,4 +52,4 @@ with arcpy.da.SearchCursor(points, "rate") as cursor:
         # https://community.esri.com/thread/159217
 
 # spatial join the new point-based data to the building polygons        
-arcpy.SpatialJoin_analysis("bldgs", "points", "in_memory/bldgs_SpatialJoin")
+arcpy.SpatialJoin_analysis(bldgs, points, "in_memory/bldgs_SpatialJoin")
