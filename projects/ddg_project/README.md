@@ -11,6 +11,7 @@
 			- coordinate system for plotting xy data in ArcGIS Pro
 			- filepath for MapPLUTO data on local drive
 			- api key (nyc geoclient api)
+		* still working on making this part of the project
 
 ## Project Description
 
@@ -22,7 +23,7 @@ In further work on this project, I hope to be able to use python to geocode the 
 
 ## Project Outline
 
-	*this entire process, ideally, would happen in ArcGIS Pro, with a map active*
+	* this entire process, ideally, happens in ArcGIS Pro, with a map active *
 
 	receive list of (nyc-based) addresses
 		(e.g., list of no-build projects; list of historic landmarks, etc.)
@@ -55,4 +56,5 @@ In further work on this project, I hope to be able to use python to geocode the 
 ## Questions Remaining
 
 	* geocoding addresses within python (could not get geocoder to work as of yet)
+	* use config.json to store coordinate system and static file paths (e.g., MapPLUTO data)
 
