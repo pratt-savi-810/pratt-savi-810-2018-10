@@ -52,27 +52,31 @@ arcpy.RefreshActiveView()
 mxd.save()
 
 
-sql_1 = """ "brg" = 'Brooklyn Bridge' OR "brg" = 'Manhattan Bridge' OR "brg" = 'Williamsburg Bridge' OR "brg" = 'Ed Koch Queensboro Bridge' """
-sql_2 = """ "brg" = 'George Washington Bridge' OR "brg" = 'Lincoln Tunnel' OR "brg" = 'Holland Tunnel' """
-sql_3 = """ "brg" = 'Bayonne Bridge' OR "brg" = 'Goethals Bridge' OR "brg" = 'Outerbridge Crossing Bridge' """
+mp1 = " 'brg' = 'Brooklyn Bridge' OR 'brg' = 'Manhattan Bridge' OR 'brg' = 'Williamsburg Bridge' OR " \
+      "\n'brg' = 'Ed Koch Queensboro Bridge' "
+mp2 = " 'brg' = 'George Washington Bridge' OR 'brg' = 'Lincoln Tunnel' OR 'brg' = 'Holland Tunnel' "
+mp3 = " 'brg' = 'Bayonne Bridge' OR 'brg' = 'Goethals Bridge' OR 'brg' = 'Outerbridge Crossing Bridge' "
 
-SQL_List = [sql_1, sql_2, sql_3]
+MP_List = [mp1, mp2, mp3]
+number = 1
 
-for x in SQL_List:
-    number = 1
-    output = 'example{}.png'.format(number), 1 # this will add the number to the file name
-# Select Features & Zoom
-    nycbrg = arcpy.mapping.ListLayers(mxd)[0]
-    arcpy.SelectLayerByAttribute_management(nycbrg, "NEW_SELECTION", x)
+for i in MP_List:
+    output = 'example{}'.format(number)
+    # Select Features & Zoom
+    df = arcpy.mapping.ListLayers(mxd)[0]
+    arcpy.SelectLayerByAttribute_management(df, "NEW_SELECTION", i)
     df.zoomToSelectedFeatures()
+    # arcpy.SelectLayerByAttribute_management(nyc_brg, "CLEAR_SELECTION", i)
     mxd.save()
 
-# Declare Variable of Where to Save Map Export
-    Make_Export = 'C:\Users\Hector Hernandez\Documents\GitHub\pratt-savi-810-2018-10\projects\hhernandez project\{}'.format(output)
-# Export Map
-    arcpy.mapping.ExportToPNG(mxd, Make_Export, df)
+    # Export Map
+    arcpy.mapping.ExportToPNG(
+    mxd,
+    '{}/{}.png'.format('C:\Users\Hector Hernandez\Documents\GitHub\pratt-savi-810-2018-10\projects\hhernandez project',
+    output,
+    df
+    )
+    )
 
-    if number != 3:
-        number = number + 1 # this will increment the output number for the filename
-    else:
-        print('done!')
+    number += 1
+    print (number)
