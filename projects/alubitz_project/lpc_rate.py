@@ -3,10 +3,12 @@ import urllib
 import zipfile
 import os
 
+
 def download_file_from_web(url, filename):
     # Download the file from `url` and save it locally under `file_name`:
     urllib.urlretrieve(url, filename)
 # mxd = arcpy.mapping.MapDocument(r'C:\Users\alubitz\Desktop\lpc_test.mxd')
+
 
 link_dict = {
         "boro_boundary": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybb_17c.zip",
@@ -38,12 +40,10 @@ for points in arcpy.ListFeatureClasses():
     arcpy.AddField_management(points, "rate", "DOUBLE", 6, "", "", "rate", "NULLABLE", "NON_REQUIRED")
     # for reference http://pro.arcgis.com/en/pro-app/tool-reference/data-management/add-field.htm
 
-from arcpy.time import ParseDateTimeString
+# from arcpy.time import ParseDateTimeString
 
 with arcpy.da.SearchCursor(points, "rate") as cursor:
     for row in cursor:
-        # Time.subtract("DESDATE", "CALDATE", row[0])
-        # The following inputs are layers or table views: "IND_Landmark_Points_10_26_18_revised"
         arcpy.CalculateField_management(points,
                                         "rate",
                                         expression="(arcpy.time.ParseDateTimeString(!DESDATE!) - arcpy.time.ParseDateTimeString(!CALDATE!)).days",
@@ -51,4 +51,5 @@ with arcpy.da.SearchCursor(points, "rate") as cursor:
         # http://desktop.arcgis.com/en/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_AFC203DD316B4543A729B413C3322F3C
         # https://community.esri.com/thread/159217
 
-arcpy.SpatialJoin_analysis("bldgs", "points", "in_memory/points_SpatialJoin")
+# spatial join the new point-based data to the building polygons        
+arcpy.SpatialJoin_analysis("bldgs", "points", "in_memory/bldgs_SpatialJoin")
