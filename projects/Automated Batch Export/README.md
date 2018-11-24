@@ -4,26 +4,22 @@
 
 Many times when I am tasked with mapping projects, a lot of time and effort is spent toggling layers and bookmarks to export individually, only to then wait for the export to finish to repeat the process, over and over again. The goal of this project is to automate this process as much as possible.
 
-<br>
 **How to Use**
 
 1. FIll in all the desired bookmarks, layers, and export
 2. Run
 3. Voila
 
-<br>
 **Python Dependencies**
 
 -arcpy
 
-<br>
 **Current Limitations**
 
 I am having difficulty clearing the layers I enabled previously for the next export. I tried using the '''else:''' function, but I kept recieving errors. I tried all the indentations I thought possible, and ordered them in different ways to no avail.
 
 My workaround is to use the '''del mxd''' function and just re-input the mxd after each export. I imagine this will slow things down, but it works.
 
-<br>
 **Specific Project Examples**
 
 At the moment, I am working on a project that studies Public Spending and it's relationship to equity within Community Districts, one in each borough.
@@ -32,21 +28,21 @@ We've identified a series of variables and topics that could potentially be inte
 
 <i>Some of them include:</i>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Community Facilities<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parks and Open Spaces<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schools<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public Library<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkNYC and Public WiFi<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<b>Transportation</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bicycle<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subway<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Bus</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ferry Routes<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Housing<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building by Year Built<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclusionary Housing Area<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;421-a Tax Lots<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NYCHA Properties<br>
+*Community Facilities
+* Parks and Open Spaces
+* Schools
+* Public Library
+* LinkNYC and Public WiFi
+*<b>Transportation</b>
+* Bicycle
+* Subway
+* <b>Bus</b>
+* Ferry Routes
+*Housing
+* Building by Year Built
+* Inclusionary Housing Area
+*421-a Tax Lots
+*NYCHA Properties
 
 The challenge is the continuous toggling of layers and changing extents to the different community districts. This process would usually be painstakingly long and cumberson. The automation would allow me to set up the scene, and just run.
 
