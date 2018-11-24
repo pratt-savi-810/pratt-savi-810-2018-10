@@ -11,19 +11,22 @@ Many times when I am tasked with mapping projects, a lot of time and effort is s
 3. Voila
 	
 **Python Dependencies**
+
 -arcpy
 
 **Current Limitations**
-I am having difficulty clearing the layers I enabled previously for the next export. I tried using the <i>else:</i> function, but I kept recieving errors. I tried all the indentations I thought possible, and ordered them in different ways to no avail.
 
-My workaround is to use the <i>del mxd</i> function and just re-input the mxd after each export. I imagine this will slow things down, but it works.
+I am having difficulty clearing the layers I enabled previously for the next export. I tried using the '''else:''' function, but I kept recieving errors. I tried all the indentations I thought possible, and ordered them in different ways to no avail.
+
+My workaround is to use the '''del mxd''' function and just re-input the mxd after each export. I imagine this will slow things down, but it works.
 
 **Specific Project Examples**
+
 At the moment, I am working on a project that studies Public Spending and it's relationship to equity within Community Districts, one in each borough.
 
 We've identified a series of variables and topics that could potentially be interesting in this study, and I am tasked with mapping and visualizing them.
 
-Some of them include:
+<i>Some of them include:</i>
     Community Facilities
         Parks and Open Spaces
         Schools
