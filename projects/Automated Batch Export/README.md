@@ -41,9 +41,67 @@ Some of them include:
         NYCHA Properties
 
 The challenge is the continuous toggling of layers and changing extents to the different community districts. This process would usually be painstakingly long and cumberson. The automation would allow me to set up the scene, and just run.
+
+For the example, I will just be showing the Bus, in the Transportation category, and will only be exporting extents from two bookmarks.
+
+Please see the link for a recording of the function running: http://recordit.co/JCrQq2iP9l
 	
 
-**Psuedocode for copy**
+**Psuedocode for example**
+```
+import arcpy
+
+mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\AIA\GIS\AIA_1.mxd")
+layers = arcpy.mapping.ListLayers(mxd, "*")
+for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD103"):
+    ext = bkmk.extent
+    df = arcpy.mapping.ListDataFrames(mxd)[0]
+    df.extent = ext
+    for item in layers:
+        if item.name == 'Basemap and Boundaries':
+            item.visible = True
+        if item.name == 'Mask':
+            item.visible = True
+        if item.name == 'Transportation':
+            item.visible = True
+        if item.name == 'Bus':
+            item.visible = True
+        if item.name == 'Bus Routes SBS':
+            item.visible = True
+        if item.name == 'Bus Routes':
+            item.visible = True
+    arcpy.mapping.overwriteOutput = True
+    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Documents\Desktop\AIA\Exports\11 24 18\Bus CD103.png".format(bkmk.name),resolution=100)
+del mxd
+
+mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\AIA\GIS\AIA_1.mxd")
+layers = arcpy.mapping.ListLayers(mxd, "*")
+for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD201"):
+    ext = bkmk.extent
+    df = arcpy.mapping.ListDataFrames(mxd)[0]
+    df.extent = ext
+    for item in layers:
+        if item.name == 'Basemap and Boundaries':
+            item.visible = True
+        if item.name == 'Mask':
+            item.visible = True
+        if item.name == 'Transportation':
+            item.visible = True
+        if item.name == 'Bus':
+            item.visible = True
+        if item.name == 'Bus Routes SBS':
+            item.visible = True
+        if item.name == 'Bus Routes':
+            item.visible = True
+    arcpy.mapping.overwriteOutput = True
+    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Documents\Desktop\AIA\Exports\11 24 18\Bus CD201".format(bkmk.name),resolution=100)
+del mxd
+
+```
+
+
+
+**Standardized Psuedocode**
 ```
 # import modules
 import arcpy
@@ -102,108 +160,5 @@ for bkmk in arcpy.mapping.ListBookmarks(mxd, "BOOKMARK 2"):
             item.visible = True
     arcpy.mapping.overwriteOutput = True
     arcpy.mapping.ExportToPNG(mxd, r"EXPORT DESTINATION".format(bkmk.name))
-del mxd
-```
-
-
-
-**Psuedocode for example**
-```
-import arcpy
-
-mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\AIA\GIS\AIA.mxd")
-layers = arcpy.mapping.ListLayers(mxd, "*")
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD103"):
-    ext = bkmk.extent
-    df = arcpy.mapping.ListDataFrames(mxd)[0]
-    df.extent = ext
-    for item in layers:
-        if item.name == 'Transportation':
-            item.visible = True
-        if item.name == 'Bus':
-            item.visible = True
-        if item.name == 'Bus Routes SBS':
-            item.visible = True
-        if item.name == 'Bus Routes':
-            item.visible = True
-    arcpy.mapping.overwriteOutput = True
-    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Documents\Desktop\AIA\Exports\11 24 18\Bus CD103".format(bkmk.name),resolution=300)
-del mxd
-
-
-mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\AIA\GIS\AIA.mxd")
-layers = arcpy.mapping.ListLayers(mxd, "*")
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD201"):
-    ext = bkmk.extent
-    df = arcpy.mapping.ListDataFrames(mxd)[0]
-    df.extent = ext
-    for item in layers:
-        if item.name == 'Transportation':
-            item.visible = True
-        if item.name == 'Bus':
-            item.visible = True
-        if item.name == 'Bus Routes SBS':
-            item.visible = True
-        if item.name == 'Bus Routes':
-            item.visible = True
-    arcpy.mapping.overwriteOutput = True
-    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Documents\Desktop\AIA\Exports\11 24 18\Bus CD201".format(bkmk.name),resolution=300)
-del mxd
-
-mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\AIA\GIS\AIA.mxd")
-layers = arcpy.mapping.ListLayers(mxd, "*")
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD304"):
-    ext = bkmk.extent
-    df = arcpy.mapping.ListDataFrames(mxd)[0]
-    df.extent = ext
-    for item in layers:
-        if item.name == 'Transportation':
-            item.visible = True
-        if item.name == 'Bus':
-            item.visible = True
-        if item.name == 'Bus Routes SBS':
-            item.visible = True
-        if item.name == 'Bus Routes':
-            item.visible = True
-    arcpy.mapping.overwriteOutput = True
-    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Documents\Desktop\AIA\Exports\11 24 18\Bus CD304".format(bkmk.name),resolution=300)
-del mxd
-
-mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\AIA\GIS\AIA.mxd")
-layers = arcpy.mapping.ListLayers(mxd, "*")
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD404"):
-    ext = bkmk.extent
-    df = arcpy.mapping.ListDataFrames(mxd)[0]
-    df.extent = ext
-    for item in layers:
-        if item.name == 'Transportation':
-            item.visible = True
-        if item.name == 'Bus':
-            item.visible = True
-        if item.name == 'Bus Routes SBS':
-            item.visible = True
-        if item.name == 'Bus Routes':
-            item.visible = True
-    arcpy.mapping.overwriteOutput = True
-    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Documents\Desktop\AIA\Exports\11 24 18\Bus CD404".format(bkmk.name),resolution=300)
-del mxd
-
-mxd = arcpy.mapping.MapDocument(r"C:\Users\blazer\Documents\Desktop\AIA\GIS\AIA.mxd")
-layers = arcpy.mapping.ListLayers(mxd, "*")
-for bkmk in arcpy.mapping.ListBookmarks(mxd, "CD501"):
-    ext = bkmk.extent
-    df = arcpy.mapping.ListDataFrames(mxd)[0]
-    df.extent = ext
-    for item in layers:
-        if item.name == 'Transportation':
-            item.visible = True
-        if item.name == 'Bus':
-            item.visible = True
-        if item.name == 'Bus Routes SBS':
-            item.visible = True
-        if item.name == 'Bus Routes':
-            item.visible = True
-    arcpy.mapping.overwriteOutput = True
-    arcpy.mapping.ExportToPNG(mxd, r"C:\Users\blazer\Documents\Desktop\AIA\Exports\11 24 18\Bus CD501".format(bkmk.name),resolution=300)
 del mxd
 ```
