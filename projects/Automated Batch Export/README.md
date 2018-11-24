@@ -29,9 +29,9 @@ We've identified a series of variables and topics that could potentially be inte
 <i>Some of them include:</i>
 
 *Community Facilities
-* Parks and Open Spaces
-* Schools
-* Public Library
+    * Parks and Open Spaces
+    * Schools
+    * Public Library
 * LinkNYC and Public WiFi
 *<b>Transportation</b>
 * Bicycle
@@ -43,7 +43,7 @@ We've identified a series of variables and topics that could potentially be inte
 * Inclusionary Housing Area
 *421-a Tax Lots
 *NYCHA Properties
-        * https://github.com/pratt-savi-810/project-anttim1
+
 
 The challenge is the continuous toggling of layers and changing extents to the different community districts. This process would usually be painstakingly long and cumberson. The automation would allow me to set up the scene, and just run.
 
