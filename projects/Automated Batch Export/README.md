@@ -34,15 +34,15 @@ _Some of them include:_
     * Public Library
     * LinkNYC and Public WiFi
 * <b>Transportation</b>
-* Bicycle
-* Subway
-* <b>Bus</b>
-* Ferry Routes
+    * Bicycle
+    * Subway
+    * <b>Bus</b>
+    * Ferry Routes
 * Housing
-* Building by Year Built
-* Inclusionary Housing Area
-*421-a Tax Lots
-*NYCHA Properties
+    * Building by Year Built
+    * Inclusionary Housing Area
+    *421-a Tax Lots
+    *NYCHA Properties
 
 
 The challenge is the continuous toggling of layers and changing extents to the different community districts. This process would usually be painstakingly long and cumberson. The automation would allow me to set up the scene, and just run.
