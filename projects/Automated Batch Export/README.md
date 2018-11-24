@@ -28,17 +28,17 @@ We've identified a series of variables and topics that could potentially be inte
 
 _Some of them include:_
 
-1. *Community Facilities
-2. * Parks and Open Spaces
-2. * Schools
-* Public Library
-* LinkNYC and Public WiFi
-*<b>Transportation</b>
+* Community Facilities
+    * Parks and Open Spaces
+    * Schools
+    * Public Library
+    * LinkNYC and Public WiFi
+* <b>Transportation</b>
 * Bicycle
 * Subway
 * <b>Bus</b>
 * Ferry Routes
-*Housing
+* Housing
 * Building by Year Built
 * Inclusionary Housing Area
 *421-a Tax Lots
