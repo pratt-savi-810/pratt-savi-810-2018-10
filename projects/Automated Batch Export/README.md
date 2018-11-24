@@ -8,7 +8,7 @@ Many times when I am tasked with mapping projects, a lot of time and effort is s
 
 1. FIll in all the desired bookmarks, layers, and export
 2. Run
-3. Voila
+3. Voila, the exports appear in their folder
 
 **Python Dependencies**
 
@@ -104,7 +104,7 @@ del mxd
 
 ```
 
-
+<Br><br>
 
 **Standardized Psuedocode**
 ```
