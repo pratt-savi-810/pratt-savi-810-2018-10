@@ -10,7 +10,8 @@
 		* stores the following:
 			- coordinate system for plotting xy data in ArcGIS Pro
 			- filepath for MapPLUTO data on local drive
-			- api key (nyc geoclient api)
+			- options for Table View (which fields to include in curated csv of selected MapPLUTO lots)
+			- api key (nyc geoclient api); if needed
 		* still working on making this part of the project
 
 ## Project Description
@@ -56,5 +57,5 @@ In further work on this project, I hope to be able to use python to geocode the 
 ## Questions Remaining
 
 	* geocoding addresses within python (could not get geocoder to work as of yet)
-	* use config.json to store coordinate system and static file paths (e.g., MapPLUTO data)
+	* use config.json to store coordinate system, options for curated csv, and static file paths (e.g., MapPLUTO data)
 
