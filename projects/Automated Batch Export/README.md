@@ -26,12 +26,12 @@ At the moment, I am working on a project that studies Public Spending and it's r
 
 We've identified a series of variables and topics that could potentially be interesting in this study, and I am tasked with mapping and visualizing them.
 
-<i>Some of them include:</i>
+_Some of them include:_
 
-*Community Facilities
-    * Parks and Open Spaces
-    * Schools
-    * Public Library
+1. *Community Facilities
+2. * Parks and Open Spaces
+2. * Schools
+* Public Library
 * LinkNYC and Public WiFi
 *<b>Transportation</b>
 * Bicycle
