@@ -24,10 +24,13 @@ for i in data:  # iterate through link dictionary and extract each into same fol
 # from arcpy import env
 mxd = arcpy.mapping.MapDocument("CURRENT")  # set up map document in ArcMap
 df = arcpy.mapping.ListDataFrames(mxd, "*")[0]  # set up data frame from the mxd object
-points = arcpy.mapping.Layer(r"C:\Users\Adam\Desktop\data\IND_Landmark_Points_10_26_18_revised.shp") # creates new layer
-arcpy.mapping.AddLayer(df, points, "BOTTOM") # add the layer to the map at the bottom of the TOC in data frame 0
-bldgs = arcpy.mapping.Layer(r'C:\Users\Adam\Desktop\data\LPC_IL_HD_Bld_DB_10_19_18.shp')
+
+points = arcpy.mapping.Layer(r"C:\Users\Adam\Desktop\data\IND_Landmark_Points_10_26_18_revised.shp")  # creates layer
+arcpy.mapping.AddLayer(df, points, "BOTTOM")  # add the layer to the map at the bottom of the TOC in data frame 0
+
+bldgs = arcpy.mapping.Layer(r'C:\Users\Adam\Desktop\data\LPC_IL_HD_Bld_DB_10_19_18.shp')  # sets filenames as vars
 arcpy.mapping.AddLayer(df, bldgs, "BOTTOM")
+
 nybb = arcpy.mapping.Layer(r'C:\Users\Adam\Desktop\data\nybb_17c\nybb.shp')
 arcpy.mapping.AddLayer(df, nybb, "BOTTOM")
 
@@ -40,7 +43,12 @@ from arcpy.time import ParseDateTimeString
 with arcpy.da.SearchCursor(points, "rate") as cursor:
     for row in cursor:
         # Time.subtract("DESDATE", "CALDATE", row[0])
-        ParseDateTimeString(!DESDATE!) - arcpy.time.ParseDateTimeString(!CALDATE!)).days
+        # The following inputs are layers or table views: "IND_Landmark_Points_10_26_18_revised"
+        arcpy.CalculateField_management(points,
+                                        "rate",
+                                        expression="(arcpy.time.ParseDateTimeString(!DESDATE!) - arcpy.time.ParseDateTimeString(!CALDATE!)).days",
+                                        expression_type="PYTHON_9.3", code_block="")
+        # http://desktop.arcgis.com/en/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_AFC203DD316B4543A729B413C3322F3C
+        # https://community.esri.com/thread/159217
 
 arcpy.SpatialJoin_analysis("bldgs", "points", "in_memory/points_SpatialJoin")
-
