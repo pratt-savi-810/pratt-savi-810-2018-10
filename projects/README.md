@@ -131,5 +131,5 @@ A fly through of a given route
 ## Final Output
 ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Video_Gifs/3D_flythrough.gif)
 
-[Videos of Code Working Successfully](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/Video_Gifs/projects/)
+[Videos of Code Working Successfully](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/Video_Gifs/)
 (jbagtas_project/Videos_Gifs)
