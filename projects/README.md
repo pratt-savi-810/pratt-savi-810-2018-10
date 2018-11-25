@@ -111,7 +111,7 @@ A fly through of a given route
     * Properties > Elevation Surface > Elevation Sources > Add Elevation Source, choose ```njdem```
     * Set the exaggeration to around 15-20 to see elevation better
     * Click OK
-    * Go back to the Elevation Source in properties to check if the Elevation Source from ArcOnline was automaticallyt added. This is not necessary and may use credits, so click the X to remove it
+    * Go back to the Elevation Source in properties to check if the Elevation Source from ArcOnline was automatically added. This is not necessary and may use credits, so click the X to remove it
     * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/DeleteArcOnlineElevationSource.png)
     
  7. Change Symbology/Appearance to improve 3D visuals:
