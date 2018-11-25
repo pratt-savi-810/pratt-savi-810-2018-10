@@ -80,13 +80,13 @@ A fly through of a given route
     * Once the scene has loaded, make it a local scene: View > Local
     * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/LocalSceneView.png)
 
-Set each WMA raster to an object name in the following scheme: WMA{ID number}
-
-2. Go through steps to extrude elevation values to create a 3D surface 
-
-3. New Local Scene
-
-4. Add Data to ArcGIS Pro 
+2. Open the Python Window and use [Load Data in Pro.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Load%20Data%20in%20Pro.py) to easily load all 20 layers into the Scene
+    * This utilizes the library ```arcpy.mp``` and ```addDataFromPath()```
+3. Use [Mosaic to Raster.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Mosaic%20to%20Raster.py) to combine all 20 DEM layers into 1 raster layer (```njdem```).
+    * Having a single raster makes it easier to use as a 3D Elevation Surface
+    * Uses ```arcpy.management.MosaicToNewRaster()```
+    * Help Documentation: https://pro.arcgis.com/en/pro-app/tool-reference/data-management/mosaic-to-new-raster.htm
+4. Remove the 20 DEM layers from the Scene. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Choose a Base Map (parameter. set a Topographic as the default basemap)
 

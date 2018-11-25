@@ -38,12 +38,7 @@ urllib.request.urlretrieve(
     str(your_downloads_folder) + "NJ_Roads_shp.zip"
     )
 
-filename_list.append(
-    str(your_downloads_folder) + "NJ_Roads_shp.zip"
-)
-
 print("Create filename_list: Complete. " + str(filename_list))
-
 
 #  unzip files from the location listed in filename_list into the specified folder (your_project_folder)
 

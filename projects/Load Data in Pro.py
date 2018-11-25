@@ -22,7 +22,3 @@ for i in range(1, 21):
     else:
         map1.addDataFromPath(project_data_folder + "\wma" + str(i) + "\wma" + str(i) + "lat")
 
-#  add the road network
-roads = r'C:\Users\bagta\Documents\810 Project\NJ_Roadway_Network.shp'
-map1.addDataFromPath(roads)
-
