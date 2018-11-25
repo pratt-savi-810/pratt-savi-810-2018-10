@@ -1,19 +1,15 @@
-#  create a list of zip file names to unzip
+project_data_folder = "C:/Users/bagta/Documents/810 Project/"
 
-filename_list = []
-
-your_downloads_folder = "C:/Users/jbagtas/Downloads/"
+data_path = []
 
 for i in range(1, 21):
     if i < 10:
-        filename_list.append(
-            str(your_downloads_folder) + "wma0" + str(i) + ".zip")
+        data_path.append(str(project_data_folder) + "wma0" + str(i) + "/wma0" + str(i) + "lat")
     else:
-        filename_list.append(
-            str(your_downloads_folder) + "wma" + str(i) + ".zip")
+        data_path.append(str(project_data_folder) + "wma" + str(i) + "/wma" + str(i) + "lat")
 
-filename_list.append(
-    str(your_downloads_folder) + "NJroads.zip"
-)
-print(len(filename_list))
+#  add the road network
+data_path.append(str(project_data_folder) + "NJ_Roadway_Network.shp")
+
+print(data_path)
 

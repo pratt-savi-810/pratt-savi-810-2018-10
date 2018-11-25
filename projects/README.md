@@ -22,7 +22,7 @@ A fly through of a given route
 
 
 
-## Steps
+## Steps - (Utilize Python 3.x)
 
 ### Downloading the Data
 1. To download the DEM for each watershed management area (WMA), first start by creating a list of URLs to download, one for each WMA (there are 20).  
