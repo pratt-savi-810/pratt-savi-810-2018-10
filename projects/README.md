@@ -109,7 +109,7 @@ A fly through of a given route
 6. Set ```njdem``` as the elevation surface. Start by right-clicking on the Map in Contents to edit the Map Properties
     * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/MapProperties.png)
     * Properties > Elevation Surface > Elevation Sources > Add Elevation Source, choose ```njdem```
-    * Set the exaggeration to around 25 to see elevation better
+    * Set the exaggeration to around 15-20 to see elevation better
     * Click OK
     
  7. Change Symbology/Appearance to improve 3D visuals:
