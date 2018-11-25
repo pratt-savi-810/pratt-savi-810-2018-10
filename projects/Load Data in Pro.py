@@ -8,10 +8,10 @@ aprx = arcpy.mp.ArcGISProject("Current")
 map1 = aprx.activeMap
 
 #  Each DEM layers should have been extracted to a path like the following:
-#  "C:/Users/bagta/Documents/810 Project/" (your poject folder) + "wma01/wma01lat"
+#  "C:/Users/bagta/Documents/810 Project/" (your project folder) + "wma01/wma01lat"
 #  Use addDataFromPath to add layers
 #  map1.addDataFromPath(r'C:\Users\bagta\Documents\810 Project\wma01\wma01lat')
-#  Create a list of filepaths first
+#  Create a list of file paths first
 
 
 project_data_folder = r"C:\Users\bagta\Documents\810 Project"
@@ -23,7 +23,6 @@ for i in range(1, 21):
         map1.addDataFromPath(project_data_folder + "\wma" + str(i) + "\wma" + str(i) + "lat")
 
 #  add the road network
-map1.addDataFromPath(str(project_data_folder + "NJ_Roadway_Network.shp")
-
-
+roads = r'C:\Users\bagta\Documents\810 Project\NJ_Roadway_Network.shp'
+map1.addDataFromPath(roads)
 
