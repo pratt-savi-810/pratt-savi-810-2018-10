@@ -3,18 +3,36 @@ import urllib
 import zipfile
 import os
 
+# not using the local mxd function unless I can't get the download multiple files to work
+# mxd = arcpy.mapping.MapDocument(r'C:\Users\Adam\Desktop\lpc_test.mxd')
+
 
 def download_file_from_web(url, filename):
     # Download the file from `url` and save it locally under `file_name`:
     urllib.urlretrieve(url, filename)
-# mxd = arcpy.mapping.MapDocument(r'C:\Users\alubitz\Desktop\lpc_test.mxd')
 
 
-link_dict = {
+def main():
+    link_dict = {
         "boro_boundary": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybb_17c.zip",
         "landmark_footprints": "https://data.cityofnewyork.us/api/geospatial/7mgd-s57w?method=export&format=Original",
         "ind_landmarks": "https://data.cityofnewyork.us/api/geospatial/ch5p-r223?method=export&format=Original",
     }
+
+    download_location = r'C:\Users\Adam\Desktop\data'  # a 'data' folder must first be created on the desktop
+
+    for key, url in link_dict.items():
+
+        print('downloading {0} data, from url: {1}'.format(key, url))
+
+        download_file_from_web(
+            url,
+            '{0}/{1}.zip'.format(download_location, key)
+        )
+
+
+if __name__ == '__main__':
+    main()
 
 dest_dir = r'C:\Users\Adam\Desktop\data'
 data = os.listdir(r'C:\Users\Adam\Desktop\data')  # from os import listdir to compile list of file names
@@ -40,6 +58,7 @@ for points in arcpy.ListFeatureClasses():
     arcpy.AddField_management(points, "rate", "DOUBLE", 6, "", "", "rate", "NULLABLE", "NON_REQUIRED")
     # for reference http://pro.arcgis.com/en/pro-app/tool-reference/data-management/add-field.htm
 
+# Not certain if I need to import this
 # from arcpy.time import ParseDateTimeString
 
 with arcpy.da.SearchCursor(points, "rate") as cursor:
@@ -47,7 +66,8 @@ with arcpy.da.SearchCursor(points, "rate") as cursor:
         arcpy.CalculateField_management(points,
                                         "rate",
                                         expression="(arcpy.time.ParseDateTimeString(!DESDATE!) - arcpy.time.ParseDateTimeString(!CALDATE!)).days",
-                                        expression_type="PYTHON_9.3", code_block="")
+                                        expression_type="PYTHON_9.3", 
+                                        code_block="")
         # http://desktop.arcgis.com/en/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_AFC203DD316B4543A729B413C3322F3C
         # https://community.esri.com/thread/159217
 
