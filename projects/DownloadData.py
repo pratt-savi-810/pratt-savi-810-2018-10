@@ -25,6 +25,9 @@ for i in range(1, 21):
         filename_list.append(
             str(your_downloads_folder) + "wma" + str(i) + ".zip")
 
+print("Create filename_list: Complete." + str(filename_list))
+
+print("Files Downloading to your folder")
 
 #  download all WMA DEMs to the specified file paths
 for url_item, filename_item in zip(url_list, filename_list):
