@@ -49,9 +49,12 @@ count_points_in_poly(url_points, url_poly)
 
 ## possible next steps
 * clean up the results of the spatial join (remove extraneous columns from points and keep only the "join_count" field)
-* automate map producion in some way, such as the top 5 census tracts
+* automate symbology; make it so that the results of count_points_in_poly automatically go to graduated colors based on "join_count"
+* automate map production in some way, such as the top 5 census tracts
 * join demographic data by census tracts and use to normalize and perform other analyses
 
-
+## recording
+http://recordit.co/DAGXUzk1N2
+![image placeholder](http://recordit.co/DAGXUzk1N2)
 
 
