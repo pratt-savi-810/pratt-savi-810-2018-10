@@ -15,30 +15,30 @@ mp4 of the video also in the github link above
 
 Project Outline/Pseudocode
 ----------------------------
-'''Create function to read JSON file
-	Return path of csv file with coordinates
+	Create function to read JSON file
+		Return path of csv file with coordinates
 
-Store csv file path in variable
+	Store csv file path in variable
 
-Project xy coordinates from csv file and save in memory
+	Project xy coordinates from csv file and save in memory
 
-Create a shapefile from projected xy coordinates
-	Save shapefile in location that is read from JSON 
+	Create a shapefile from projected xy coordinates
+		Save shapefile in location that is read from JSON 
 
-Read JSON for location of basemap
-	Get mxd document with basemap
-Load shapefile in Arcmap document with basemap
-Save shapefile as layer in Arcmap
+	Read JSON for location of basemap
+		Get mxd document with basemap
+	Load shapefile in Arcmap document with basemap
+	Save shapefile as layer in Arcmap
 
-Turn labels on for defined layer and show labels on map
+	Turn labels on for defined layer and show labels on map
 
-Create a for loop that runs through a list of different map feature sets and performs the following
-	Select first set of features
-	Zoom to those selected features
-	Export a png file
-	Declare variable of location to save export and a save
+	Create a for loop that runs through a list of different map feature sets and performs the following
+		Select first set of features
+		Zoom to those selected features
+		Export a png file
+		Declare variable of location to save export and a save
 
-Repeat loop for additional two map features sets'''
+	Repeat loop for additional two map features sets
 
 
 Sources of code
