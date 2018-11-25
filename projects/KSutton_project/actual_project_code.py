@@ -2,7 +2,6 @@ import urllib
 import pandas as pd
 import arcpy
 import arcpy.mapping
-from arcpy import env
 import zipfile
 
 arcpy.env.overwriteOutput = 'True'
@@ -178,23 +177,20 @@ download_file_from_web("https://data.cityofnewyork.us/api/views/k5ta-2trh/rows.c
 # separate long and lat in treepoints to their own columns
 trees = r'E:\SAVI810\Final_Project\Data_Test\table\treepoints.csv'
 df_trees = pd.read_csv(trees)
-df_trees['longitude'] = df_trees['Location'].str.split('(').str[1].str.split(' ').str[0].str.replace(',', '')
-df_trees['latitude'] = df_trees['Location'].str.split(' ').str[1].str.replace(')', '')
+df_trees['latitude'] = df_trees['Location'].str.split('(').str[1].str.split(' ').str[0].str.replace(',', '')
+df_trees['longitude'] = df_trees['Location'].str.split(' ').str[1].str.replace(')', '')
 
 # export the dataframe to a fresh csv to use in arc
 out_trees = trees.replace('.csv', '_clean.csv')
 df_trees.to_csv(out_trees, index=False)
 
 # show treepoint data
-# the projection isn't working correctly. I specified the spatial reference parameter in hopes that it would work
-# but it does not
-State_Plane = arcpy.SpatialReference(4456)
+# State_Plane = arcpy.SpatialReference(4456)
 arcpy.MakeXYEventLayer_management(
     out_trees,
     'longitude',
     'latitude',
     "trees_layer",
-    State_Plane
 )
 
 # copy the features to a layer
