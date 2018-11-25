@@ -47,7 +47,7 @@ Though developed for Broadway, this tool can be used for any corridor in New Yor
 	* district_numbers: (112, 109, 107)
 
 
-## Projet Outline
+## Project Outline
 	- downloading files:
 		- all files are downloaded directly from NYC Open Data
 		- this ensures that all data is the most current version, particularly useful for the treepoints dataset which is updated weekly
