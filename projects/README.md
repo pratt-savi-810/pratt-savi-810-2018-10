@@ -1,6 +1,6 @@
 # Project Documentation
 
-Objective: Use DEM files from visualize NJ with 3D Elevation. Find a driving route between 2 locations. Create a flythrough to preview your route in 3D
+Objective: Use DEM files from visualize NJ with 3D Elevation. Create a flythrough 
 
 ## Inputs
 
@@ -29,9 +29,9 @@ A fly through of a given route
     * The URL is the same for each watershed except for its WMA ID# (eg. wma01, wma02,...wma20). 
     * Use an if statement so those less than 10 have a leading zero.
     * Also download the NJ road networks shp file 
-    * Utilize [download input data.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/download%20input%20data.py) to accomplish this
+    * Utilize [DownloadData.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/DownloadData.py) to accomplish this
 
-    Excerpt from [download input data.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/download%20input%20data.py)
+    Excerpt from [DownloadData.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/DownloadData.py)
     ```
     import urllib
     
@@ -51,7 +51,7 @@ A fly through of a given route
     for url_item, filename_item in zip(url_list, filename_list):
         urllib.urlretrieve(url_item, filename_item)
     ```  
-2. Extract to a specified location using [unzip all.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/unzip%20all.py)
+2. Extract to a specified location 
     
     Exerpt:
     ```
@@ -81,21 +81,50 @@ A fly through of a given route
     * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/LocalSceneView.png)
 
 2. Open the Python Window and use [Load Data in Pro.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Load%20Data%20in%20Pro.py) to easily load all 20 layers into the Scene
-    * This utilizes the library ```arcpy.mp``` and ```addDataFromPath()```
-3. Use [Mosaic to Raster.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Mosaic%20to%20Raster.py) to combine all 20 DEM layers into 1 raster layer (```njdem```).
-    * Having a single raster makes it easier to use as a 3D Elevation Surface
+    * Uses ```arcpy.mp``` library, ```addDataFromPath()```, and a for loop
+    * Each DEM layer should have been extracted to a path like the following:
+        * "C:/Users/bagta/Documents/810 Project/wma01/wma01lat" 
+        * Thus the for loop in the excerpt below:
+        
+    ```
+    project_data_folder = r"C:\Users\bagta\Documents\810 Project"
+    
+    for i in range(1, 21):
+        if i < 10:
+            map1.addDataFromPath(project_data_folder + "\wma0" + str(i) + "\wma0" +str(i) + "lat")
+        else:
+            map1.addDataFromPath(project_data_folder + "\wma" + str(i) + "\wma" + str(i) + "lat")
+    ```
+3. Use [TransformRasters.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/TransformRasters.py) to combine all 20 DEM layers into 1 raster layer (```njdem```).
+    * Easier to use a single raster rather than 20 as a 3D Elevation Surface
     * Uses ```arcpy.management.MosaicToNewRaster()```
+    * The output should be added to the Scene
     * Help Documentation: https://pro.arcgis.com/en/pro-app/tool-reference/data-management/mosaic-to-new-raster.htm
-4. Remove the 20 DEM layers from the Scene. 
+4. Create hillshading with ```arcpy.ddd.HillShade()``` (code is in the same .py file as step 3)
+    * The output should be added to the Scene
+    * Help documentation for hillshading: https://pro.arcgis.com/en/pro-app/tool-reference/3d-analyst/hillshade.htm
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Choose a Base Map (parameter. set a Topographic as the default basemap)
+5. Remove the 20 DEM layers from the Scene as they are no longer needed
 
-Find a biking route between 2 locations using the ArcGIS Network Analyst extension
+6. Set ```njdem``` as the elevation surface. Start by right-clicking on the Map in Contents to edit the Map Properties
+    * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/MapProperties.png)
+    * Properties > Elevation Surface > Elevation Sources > Add Elevation Source, choose ```njdem```
+    * Set the exaggeration to around 25 to see elevation better
+    * Click OK
+    
+ 7. Change Symbology/Appearance to improve 3D visuals:
+    * Set Hillshade (```hillshd```) transparancy to ~ 50%
+    * Set ```njdem``` color scheme to "Condition Numbers" (low elevation = green, high elevation = red)
+ 
+ 8. Navigate through the 3D visualization by holding the V key and and dragging. Drag with either left-click or scroll wheel to view at different angles
+    
+ 9. Create a fly-through visualization
+    * View > Animation >  Add Animation
+    * Go to the Keyframe timeline to add a key frame
+    * Navigate to a key frame (a location where the "camera" will go place to place) and Choose "Append" to the animation
+    * Use "Fixed" transitions (choice of Fixed, Linear, Hop, etc) and Check off "Maintain Speed"
+    * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/KeyFrameTimeline.png)
+    * [Help Documenation for Creating Flythrough Animations](https://pro.arcgis.com/en/pro-app/help/mapping/animation/animate-the-camera.htm#ESRI_SECTION1_0F98E1F2D6754A019D945D005225375F) 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://pro.arcgis.com/en/pro-app/arcpy/network-analyst/what-is-network-analyst-module.htm
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MakeRouteLayer_na http://pro.arcgis.com/en/pro-app/tool-reference/network-analyst/make-route-layer.htm
-
-Create a fly-through visualization to preview the route with elevation in mind 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; info: https://pro.arcgis.com/en/pro-app/help/mapping/animation/animate-the-camera.htm
-	
-	
+## Final Output
+![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Video_Gifs/3D_flythrough.gif)
