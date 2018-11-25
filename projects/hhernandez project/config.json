@@ -1,8 +1,8 @@
 {
-  "in_csv": "C:/Users/Hector Hernandez/Documents/GitHub/pratt-savi-810-2018-10/projects/hhernandez project/ld/brg.csv",
-  "basemap": "C:/Users/Hector Hernandez/Documents/GitHub/pratt-savi-810-2018-10/projects/hhernandez project/ld/ld.mxd",
-  "save_ly": "C:/Users/Hector Hernandez/Documents/GitHub/pratt-savi-810-2018-10/projects/hhernandez project/ld/brg.shp",
-  "shp_workspace": "C:/Users/Hector Hernandez/Documents/GitHub/pratt-savi-810-2018-10/projects/hhernandez project/ld/",
-  "map_export_dir": "C:/Users/Hector Hernandez/Documents/GitHub/pratt-savi-810-2018-10/projects/hhernandez project/ld/"
+  "in_csv": "Z:/Windows/GitHub/pratt-savi-810-2018-10/projects_scratch/hhernandez2783/ld/brg.csv",
+  "basemap": "Z:/Windows/GitHub/pratt-savi-810-2018-10/projects_scratch/hhernandez2783/ld/ld.mxd",
+  "save_ly": "Z:/Windows/GitHub/pratt-savi-810-2018-10/projects_scratch/hhernandez2783/ld/brg.shp",
+  "shp_workspace": "Z:/Windows/GitHub/pratt-savi-810-2018-10/projects_scratch/hhernandez2783/ld/",
+  "map_export_dir": "Z:/Windows/GitHub/pratt-savi-810-2018-10/projects_scratch/hhernandez2783/ld/"
 }
 
