@@ -1,7 +1,6 @@
 import arcpy
 import json
 
-
 arcpy.env.overwriteOutput = True  # this allows the shapefile to be overwritten
 
 
@@ -51,9 +50,6 @@ def bridge_export(config_file, map_frames):
     # add the layer to the map at the bottom of the TOC in data frame 0
     arcpy.mapping.AddLayer(df, newlayer, "AUTO_ARRANGE")
 
-    # # save the mxd file
-    # mxd.save() DANNY - I don't think you need to save the mxd.
-
     # Adding Labeling
     layer = arcpy.mapping.ListLayers(mxd, "brg")[0]  # Indexing list for 1st layer
     if layer.supports("LABELCLASSES"):
@@ -62,7 +58,6 @@ def bridge_export(config_file, map_frames):
 
     layer.showLabels = True
     arcpy.RefreshActiveView()
-    # mxd.save() DANNY - I don't think you need to save the mxd.
 
     for m in map_frames:
         map_frame_sql, map_name = m[0], m[1]
@@ -71,7 +66,7 @@ def bridge_export(config_file, map_frames):
         nycbrg = arcpy.mapping.ListLayers(mxd)[0]
         arcpy.SelectLayerByAttribute_management(nycbrg, "NEW_SELECTION", map_frame_sql)
         df.zoomToSelectedFeatures()
-        # mxd.save() DANNY - I don't think you need to save the mxd.
+
 
         # Declare Variable of Where to Save Map Export
         make_export = '{}{}.png'.format(data['map_export_dir'], map_name)  # PEP-8 variables should be lowercase
