@@ -1,8 +1,8 @@
 # Identify Rent Stabilized Buildings in Brooklyn NY
 
-[![watch the video](https://img.youtube.com/vi/S5q3iTrgjsA/hqdefault.jpg)]
+[![watch the video](https://img.youtube.com/vi/rB3tkYohPnk/hqdefault.jpg)]
 
-[Code Recording Link](https://youtu.be/zkZ4_Cv1eZ4)
+[Code Recording Link](https://youtu.be/rB3tkYohPnk)
 
 Project Description
 
