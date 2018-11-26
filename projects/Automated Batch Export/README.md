@@ -6,7 +6,7 @@ Many times when I am tasked with mapping projects, a lot of time and effort is s
 
 **How to Use**
 
-1. FIll in all the desired bookmarks, layers, and export
+1. FIll in all the desired bookmarks, layers, and export destination
 2. Run
 3. Voila, the exports appear in their folder
 
