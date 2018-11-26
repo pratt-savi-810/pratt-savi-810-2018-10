@@ -2,6 +2,8 @@
 
 [![watch the video](https://img.youtube.com/vi/S5q3iTrgjsA/hqdefault.jpg)]
 
+[Code Recording Link](https://youtu.be/zkZ4_Cv1eZ4)
+
 Project Description
 
 The goal of this project is to map the locations of rent stabilzed buildings in Brooklyn, New York, to later examine the income levels of the population living in the communities where these buildings are more prevalent.
