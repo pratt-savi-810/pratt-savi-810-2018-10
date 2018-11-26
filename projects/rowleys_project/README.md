@@ -1,6 +1,6 @@
-#Identify Rent Stabilized Buildings in Brooklyn NY
+# Identify Rent Stabilized Buildings in Brooklyn NY
 
-![image place holder](https://youtu.be/S5q3iTrgjsA)
+[![watch the video](https://img.youtube.com/vi/S5q3iTrgjsA/hqdefault.jpg)]
 
 Project Description
 
