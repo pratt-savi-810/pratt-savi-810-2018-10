@@ -81,27 +81,37 @@ students/hhernandez2783/Data110318/buffer_400.dbf
 students/hhernandez2783/Data110318/buffer_400.cpg
 students/hhernandez2783/buildlandbuffer.mxd
 *.pyc
+
+
+*.xml
+*.lock
+*.shp
+*.sbn
 *.dbf
+*.prj
+*.sbx
+*.shx
 *.cpg
+
+*.lock
+*.shp
+*.cpg
+*.dbf
+*.prj
 *.md
-students/friches/bbl/data/IND_Landmark_Points_10_26_18_revised/IND_Landmark_Points_10_26_18_revised.prj
-students/friches/bbl/data/IND_Landmark_Points_10_26_18_revised/IND_Landmark_Points_10_26_18_revised.sbn
-students/friches/bbl/data/IND_Landmark_Points_10_26_18_revised/IND_Landmark_Points_10_26_18_revised.sbx
-students/friches/bbl/data/IND_Landmark_Points_10_26_18_revised/IND_Landmark_Points_10_26_18_revised.shp
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/LPC_IL_HD_Bld_DB_10_19_18.shx
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/LPC_IL_HD_Bld_DB_10_19_18.shp.xml
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/LPC_IL_HD_Bld_DB_10_19_18.shp.SAVI-006-18.10704.2520.sr.lock
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/LPC_IL_HD_Bld_DB_10_19_18.shp
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/LPC_IL_HD_Bld_DB_10_19_18.sbx
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/LPC_IL_HD_Bld_DB_10_19_18.sbn
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/LPC_IL_HD_Bld_DB_10_19_18.prj
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/Borough Boundaries/geo_export_7ab00af5-baca-4ddc-940f-5af86efe4b5e.shx
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/Borough Boundaries/geo_export_7ab00af5-baca-4ddc-940f-5af86efe4b5e.shp.SAVI-006-18.10704.2520.sr.lock
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/Borough Boundaries/geo_export_7ab00af5-baca-4ddc-940f-5af86efe4b5e.shp
-students/friches/bbl/data/LPC_IL_HD_Bld_DB_10_19_18/Borough Boundaries/geo_export_7ab00af5-baca-4ddc-940f-5af86efe4b5e.prj
-students/friches/bbl/data/Individual Landmarks/geo_export_82f30e4a-2d92-4706-ae9b-f9061513a814.shx
-students/friches/bbl/data/Individual Landmarks/geo_export_82f30e4a-2d92-4706-ae9b-f9061513a814.shp
-students/friches/bbl/data/Individual Landmarks/geo_export_82f30e4a-2d92-4706-ae9b-f9061513a814.prj
-students/friches/bbl/data/IND_Landmark_Points_10_26_18_revised/IND_Landmark_Points_10_26_18_revised.shx
-students/friches/bbl/data/IND_Landmark_Points_10_26_18_revised/IND_Landmark_Points_10_26_18_revised.shp.xml
-students/friches/bbl/data/IND_Landmark_Points_10_26_18_revised/IND_Landmark_Points_10_26_18_revised.shp.SAVI-006-18.10704.2520.sr.lock
+*.sbx
+*.sbn
+*.shx
+
+*.cpg
+*.prj
+*.sbn
+*.dbf
+*.shx
+*.shp
+*.lock
+*.sbx
+
+*.xml
+
+lessons/lesson_10_read_config_json/secret_config.json
