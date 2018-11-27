@@ -27,7 +27,7 @@ def
 # declared mxd as current (instead of mxd filepath since this was in ArcMap desktop)
 mxd = arcpy.mapping.MapDocument(mxd_file)
 
-# extracted map_datafram from the mxd object
+# extracted map_df from the mxd object
 map_df = arcpy.mapping.ListDataFrames(mxd, "*")[0]
 
 # make empty
