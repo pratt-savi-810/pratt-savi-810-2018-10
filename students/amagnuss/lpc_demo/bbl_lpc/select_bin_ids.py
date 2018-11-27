@@ -50,4 +50,7 @@ def select_bin_ids(
     arcpy.Delete_management('build_lyr')
     arcpy.Delete_management('select_bin_lyr')
     arcpy.Delete_management('in_memory/buffer4')
+
     return bin_list
+
+

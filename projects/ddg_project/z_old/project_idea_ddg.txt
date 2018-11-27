@@ -1,0 +1,26 @@
+# Data inputs
+
+street_address
+    geocode to lat/lng
+MapPLUTO data (local)
+    
+# Output
+
+shapefiles: geocoded addresses (points)
+            selected MapPLUTO parcels
+
+csv:        selected MapPLUTO parcels
+                - only export certain columns from the data--is this possible? this would be super-helpful
+
+# Steps
+
+street addresses (csv)
+    geocode to lat/lng
+        # move into arcgis #
+    create shapefile (points)
+import MapPLUTO data (from local)
+    select by location (overlap with points)
+    export selected MapPLUTO as shapefile and csv 
+        - if multiple points fall on the same parcel, can the output duplicate itself as many times as necessary? (i.e., if 4 points fall on the same BBL, can that BBL show up in the output 4 times?)
+
+    * decide which columns to export?
