@@ -1,0 +1,3 @@
+# exclude specific files from .gitignore
+!Bikeshare_ND_template.xml
+!Bikeshare_files.zip

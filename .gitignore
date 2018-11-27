@@ -74,3 +74,4 @@ venv/
 *.xml
 
 lessons/lesson_10_read_config_json/secret_config.json
+
