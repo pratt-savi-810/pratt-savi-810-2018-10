@@ -1,0 +1,4 @@
+Analyze Bushwick Rezoning Proposal by mapping proposed new zones. Attaching new data to existing tax lot database (PLUTO). 
+Specifically, I realize that I can draw commercial overlays using a buffer selection using the street centerline data for these selected properties. 
+Python will help me with creating these selections and geometries. Automation will enable me to more quickly look at the entire neighborhood instead of pouring through repetative data entry.
+In my previous class, I created a map displaying the existing zoning, so once this new map is completed, they can be overlaid with one another for analytical purposes.
