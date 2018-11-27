@@ -1,0 +1,49 @@
+# https://developer.foursquare.com/docs/resources/categories
+# Course Projects
+
+#Project outline
+
+#Project Name: Foursquare district Web Scrapper
+
+#Student: Daniel Eizo
+
+
+#Why: This project should help the ongoing research about dynamic placemaking in Pratt Institute. This research focus on the understanding the place perception and how people fell about the place in different cycles of time.
+#Description: the project will use the places API from Foursquare to identify the tenant mix of the district and extract especific characteristcs eateries and other retail classes to provide a snapshot of the district composition.
+
+#How: Create a grid for scraper
+
+
+
+#Define a point of interest as a lat long
+#Define research area and devide into quadrants according to the API limitations
+#Define
+
+import arcpy
+import pandas
+import os
+import subprocess
+import json
+import requests
+import csv
+url = 'https://api.foursquare.com/v2/venues/explore'
+
+params = dict(
+  client_id='2B1JHZOK3RE1DKMQGGSQDNNJE4IYOB0AP2V1VSGGL0RRMZYD',
+  client_secret='4FJSBFVMNZDLR5DNYEA3T4BH1TK2BOJFX1K00WAHSR5D3ZUQ',
+  v='20180323',
+  ll='40.7243,-74.0018',
+  query='coffee',
+  limit=10
+)
+resp = requests.get(url=url, params=params)
+data = json.loads(resp.text)
+print(resp)
+
+f= open("guru99.txt","w+")
+f.write()
+
+
+#def get_venues_hours(lat, long):
+
+#f=open('C:\ProgramData\Microsoft\Windows\Start Menu\Programs\ArcGIS\ArcMap 10.6')
