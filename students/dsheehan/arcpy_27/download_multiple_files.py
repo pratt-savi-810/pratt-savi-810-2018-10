@@ -11,8 +11,8 @@ url_list = [
 ]
 
 filename_list = [
-    "C:/Users/dsheehan/Documents/data/wifi_{0}_finalfinal.zip".format(todays_date),
-    "C:/Users/dsheehan/Documents/data/wifi_{0}_for_excel.csv".format(todays_date)
+    "C:/Users/Riches/Documents/GitHub/pratt-savi-810-2018-10/projects/RICHES PROJECT.zip".format(todays_date),
+    "C:/Users/Riches/Documents/GitHub/pratt-savi-810-2018-10/projects/RICHES PROJECT.csv".format(todays_date)
 ]
 
 for url_item, filename_item in zip(url_list, filename_list):
@@ -25,3 +25,5 @@ for url_item, filename_item in zip(url_list, filename_list):
 
 
 
+
+dnknkn
