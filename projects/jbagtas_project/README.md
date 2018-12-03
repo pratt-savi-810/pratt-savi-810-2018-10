@@ -130,4 +130,4 @@ A fly through of a NJ state elevation
 ## Final Output
 ![3D_flythrough](Video_Gifs/3D_flythrough.gif)
 
-[Videos of Code Working Successfully](Videos_Gifs)
+[Videos of Code Working Successfully](Video_Gifs)
