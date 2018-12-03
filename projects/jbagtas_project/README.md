@@ -119,15 +119,15 @@ A fly through of a NJ state elevation
  
  8. Navigate through the 3D visualization by holding the V key and and dragging. Drag with either left-click or scroll wheel to view at different angles
     
- 9. Create a fly-through visualization
-    * View > Animation >  Add Animation
-    * Go to the Keyframe timeline to add a key frame
-    * Navigate to a key frame (a location where the "camera" will go place to place) and Choose "Append" to the animation
-    * Use "Fixed" transitions (choice of Fixed, Linear, Hop, etc) and Check off "Maintain Speed"
+### Create a fly-through visualization
+1. View > Animation >  Add Animation
+2. Go to the Keyframe timeline to add a key frame
+3. Navigate to a key frame (a location where the "camera" will go place to place) and Choose "Append" to the animation
+4. Use "Fixed" transitions (choice of Fixed, Linear, Hop, etc) and Check off "Maintain Speed"
     * ![KeyFrameTimeline](Screenshot%20References/KeyFrameTimeline.png)
     * [Help Documenation for Creating Flythrough Animations](https://pro.arcgis.com/en/pro-app/help/mapping/animation/animate-the-camera.htm#ESRI_SECTION1_0F98E1F2D6754A019D945D005225375F) 
 
 ## Final Output
 ![3D_flythrough](Video_Gifs/3D_flythrough.gif)
 
-[Videos of Code Working Successfully](jbagtas_project/Videos_Gifs)
+[Videos of Code Working Successfully](Videos_Gifs)
