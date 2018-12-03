@@ -30,7 +30,7 @@ A fly through of a NJ state elevation
     * Also download the NJ road networks shp file 
     * Utilize [DownloadData.py](DownloadData.py) to accomplish this
 
-    Excerpt from [DownloadData.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/DownloadData.py)
+    Excerpt from [DownloadData.py](DownloadData.py)
     ```
     import urllib
     
@@ -75,11 +75,11 @@ A fly through of a NJ state elevation
 1. Add a local scene in ArcGIS Pro: 
     * Insert > New Map > New Scene. 
     
-    * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/InsertScene.png)
+    * ![InsertScene](Screenshot%20References/InsertScene.png)
     * Once the scene has loaded, make it a local scene: View > Local
-    * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/LocalSceneView.png)
+    * ![LocalSceneView](Screenshot%20References/LocalSceneView.png)
 
-2. Open the Python Window and use [Load Data in Pro.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Load%20Data%20in%20Pro.py) to easily load all 20 layers into the Scene
+2. Open the Python Window and use [Load Data in Pro.py](Load%20Data%20in%20Pro.py) to easily load all 20 layers into the Scene
     * Uses ```arcpy.mp``` library, ```addDataFromPath()```, and a for loop
     * Each DEM layer should have been extracted to a path like the following:
         * "C:/Users/bagta/Documents/810 Project/wma01/wma01lat" 
@@ -94,7 +94,7 @@ A fly through of a NJ state elevation
         else:
             map1.addDataFromPath(project_data_folder + "\wma" + str(i) + "\wma" + str(i) + "lat")
     ```
-3. Use [TransformRasters.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/TransformRasters.py) to combine all 20 DEM layers into 1 raster layer (```njdem```).
+3. Use [TransformRasters.py](TransformRasters.py) to combine all 20 DEM layers into 1 raster layer (```njdem```).
     * Easier to use a single raster rather than 20 as a 3D Elevation Surface
     * Uses ```arcpy.management.MosaicToNewRaster()```
     * The output should be added to the Scene
@@ -106,12 +106,12 @@ A fly through of a NJ state elevation
 5. Remove the 20 DEM layers from the Scene as they are no longer needed
 
 6. Set ```njdem``` as the elevation surface. Start by right-clicking on the Map in Contents to edit the Map Properties
-    * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/MapProperties.png)
+    * ![MapProperties](Screenshot%20References/MapProperties.png)
     * Properties > Elevation Surface > Elevation Sources > Add Elevation Source, choose ```njdem```
     * Set the exaggeration to around 15-20 to see elevation better
     * Click OK
     * Go back to the Elevation Source in properties to check if the Elevation Source from ArcOnline was automatically added. This is not necessary and may use credits, so click the X to remove it
-    * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/DeleteArcOnlineElevationSource.png)
+    * ![DeleteArcOnlineElevationSource](Screenshot%20References/DeleteArcOnlineElevationSource.png)
     
  7. Change Symbology/Appearance to improve 3D visuals:
     * Set Hillshade (```hillshd```) transparancy to ~ 50%
@@ -124,11 +124,10 @@ A fly through of a NJ state elevation
     * Go to the Keyframe timeline to add a key frame
     * Navigate to a key frame (a location where the "camera" will go place to place) and Choose "Append" to the animation
     * Use "Fixed" transitions (choice of Fixed, Linear, Hop, etc) and Check off "Maintain Speed"
-    * ![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Screenshot%20References/KeyFrameTimeline.png)
+    * ![KeyFrameTimeline](Screenshot%20References/KeyFrameTimeline.png)
     * [Help Documenation for Creating Flythrough Animations](https://pro.arcgis.com/en/pro-app/help/mapping/animation/animate-the-camera.htm#ESRI_SECTION1_0F98E1F2D6754A019D945D005225375F) 
 
 ## Final Output
-![Text](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Video_Gifs/3D_flythrough.gif)
+![3D_flythrough](Video_Gifs/3D_flythrough.gif)
 
-[Videos of Code Working Successfully](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/Video_Gifs)
-(jbagtas_project/Videos_Gifs)
+[Videos of Code Working Successfully](jbagtas_project/Videos_Gifs)
