@@ -8,7 +8,6 @@ Objective: Use DEM files from visualize NJ with 3D Elevation. Create a flythroug
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://www.nj.gov/dep/gis/digidownload/zips/wmalattice/wma01lat.zip 
 
-NJ Street Network: https://www.state.nj.us/transportation/gis/zip/NJ_Roads_shp.zip
 
 http://njogis-newjersey.opendata.arcgis.com/
 
@@ -18,7 +17,7 @@ Note: There is a DEM for all of NJ, but will proceed with data broken out by wat
 
 ## Output
 
-A fly through of a given route
+A fly through of a NJ state elevation
 
 
 
@@ -29,7 +28,7 @@ A fly through of a given route
     * The URL is the same for each watershed except for its WMA ID# (eg. wma01, wma02,...wma20). 
     * Use an if statement so those less than 10 have a leading zero.
     * Also download the NJ road networks shp file 
-    * Utilize [DownloadData.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/DownloadData.py) to accomplish this
+    * Utilize [DownloadData.py](DownloadData.py) to accomplish this
 
     Excerpt from [DownloadData.py](https://github.com/pratt-savi-810/pratt-savi-810-2018-10/blob/jbagtas_project/projects/DownloadData.py)
     ```
