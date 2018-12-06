@@ -1,6 +1,6 @@
 import arcpy
 # mxd = arcpy.mapping.MapDocument(r'C:\Users\alubitz\Desktop\lpc_test.mxd')
-
+from arcpy import env
 import urllib
 import zipfile
 import os
@@ -24,7 +24,7 @@ for i in data:  # iterate through link dictionary
     zip = zipfile.ZipFile(r'C:\Users\alubitz\Desktop\data\{}'.format(i), 'r')
     zip.extractall(dest_dir)
 
-from arcpy import env
+
 mxd = arcpy.mapping.MapDocument("CURRENT")  # set up map document in ArcMap
 df = arcpy.mapping.ListDataFrames(mxd, "*")[0]  # set up data frame
 nybb = arcpy.mapping.Layer(r'C:\Users\alubitz\Desktop\data\nybb')  # create new layer
@@ -49,4 +49,4 @@ for field_value in list_of_field_values:
     )
 
 
-arcpy.ExportToPNG
+# arcpy.ExportToPNG
