@@ -41,35 +41,30 @@ for i in data:  # iterate through link dictionary and extract each into same fol
     zip = zipfile.ZipFile(r'C:\Users\Adam\Desktop\data\{}'.format(i), 'r')
     zip.extractall(dest_dir)
 
-# from arcpy import env
-mxd = arcpy.mapping.MapDocument("CURRENT")  # set up map document in ArcMap
+# set up map document in ArcMap
+mxd = arcpy.mapping.MapDocument("CURRENT")
 df = arcpy.mapping.ListDataFrames(mxd, "*")[0]  # set up data frame from the mxd object
 
-points = arcpy.mapping.Layer(r"C:\Users\Adam\Desktop\data\IND_Landmark_Points_10_26_18_revised.shp")  # creates layer
+# create layers and set filenames as vars
+points = arcpy.mapping.Layer(r"C:\Users\Adam\Desktop\data\IND_Landmark_Points_10_26_18_revised.shp")
 arcpy.mapping.AddLayer(df, points, "BOTTOM")  # add the layer to the map at the bottom of the TOC in data frame 0
 
-bldgs = arcpy.mapping.Layer(r'C:\Users\Adam\Desktop\data\LPC_IL_HD_Bld_DB_10_19_18.shp')  # sets filenames as vars
+bldgs = arcpy.mapping.Layer(r'C:\Users\Adam\Desktop\data\LPC_IL_HD_Bld_DB_10_19_18.shp')
 arcpy.mapping.AddLayer(df, bldgs, "BOTTOM")
 
 nybb = arcpy.mapping.Layer(r'C:\Users\Adam\Desktop\data\nybb_17c\nybb.shp')
 arcpy.mapping.AddLayer(df, nybb, "BOTTOM")
 
-for points in arcpy.ListFeatureClasses():
-    arcpy.AddField_management(points, "rate", "DOUBLE", 6, "", "", "rate", "NULLABLE", "NON_REQUIRED")
-    # for reference http://pro.arcgis.com/en/pro-app/tool-reference/data-management/add-field.htm
+# convert date field types from string to date
+# for reference http://pro.arcgis.com/en/pro-app/tool-reference/data-management/add-field.htm
+arcpy.AddField_management(points, "cal", "DATE")
+arcpy.CalculateField_management(points, "cal", "[CALDATE]", "VB")
+arcpy.AddField_management(points, "des", "DATE")
+arcpy.CalculateField_management(points, "des", "[DESDATE]", "VB")
 
-# Not certain if I need to import this
-# from arcpy.time import ParseDateTimeString
-
-with arcpy.da.SearchCursor(points, "rate") as cursor:
-    for row in cursor:
-        arcpy.CalculateField_management(points,
-                                        "rate",
-                                        expression="(arcpy.time.ParseDateTimeString(!DESDATE!) - arcpy.time.ParseDateTimeString(!CALDATE!)).days",
-                                        expression_type="PYTHON_9.3", 
-                                        code_block="")
-        # http://desktop.arcgis.com/en/arcmap/10.3/manage-data/tables/calculate-field-examples.htm#ESRI_SECTION1_AFC203DD316B4543A729B413C3322F3C
-        # https://community.esri.com/thread/159217
+# create and populate rate field
+arcpy.AddField_management(points, "rate", "LONG")
+arcpy.CalculateField_management(points, "rate", "[des] - [cal]", "VB")
 
 # spatial join the new point-based data to the building polygons        
-arcpy.SpatialJoin_analysis(bldgs, points, "in_memory/bldgs_SpatialJoin")
+arcpy.SpatialJoin_analysis(bldgs, points, "in_memory/lpc_rate")
