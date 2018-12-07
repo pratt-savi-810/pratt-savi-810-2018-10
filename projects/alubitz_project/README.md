@@ -21,6 +21,8 @@ Borough Boundaries Clipped to Shoreline (Polygon shapefile nybb), NYC Department
 ## Output
 The output is a new polygon shapefile which contains rate of designation as a new field which can be symbolized for relative rates across NYC. For instance, this can be used for running statistics or symbolizing average rates by borough.
 
+A recording of the code running can be viewed here: http://recordit.co/9xCiJrpXJQ
+
 ## Outline of Steps
 ####    1. Import dependencies
 
@@ -85,23 +87,20 @@ Then create and run `main` function which compiles a list of all file names.
     nybb = arcpy.mapping.Layer(r'C:\Users\Adam\Desktop\data\nybb_17c\nybb.shp')
     arcpy.mapping.AddLayer(df, nybb, "BOTTOM")
 
-#### 5. Add a new double numeric field to the `points` shapefile
+#### 5. Convert calendared and designated date field types from string to date
 
-    for points in arcpy.ListFeatureClasses():
-    arcpy.AddField_management(points, "rate", "DOUBLE", 6, "", "", "rate", "NULLABLE", "NON_REQUIRED")  # Nullable is for blank fields representing immediate designation
+    arcpy.AddField_management(points, "cal", "DATE")
+    arcpy.CalculateField_management(points, "cal", "[CALDATE]", "VB")
+    arcpy.AddField_management(points, "des", "DATE")
+    arcpy.CalculateField_management(points, "des", "[DESDATE]", "VB")
 
-#### 6. Using a cursor-based approach, populate the new field with a value which represents, in days, the difference between designation date minus calendared date.
+#### 6. Create and populate the new `rate` field with a value which represents, in days, the difference between designation date minus calendared date.
 
-    with arcpy.da.SearchCursor(points, "rate") as cursor:
-    for row in cursor:
-        arcpy.CalculateField_management(points,
-                                        "rate",
-                                        expression="(arcpy.time.ParseDateTimeString(!DESDATE!) - arcpy.time.ParseDateTimeString(!CALDATE!)).days",
-                                        expression_type="PYTHON_9.3",
-                                        code_block="")
+    arcpy.AddField_management(points, "rate", "LONG")
+    arcpy.CalculateField_management(points, "rate", "[des] - [cal]", "VB")
 
 #### 7. Conduct a spatial join between the `points` shapefile with the polygon-based `bldgs` shapefile as the destination.
 
-	arcpy.SpatialJoin_analysis("bldgs", "points", "in_memory/points_SpatialJoin")
+	arcpy.SpatialJoin_analysis("bldgs", "points", "in_memory/lpc_rate")
 
 This final shapefile is now ready to use for spatial analysis, including symbolizing where higher and lower rates of designation exist across the city.
