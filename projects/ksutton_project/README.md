@@ -12,7 +12,7 @@ their existing plantings and getting some recommendations about which tree speci
 
 Though developed for Broadway, this tool can be used for any corridor in New York City.
 
-Here is a (video)[https://www.dropbox.com/s/ptwv3nzppuegr52/SAVI810_FinalProject_StreetTree_Corridor_Analysis.fbr?dl=0] of the tool executing on my computer.
+Here is a [video](https://www.dropbox.com/s/ptwv3nzppuegr52/SAVI810_FinalProject_StreetTree_Corridor_Analysis.fbr?dl=0) of the tool executing on my computer.
 ## Dependencies
 	import urllib
 	import pandas as pd
