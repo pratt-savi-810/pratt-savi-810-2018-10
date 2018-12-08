@@ -22,12 +22,16 @@ trees = r'E:\SAVI810\Final_Project\Data_Test\table\treepoints.csv'
 df_trees = pd.read_csv(trees)
 
 
-df_trees['longitude'] = df_trees['Location'].str.split('(').str[1].str.split(' ').str[0] .str.replace(',', '')
 
+df_trees['longitude'] = df_trees['Location'].str.split(' ').str[1].str.replace(')', '')
 print(df_trees.longitude.head)
-df_trees['latitude'] = df_trees['Location'].str.split(' ').str[1].str.replace(')', '')
+
+df_trees['latitude'] = df_trees['Location'].str.split('(').str[1].str.split(' ').str[0] .str.replace(',', '')
 print(df_trees.latitude.head)
-#
+
+print(df_trees.columns)
+
+
 # # export the dataframe to a fresh csv to use in arc
 # out_trees = trees.replace('.csv', '_clean.csv')
 # df_trees.to_csv(out_trees, index=False)
